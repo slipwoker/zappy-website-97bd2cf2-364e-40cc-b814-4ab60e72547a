@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="he" dir="rtl"><head>
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מכשיר הזרקת רובה חשמלי למרצפות — Groutbot</title>
-  <meta name="description" content="Groutbot מציגה את עתיד ענף הריצוף: מכשיר הזרקת רובה חשמלי למרצפות שמחליף עבודת ידיים בדיוק אוטומטי. חסכו זמן, הורידו עלויות והעלו את רמת הגימור בכל פרויקט. גלו עכשיו!">
+  <title>Electric Grout Injection Device for Tiles — Groutbot</title>
+  <meta name="description" content="Groutbot presents the future of the flooring industry: an electric grout injection device for tiles that replaces manual work with automatic precision. Save time, reduce costs, and elevate the finish quality in every project. Discover now!">
   <meta name="keywords" content="מכשיר הזרקת רובה חשמלי למרצפות, הזרקת רובה אוטומטית, ציוד רובה בין אריחים לפרויקטים גדולים, טכנולוגיה לענף הבניה, Groutbot">
   <meta name="robots" content="index, follow">
   
@@ -87,13 +87,11 @@
   min-height: 100vh;
 }
 
-.index-hero-section .index-hero-content {
-  max-width: 620px;
+.index-hero-section .index-hero-content {max-width: 620px;
   width: 100%;
-  text-align: right;
+  
   padding-top: 80px;
-  padding-bottom: 40px;
-}
+  padding-bottom: 40px;}html[dir="rtl"] .index-hero-section .index-hero-content{text-align: right;}
 
 .index-hero-section .index-hero-label {
   display: inline-block;
@@ -279,9 +277,8 @@
 }
 </style>
 
-<style data-zappy-section-v2-css="true">
-/* V2 Regenerated Section CSS */
-.index-workflow-section {
+<style data-zappy-section-v2-css="true">html[dir="rtl"] /* V2 Regenerated Section CSS */
+.index-workflow-section{
   background-color: #F8F3EA;
   background-image:
     radial-gradient(circle at 15% 25%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 45%),
@@ -360,10 +357,8 @@
 
 .index-workflow-section .workflow-step:last-of-type {
   border-bottom: 1px solid var(--border-light);
-}
-
-/* Reverse layout for even steps (image on left, content on right in RTL = image on right) */
-.index-workflow-section .workflow-step.step-reverse {
+}html[dir="rtl"] /* Reverse layout for even steps (image on left, content on right in RTL = image on right) */
+.index-workflow-section .workflow-step.step-reverse{
   direction: rtl;
 }
 
@@ -1259,7 +1254,76 @@ html[dir="rtl"] body {
 <!-- hreflang tags for SEO -->
 <link rel="alternate" hreflang="he" href="https://groutbot.co.il/">
 <link rel="alternate" hreflang="en" href="https://groutbot.co.il/en">
-<link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/"><style id="mobile-lang-menu-deployed-css">@media (max-width:768px){.lang-switcher,.nav-cta-container .lang-switcher,.nav-container .lang-switcher,.navbar .lang-switcher,.navbar .nav-cta-container .lang-switcher,.nav-icons-left .lang-switcher,.nav-ecommerce-icons .lang-switcher{display:none!important}.mobile-lang-menu{width:100%;border-top:1px solid rgba(128,128,128,0.2);padding:8px 0 0 0;margin-top:8px}.mobile-lang-toggle{display:flex!important;align-items:center;justify-content:space-between;width:100%;padding:12px 16px;background:none;border:none;cursor:pointer;font-size:15px;color:inherit;font-family:inherit}.mobile-lang-toggle::after{content:'';display:inline-block;width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform 0.3s ease;margin-left:8px}.mobile-lang-toggle.expanded::after{transform:rotate(-135deg)}.mobile-lang-options{display:block!important;max-height:0;overflow:hidden;transition:max-height 0.3s ease}.mobile-lang-options.expanded{display:block!important;max-height:300px}.mobile-lang-option{display:flex!important;align-items:center;gap:10px;padding:10px 24px;text-decoration:none;color:inherit;font-size:14px;font-family:inherit}.mobile-lang-option:hover{background:rgba(128,128,128,0.1)}.mobile-lang-option.active{font-weight:600;opacity:0.7;pointer-events:none}.mobile-lang-option img{width:20px;height:20px;border-radius:50%}}@media (min-width:769px){.mobile-lang-menu{display:none!important}}</style></head>
+<link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/">
+<!-- Zappy V2 LTR Layout Fix (CSS) -->
+<style>
+/* Fix V2 navbar layout for LTR pages - CSS applied immediately to prevent FOUC */
+/* CRITICAL: direction property affects how flex order is interpreted */
+/* Direction applies to all screens, but flex-direction: row is DESKTOP ONLY */
+html[dir="ltr"] header,
+html[dir="ltr"] nav,
+html[dir="ltr"] .navbar,
+html[dir="ltr"] .nav-container {
+  direction: ltr !important;
+  justify-content: space-between !important;
+}
+
+/* nav-right-group should appear FIRST (left side) in LTR */
+html[dir="ltr"] .nav-right-group {
+  direction: ltr !important;
+  order: -1 !important;
+  margin-left: 0 !important;
+}
+
+/* nav-cta-container should appear LAST (right side) in LTR */
+html[dir="ltr"] .nav-cta-container {
+  direction: ltr !important;
+  order: 1 !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* nav-menu: ensure LTR direction */
+html[dir="ltr"] .nav-menu,
+html[dir="ltr"] #navMenu {
+  direction: ltr !important;
+  margin-left: 0 !important;
+}
+
+/* nav-brand: should be first child within nav-right-group */
+html[dir="ltr"] .nav-brand {
+  direction: ltr !important;
+  order: -1 !important;
+  margin-right: 1rem !important;
+  margin-left: 0 !important;
+}
+
+/* DESKTOP ONLY: Horizontal flex layout - prevents breaking mobile vertical menu */
+@media (min-width: 769px) {
+  html[dir="ltr"] header,
+  html[dir="ltr"] nav,
+  html[dir="ltr"] .navbar,
+  html[dir="ltr"] .nav-container {
+    flex-direction: row !important;
+  }
+  
+  html[dir="ltr"] .nav-right-group,
+  html[dir="ltr"] .nav-cta-container {
+    flex-direction: row !important;
+  }
+  
+  html[dir="ltr"] .nav-menu,
+  html[dir="ltr"] #navMenu {
+    flex-direction: row !important;
+  }
+}
+
+/* lang-switcher positioning */
+html[dir="ltr"] .lang-switcher {
+  direction: ltr !important;
+  margin-left: 0 !important;
+}
+</style><style id="mobile-lang-menu-deployed-css">@media (max-width:768px){.lang-switcher,.nav-cta-container .lang-switcher,.nav-container .lang-switcher,.navbar .lang-switcher,.navbar .nav-cta-container .lang-switcher,.nav-icons-left .lang-switcher,.nav-ecommerce-icons .lang-switcher{display:none!important}.mobile-lang-menu{width:100%;border-top:1px solid rgba(128,128,128,0.2);padding:8px 0 0 0;margin-top:8px}.mobile-lang-toggle{display:flex!important;align-items:center;justify-content:space-between;width:100%;padding:12px 16px;background:none;border:none;cursor:pointer;font-size:15px;color:inherit;font-family:inherit}.mobile-lang-toggle::after{content:'';display:inline-block;width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform 0.3s ease;margin-left:8px}.mobile-lang-toggle.expanded::after{transform:rotate(-135deg)}.mobile-lang-options{display:block!important;max-height:0;overflow:hidden;transition:max-height 0.3s ease}.mobile-lang-options.expanded{display:block!important;max-height:300px}.mobile-lang-option{display:flex!important;align-items:center;gap:10px;padding:10px 24px;text-decoration:none;color:inherit;font-size:14px;font-family:inherit}.mobile-lang-option:hover{background:rgba(128,128,128,0.1)}.mobile-lang-option.active{font-weight:600;opacity:0.7;pointer-events:none}.mobile-lang-option img{width:20px;height:20px;border-radius:50%}}@media (min-width:769px){.mobile-lang-menu{display:none!important}}</style></head>
 <body>
   <nav class="navbar">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
@@ -1279,10 +1343,10 @@ html[dir="rtl"] body {
 
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
-      <a href="/" class="logo-link">
+      <a href="/en" class="logo-link">
         <img src="/assets/groutbot-hero-1776590824236-nst9zb.webp" alt="Groutbot" class="logo">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/">בית</a></li><li><a href="/about">אודות</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/en">בית</a></li><li><a href="/en/about">About</a></li></ul></div>
 
     
 
@@ -1307,10 +1371,10 @@ html[dir="rtl"] body {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421,6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
         </button>
         <div class="lang-switcher-dropdown" style="position:absolute;top:100%;right:0;background:white;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);min-width:150px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s ease;z-index:1000;">
-          <a href="/en" class="lang-option" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;text-decoration:none;color:#333;font-size:14px;"><img src="https://api.iconify.design/circle-flags/us.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:middle;border-radius:50%;"> English</a>
+          <a href="/" class="lang-option" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;text-decoration:none;color:#333;font-size:14px;"><img src="https://api.iconify.design/circle-flags/il.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:middle;border-radius:50%;"> עברית</a>
         </div>
       </div>
-      <a href="/contact" class="nav-cta-btn">צור קשר</a>
+      <a href="/en/contact" class="nav-cta-btn">Contact</a>
     </div>
   </div>
 </nav>
@@ -1752,12 +1816,12 @@ html[dir="rtl"] body {
 
   <div class="index-hero-inner">
     <div class="index-hero-content">
-      <h1>למשקיעים ולקבלנים המעוניינים בפיילוט</h1><h1 class="index-hero-h1">Groutbot — מכשיר הרובה החשמלי שמשנה את ענף הריצוף</h1>
-      <h3 class="index-hero-h3">תוכנית פיתוח מגובשת. שוק ענק. פתרון שהתעשייה מחכה לו.</h3>
-      <p class="index-hero-body">Groutbot מפתחת מכשיר הזרקת רובה חשמלי חכם שמחליף עבודת ידיים מייגעת בדיוק אוטומטי. תוכנית הפיתוח מגובשת ומוכנה — ואנחנו מחפשים משקיעים אסטרטגיים וקבלנים שותפים להאצת הפיתוח הפיזי וכניסה לשוק. ענף הריצוף בישראל ובעולם עומד בפני שינוי מבני, וGroutbot נמצאת בנקודת הכניסה הנכונה.</p>
+      <h1>For Investors and Contractors Interested in a Pilot</h1><h1 class="index-hero-h1">Groutbot — The Electric Grout Gun That's Transforming the Tiling Industry</h1>
+      <h3 class="index-hero-h3">Comprehensive development plan. Massive market. Solution the industry is waiting for.</h3>
+      <p class="index-hero-body">Groutbot is developing a smart electric grout injection device that replaces tedious manual work with automatic precision. The development plan is comprehensive and ready — and we're looking for strategic investors and contractor partners to accelerate physical development and market entry. The tiling industry in Israel and worldwide is facing structural change, and Groutbot is positioned at the right entry point.</p>
       <div class="index-hero-ctas">
-        <a href="/technology" class="index-hero-btn-primary btn btn-primary" data-element-type="button" data-element-id="btn-1776591190726-5lafkaszt" data-native-element="true" style="outline: none; border-color: rgb(111, 143, 175) !important; color: var(--light-text, #ffffff) !important; background-color: rgb(111, 143, 175) !important; background-image: none !important;" data-text-color="light">להשקעה ושותפות</a>
-        <a href="/contact" class="index-hero-btn-secondary btn btn-primary" data-element-type="button" data-element-id="btn-1776591190726-dyip7ma9c" data-native-element="true" style="outline: none; border-color: rgb(111, 143, 175) !important; color: rgb(255, 255, 255) !important; background-color: rgb(111, 143, 175) !important; background-image: none !important;">לשיחת היכרות עם המייסד</a>
+        <a href="/technology" class="index-hero-btn-primary btn btn-primary" data-element-type="button" data-element-id="btn-1776591190726-5lafkaszt" data-native-element="true" style="outline: none; border-color: rgb(111, 143, 175) !important; color: var(--light-text, #ffffff) !important; background-color: rgb(111, 143, 175) !important; background-image: none !important;" data-text-color="light">For investment and partnership</a>
+        <a href="/en/contact" class="index-hero-btn-secondary btn btn-primary" data-element-type="button" data-element-id="btn-1776591190726-dyip7ma9c" data-native-element="true" style="outline: none; border-color: rgb(111, 143, 175) !important; color: rgb(255, 255, 255) !important; background-color: rgb(111, 143, 175) !important; background-image: none !important;">For an introductory call with the founder</a>
       </div>
     </div>
   </div>
@@ -1773,23 +1837,23 @@ html[dir="rtl"] body {
 
   <!-- Section Header -->
   <div class="gb-comp-header">
-    <p class="zappy-editable">הזדמנות השוק</p><h2 class="gb-comp-title">הבעיה שאנחנו פותרים — והשוק שמחכה לפתרון</h2>
-    <p class="gb-comp-subtitle">מצוקת כוח האדם בענף הבנייה, שחיקת הפועלים והעלויות הגבוהות — אלו כאבים אמיתיים שהתעשייה מחפשת להם פתרון. Groutbot הוא הפתרון.</p>
+    <p class="zappy-editable">Market Opportunity</p><h2 class="gb-comp-title">The Problem We're Solving — And the Market Waiting for a Solution</h2>
+    <p class="gb-comp-subtitle">Labor shortage in the construction industry, worker burnout, and high costs — these are real pain points the industry is seeking to solve. Groutbot is the solution.</p>
   </div>
 
   <!-- Pain Points -->
   <div class="gb-pain-container">
     <div class="gb-pain-image-wrap">
       <div data-zappy-zoom-wrapper="true" data-element-id="img-1776609860569-l8tfvbshw" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="499px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 360px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 499px !important; display: block !important;"><img alt="Person's hand applying grey grout between light grey floor tiles with a small trowel." class="gb-pain-image" src="/assets/ai-section-1776609844731-0-37022be0-1776610241703-5r5glq.webp?v=1776610243328" data-context="ai-generated-section" data-placeholder="Click to upload new image" data-element-type="image" data-element-id="img-1776609860569-l8tfvbshw" style="object-position: 47% 55% !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-original-width="360" data-zappy-original-height="499" data-zappy-object-position="47% 55%"></div>
-      <div class="gb-pain-image-overlay">עבודה ידנית — המצב הנוכחי</div>
+      <div class="gb-pain-image-overlay">Manual work — current situation</div>
     </div>
     <div class="gb-pain-points">
-      <h3 class="gb-pain-title">האתגרים של השיטה הידנית</h3>
+      <h3 class="gb-pain-title">Challenges of the Manual Method</h3>
       <ul class="gb-pain-list" role="list">
-        <li class="gb-pain-item" data-grid-item-index="0">⏱️<br>          <br>            זמן רב ובזבוז משאבים<br>            מילוי הרובה בין המרצפות דורש זמן רב בהליך גמר הבנייה משום שהעבודה נעשית ידנית על הברכיים</li>
-        <li class="gb-pain-item" data-grid-item-index="1">🦵<br>          <br>            עייפות, כאבים ושחיקה<br>            העובדים נאלצים לעבוד על הברכיים לפרקי זמן ארוכים, מה שמוביל לעייפות, כאבים ושחיקה במקצוע</li>
-        <li class="gb-pain-item" data-grid-item-index="2">💸<br>          <br>            כוח אדם יקר וקשה להשגה<br>            במצוקת כוח האדם בענף, פועל למילוי רובה ידני יקר ומאוד קשה להשגה</li>
-        <li class="gb-pain-item" data-grid-item-index="3">🧪<br>          <br>            לכלוך וצורך בניקוי חומצה<br>            תהליך המילוי הידני מותיר לכלוך באתר, מה שמצריך שימוש בחומצה לניקוי — דבר שעלול להרוס את המרצפות</li>
+        <li class="gb-pain-item" data-grid-item-index="0">⏱️<br>          <br>            Time-consuming and resource wasteful<br>            Filling grout between tiles requires extensive time in the construction finishing process because the work is done manually on knees</li>
+        <li class="gb-pain-item" data-grid-item-index="1">🦵<br>          <br>            Fatigue, pain and wear<br>            Workers are forced to work on their knees for long periods, leading to fatigue, pain and professional wear</li>
+        <li class="gb-pain-item" data-grid-item-index="2">💸<br>          <br>            Expensive and hard-to-find labor<br>            In the industry's labor shortage, a worker for manual grout filling is expensive and very difficult to find</li>
+        <li class="gb-pain-item" data-grid-item-index="3">🧪<br>          <br>            Mess and need for acid cleaning<br>            The manual filling process leaves mess on site, requiring the use of acid for cleaning — which can damage the tiles</li>
       </ul>
     </div>
   </div>
@@ -1802,28 +1866,28 @@ html[dir="rtl"] body {
 
   <!-- Advantages Section -->
   <div class="gb-adv-header">
-    <h2 class="gb-adv-title">יתרונות Groutbot על פני עבודה ידנית</h2>
-    <p class="gb-adv-subtitle">ארבעה הבדלים מהותיים שמשנים את כללי המשחק בענף</p>
+    <h2 class="gb-adv-title">Groutbot Advantages Over Manual Work</h2>
+    <p class="gb-adv-subtitle">Four fundamental differences that change the rules of the game in the industry</p>
   </div>
 
   <div class="gb-adv-container">
     <div class="gb-adv-image-wrap">
       <img alt="Smiling man using a yellow grouting machine to finish laying grey floor tiles on a construction site." class="gb-adv-image" src="/assets/ai-section-1776609850459-1-4d66a708.png" data-context="ai-generated-section" data-placeholder="Click to upload new image" data-element-type="image" data-element-id="img-1776609860569-dasdc1t98">
-      <div class="gb-adv-image-overlay">Groutbot — המהפכה בתחום</div>
+      <div class="gb-adv-image-overlay">Groutbot — the revolution in the field</div>
     </div>
 
     <div class="gb-adv-cards">
       <div class="gb-adv-card" data-grid-item-index="0">
         <div class="gb-adv-card-number">01</div>
         <div class="gb-adv-card-content">
-          <h4 class="gb-adv-card-title">⚡<br>            זמן עבודה</h4>
-          <p class="gb-adv-card-text">המכונה מסוגלת לבצע שטח גדול יותר באותו פרק זמן. במקום תפוקה יומית של כ־68–80 מ"ר בעבודה ידנית, המכונה יכולה להגיע לכ־150–200 מ"ר ביום.</p>
+          <h4 class="gb-adv-card-title">⚡<br>            Work Time</h4>
+          <p class="gb-adv-card-text">The machine can cover a larger area in the same time period. Instead of daily output of about 68–80 sq.m in manual work, the machine can reach about 150–200 sq.m per day.</p>
           <div class="gb-adv-stat-bar">
-            <div class="gb-stat-label-row">ידני<br>              ~74 מ"ר/יום</div>
+            <div class="gb-stat-label-row">Manual<br>              ~74 sqm/day</div>
             <div class="gb-stat-bar-track">
               <div class="gb-stat-bar-fill gb-stat-manual" style="width: 37%;"></div>
             </div>
-            <div class="gb-stat-label-row">Groutbot<br>              ~175 מ"ר/יום</div>
+            <div class="gb-stat-label-row">Groutbot<br>              ~175 sqm/day</div>
             <div class="gb-stat-bar-track">
               <div class="gb-stat-bar-fill gb-stat-machine" style="width: 87%;"></div>
             </div>
@@ -1834,24 +1898,24 @@ html[dir="rtl"] body {
       <div class="gb-adv-card" data-grid-item-index="1">
         <div class="gb-adv-card-number">02</div>
         <div class="gb-adv-card-content">
-          <h4 class="gb-adv-card-title">🔄<br>            קצב קבוע ועקבי</h4>
-          <p class="gb-adv-card-text">פועל מושפע מעייפות, תנאי שטח ומאמץ גופני. המכונה מתוכננת לעבוד במהירות מוגדרת וקבועה מראש — ושומרת על קצב יציב מיום ליום.</p>
+          <h4 class="gb-adv-card-title">🔄<br>            Steady and Consistent Pace</h4>
+          <p class="gb-adv-card-text">A worker is affected by fatigue, field conditions and physical effort. The machine is designed to work at a predefined and constant speed — maintaining a steady pace day after day.</p>
         </div>
       </div>
 
       <div class="gb-adv-card" data-grid-item-index="2">
         <div class="gb-adv-card-number">03</div>
         <div class="gb-adv-card-content">
-          <h4 class="gb-adv-card-title">✅<br>            איכות עבודה</h4>
-          <p class="gb-adv-card-text">בעבודה ידנית, איכות המילוי תלויה מאוד בניסיון העובד, במצבו הפיזי ובקצב עבודתו. המכונה מבטיחה אחידות ואיכות גבוהה בכל שטח.</p>
+          <h4 class="gb-adv-card-title">✅<br>            Work Quality</h4>
+          <p class="gb-adv-card-text">In manual work, filling quality depends heavily on the worker's experience, physical condition and work pace. The machine ensures uniformity and high quality across the entire area.</p>
         </div>
       </div>
 
       <div class="gb-adv-card" data-grid-item-index="3">
         <div class="gb-adv-card-number">04</div>
         <div class="gb-adv-card-content">
-          <h4 class="gb-adv-card-title">🤖<br>            פחות תלות במפעיל</h4>
-          <p class="gb-adv-card-text">המכונה מצמצמת את התלות בכוח ידני וביכולת הפיזית של העובד. תפקיד המפעיל עובר מעבודת ביצוע מאומצת להפעלה, בקרה והזנת חומר.</p>
+          <h4 class="gb-adv-card-title">🤖<br>            Less Operator Dependence</h4>
+          <p class="gb-adv-card-text">The machine reduces dependence on manual labor and the worker's physical ability. The operator's role shifts from strenuous execution work to operation, control and material feeding.</p>
         </div>
       </div>
     </div>
@@ -1859,13 +1923,13 @@ html[dir="rtl"] body {
 
   <!-- Summary CTA -->
   <div class="gb-summary-bar">
-    <div class="gb-summary-stat">×2.5<br>      תפוקה יומית</div>
+    <div class="gb-summary-stat">×2.5<br>      daily output</div>
     <div class="gb-summary-divider" aria-hidden="true"></div>
-    <div class="gb-summary-stat">100%<br>      קצב אחיד</div>
+    <div class="gb-summary-stat">100%<br>      consistent pace</div>
     <div class="gb-summary-divider" aria-hidden="true"></div>
-    <div class="gb-summary-stat">0<br>      עבודה על ברכיים</div>
+    <div class="gb-summary-stat">0<br>      work on knees</div>
     <div class="gb-summary-divider" aria-hidden="true"></div>
-    <div class="gb-summary-stat">פחות<br>      תלות בכוח אדם</div>
+    <div class="gb-summary-stat">Less<br>      dependence on labor</div>
   </div>
 
 </section>
@@ -1883,9 +1947,9 @@ html[dir="rtl"] body {
 
     <!-- Intro Block -->
     <div class="index-features-intro">
-      <span class="index-features-eyebrow">אב-הטיפוס בפעולה</span>
-      <h2 class="index-features-heading">היתרון הטכנולוגי — הבסיס לצמיחה</h2>
-      <p class="index-features-subtext">תוכנית הפיתוח של Groutbot מגובשת לפרטי פרטים. הטכנולוגיה שתחנו מבוססת על מחקר ובדיקות מוקדמות המוכיחות יתרון ברור ומדיד על פני כל פתרון קיים — וזהו הבסיס להשקעה בעלת פוטנציאל גבוה.</p>
+      <span class="index-features-eyebrow">Prototype in action</span>
+      <h2 class="index-features-heading">The Technological Advantage — Foundation for Growth</h2>
+      <p class="index-features-subtext">Groutbot's development plan is detailed down to the smallest detail. The technology we've designed is based on research and preliminary tests that prove a clear and measurable advantage over any existing solution — and this is the foundation for a high-potential investment.</p>
     </div>
 
     <!-- 2x2 Feature Grid -->
@@ -1903,8 +1967,8 @@ html[dir="rtl"] body {
           <div class="index-feature-icon-line"></div>
         </div>
         <div class="index-feature-content">
-          <h3 class="index-feature-title">זרימה חשמלית מבוקרת</h3>
-          <p class="index-feature-desc">מנגנון ההזרקה החשמלי מספק לחץ אחיד ומדויק לאורך כל הפוגה — ללא עייפות, ללא חוסר עקביות. כמות הרובה המוזרקת נשלטת בצורה מדויקת בכל מעבר.</p>
+          <h3 class="index-feature-title">Controlled Electric Flow</h3>
+          <p class="index-feature-desc">The electric injection mechanism provides uniform and precise pressure along the entire joint — without fatigue, without inconsistency. The amount of grout injected is precisely controlled in each pass.</p>
         </div>
       </article>
 
@@ -1922,8 +1986,8 @@ html[dir="rtl"] body {
           <div class="index-feature-icon-line"></div>
         </div>
         <div class="index-feature-content">
-          <h3 class="index-feature-title">פוגות נקיות ואחידות</h3>
-          <p class="index-feature-desc">הרובה מוזרק ישירות לתוך הפוגה בעומק ובמילוי אחיד, ללא עודפים מיותרים על פני האריח. הגימור הסופי נראה מקצועי, נקי ועמיד לאורך זמן.</p>
+          <h3 class="index-feature-title">Clean and Uniform Joints</h3>
+          <p class="index-feature-desc">The grout is injected directly into the joint with uniform depth and filling, without unnecessary excess on the tile surface. The final finish looks professional, clean and durable over time.</p>
         </div>
       </article>
 
@@ -1939,8 +2003,8 @@ html[dir="rtl"] body {
           <div class="index-feature-icon-line"></div>
         </div>
         <div class="index-feature-content">
-          <h3 class="index-feature-title">הפחתת עומס על הפועל</h3>
-          <p class="index-feature-desc">תהליך הרובה הידני דורש מאמץ פיזי רב וגורם לעייפות מצטברת. Groutbot לוקח על עצמו את העבודה הפיזית, מאפשר לצוות לעבוד מהר יותר ולאורך שעות ארוכות יותר ללא פגיעה בבריאות.</p>
+          <h3 class="index-feature-title">Reduced Worker Strain</h3>
+          <p class="index-feature-desc">The manual grout process requires significant physical effort and causes cumulative fatigue. Groutbot takes on the physical work, allowing the team to work faster and for longer hours without health impact.</p>
         </div>
       </article>
 
@@ -1956,8 +2020,8 @@ html[dir="rtl"] body {
           <div class="index-feature-icon-line"></div>
         </div>
         <div class="index-feature-content">
-          <h3 class="index-feature-title">מוכן לאתר הבנייה</h3>
-          <p class="index-feature-desc">המכשיר תוכנן לעמוד בתנאי שטח קשים — קומפקטי, קל לנשיאה ועמיד לאבק ולחות. מעבר מהיר בין אזורי עבודה, הפעלה פשוטה וניקוי קל בסיום המשמרת.</p>
+          <h3 class="index-feature-title">Ready for Construction Site</h3>
+          <p class="index-feature-desc">The device is designed to withstand harsh field conditions — compact, easy to carry and resistant to dust and moisture. Quick transition between work areas, simple operation and easy cleaning at shift end.</p>
         </div>
       </article>
 
@@ -1979,8 +2043,8 @@ html[dir="rtl"] body {
 
     <!-- Section Header -->
     <div class="workflow-header">
-      <p>תהליך העבודה</p><h2 class="workflow-title">שלושה צעדים פשוטים לגימור מרצפות מושלם</h2>
-      <p class="workflow-intro">Groutbot מתאים בצורה טבעית לצוותים המכירים עבודות ריצוף — ללא עקומת למידה תלולה, ללא בזבוז חומר, ורק תוצאות עקביות ומקצועיות בכל פרויקט.</p>
+      <p>Work Process</p><h2 class="workflow-title">Three Simple Steps to Perfect Tile Finishing</h2>
+      <p class="workflow-intro">Groutbot fits naturally with teams familiar with tiling work — without a steep learning curve, without material waste, and only consistent and professional results in every project.</p>
     </div>
 
     <!-- Steps -->
@@ -1990,22 +2054,22 @@ html[dir="rtl"] body {
       <article class="workflow-step">
         <div class="step-image-wrap">
           <div class="step-number-badge">01</div>
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-aa21s22jv" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="390px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 390px !important; display: block !important;"><img alt="טעינת חומר הרובה למכשיר Groutbot" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="object-position: 50% 50% !important; width: 100.117% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; position: absolute !important; left: -0.0587227% !important; top: 0% !important; max-height: none !important" data-element-type="image" data-element-id="img-1776594098431-aa21s22jv" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="522" data-zappy-original-height="390"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-aa21s22jv" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="390px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 390px !important; display: block !important;"><img alt="Loading grout material into the Groutbot device" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="object-position: 50% 50% !important; width: 100.117% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; position: absolute !important; left: -0.0587227% !important; top: 0% !important; max-height: none !important" data-element-type="image" data-element-id="img-1776594098431-aa21s22jv" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="522" data-zappy-original-height="390"></div>
         </div>
         <div class="step-content">
-          <div class="step-meta">שלב ראשון</div>
-          <h3 class="step-title">טוענים את החומר</h3>
-          <p class="step-desc">הכניסו את מחסנית הרובה למכשיר בתנועה אחת פשוטה. המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.</p>
+          <div class="step-meta">First stage</div>
+          <h3 class="step-title">Load the Material</h3>
+          <p class="step-desc">Insert the grout cartridge into the device with one simple motion. The device is designed to accept standard grout materials common in the market — without additional tools, without special preparation.</p>
           <div class="step-color-swatches">
-            <p>תואם לכל גוני הרובה הסטנדרטיים</p><div class="swatches-row">
-              <span class="swatch" style="background:#D0CCCA;" title="אפור בהיר"></span>
-              <span class="swatch" style="background:#F5EFE6;" title="שמנת"></span>
-              <span class="swatch" style="background:#C8B49A;" title="בז\" עמוק'=""></span>
-              <span class="swatch" style="background:#8B6B4A;" title="חום עץ"></span>
-              <span class="swatch" style="background:#4A3728;" title="אספרסו"></span>
-              <span class="swatch" style="background:#2A2A2A;" title="שחור מט"></span>
+            <p>Compatible with all standard grout colors</p><div class="swatches-row">
+              <span class="swatch" style="background:#D0CCCA;" title="Light Gray"></span>
+              <span class="swatch" style="background:#F5EFE6;" title="Cream"></span>
+              <span class="swatch" style="background:#C8B49A;" title="Beige" עמוק'=""></span>
+              <span class="swatch" style="background:#8B6B4A;" title="Wood Brown"></span>
+              <span class="swatch" style="background:#4A3728;" title="Espresso"></span>
+              <span class="swatch" style="background:#2A2A2A;" title="Matte Black"></span>
             </div>
-            <div class="swatch-names">אפור בהירשמנתבז' עמוקחום עץאספרסושחור מט</div>
+            <div class="swatch-names">Light greyAnthraciteDeep beigeWood warmEspressoMatte black</div>
           </div>
         </div>
       </article>
@@ -2020,12 +2084,12 @@ html[dir="rtl"] body {
       <article class="workflow-step step-reverse">
         <div class="step-image-wrap">
           <div class="step-number-badge">02</div>
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-qgjio7eqi" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="390px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 390px !important; display: block !important;"><img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-2-1776611650853-fs1dos.webp?v=1776611652734" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="object-position: 50% 50% !important; display: block !important; object-fit: cover !important; width: 100.117% !important; height: 100% !important; margin: 0px !important; left: -0.0587227% !important; top: 0% !important; max-width: none !important; max-height: none !important;" data-element-type="image" data-element-id="img-1776594098431-qgjio7eqi" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="522" data-zappy-original-height="390"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-qgjio7eqi" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="390px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 390px !important; display: block !important;"><img alt="Guiding the Groutbot device along tile joints" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-2-1776611650853-fs1dos.webp?v=1776611652734" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="object-position: 50% 50% !important; display: block !important; object-fit: cover !important; width: 100.117% !important; height: 100% !important; margin: 0px !important; left: -0.0587227% !important; top: 0% !important; max-width: none !important; max-height: none !important;" data-element-type="image" data-element-id="img-1776594098431-qgjio7eqi" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="522" data-zappy-original-height="390"></div>
         </div>
         <div class="step-content">
-          <div class="step-meta">שלב שני</div>
-          <h3 class="step-title">מנחים לאורך המפגש</h3>
-          <p class="step-desc">הנחו את ראש ההזרקה לאורך פגז הרובה בין האריחים. מנגנון ההזרקה החשמלי מספק לחץ אחיד ורציף — מכשיר הזרקת רובה חשמלי למרצפות שמבטיח עומק ומילוי מדויק בכל קו.</p>
+          <div class="step-meta">Second stage</div>
+          <h3 class="step-title">Guide Along the Joint</h3>
+          <p class="step-desc">Guide the injection head along the grout joint between the tiles. The electric injection mechanism provides uniform and continuous pressure — an electric grout injection device for tiles that ensures precise depth and filling in every line.</p>
           <div class="step-feature-pill">
             <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"></circle><path d="M5.5 8.5L7 10L10.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             לחץ אחיד ורציף בכל קו
@@ -2043,16 +2107,16 @@ html[dir="rtl"] body {
       <article class="workflow-step">
         <div class="step-image-wrap">
           <div class="step-number-badge">03</div>
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-b91ulgluf" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="397px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 397px !important; display: block !important;"><img alt="גימור נקי ואחיד של הרובה בין המרצפות" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="object-fit: cover; display: block; object-position: 50% 50% !important; width: 103.953% !important; height: 102% !important; margin: 0px !important; left: -1.97636% !important; top: -1% !important; max-width: none !important; max-height: none !important;" data-element-type="image" data-element-id="img-1776594098431-b91ulgluf" data-zappy-zoom="1.02" data-zappy-original-width="522" data-zappy-original-height="397" data-zappy-object-position="50% 50%"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776594098431-b91ulgluf" data-element-type="image" data-zappy-zoom-wrapper-width="522px" data-zappy-zoom-wrapper-height="397px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 522px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 397px !important; display: block !important;"><img alt="Clean and uniform grout finish between tiles" class="step-img" width="560" height="380" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="object-fit: cover; display: block; object-position: 50% 50% !important; width: 103.953% !important; height: 102% !important; margin: 0px !important; left: -1.97636% !important; top: -1% !important; max-width: none !important; max-height: none !important;" data-element-type="image" data-element-id="img-1776594098431-b91ulgluf" data-zappy-zoom="1.02" data-zappy-original-width="522" data-zappy-original-height="397" data-zappy-object-position="50% 50%"></div>
         </div>
         <div class="step-content">
-          <div class="step-meta">שלב שלישי</div>
-          <h3 class="step-title">גימור נקי ועקבי</h3>
-          <p class="step-desc">התוצאה: קווי רובה אחידים, פחות פסולת, ופחות זמן ניקיון. Groutbot מצמצם את המאמץ הידני ומאפשר לצוות להתקדם מהר יותר — בלי להתפשר על איכות הגימור.</p>
+          <div class="step-meta">Third stage</div>
+          <h3 class="step-title">Clean and Consistent Finish</h3>
+          <p class="step-desc">The result: uniform grout lines, less waste, and less cleaning time. Groutbot reduces manual effort and allows the team to progress faster — without compromising on finish quality.</p>
           <div class="step-results-row">
-            <div class="result-chip">✦<br>              קווי רובה אחידים</div>
-            <div class="result-chip">✦<br>              פחות פסולת</div>
-            <div class="result-chip">✦<br>              חיסכון בזמן</div>
+            <div class="result-chip">✦<br>              Uniform grout lines</div>
+            <div class="result-chip">✦<br>              Less waste</div>
+            <div class="result-chip">✦<br>              Time savings</div>
           </div>
         </div>
       </article>
@@ -2064,12 +2128,12 @@ html[dir="rtl"] body {
 <section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
   <div class="index-cta-inner">
     <div class="index-cta-container">
-      <span class="index-cta-eyebrow">Groutbot מגייסת משקיעים לשלב הפיתוח הבא</span>
-      <h2 class="index-cta-heading">משקיעים ושותפים אסטרטגיים — בואו נבנה את עתיד הענף יחד</h2>
-      <p class="index-cta-body">תוכנית הפיתוח הפיזי מגובשת ומוכנה לביצוע. אנחנו מחפשים משקיעים ושותפים אסטרטגיים — לרבות קבלנים שמעוניינים להשקיע במיזם או להצטרף לפיילוט לאחר השלמת הפיתוח. שוק ציוד הריצוף העולמי עומד על מיליארדי דולרים, ו-Groutbot ממוצבת ליטול נתח משמעותי.</p>
+      <span class="index-cta-eyebrow">Groutbot is raising funds for the next development phase</span>
+      <h2 class="index-cta-heading">Investors and Strategic Partners — Let's Build the Future of the Industry Together</h2>
+      <p class="index-cta-body">The physical development plan is finalized and ready for execution. We are seeking investors and strategic partners — including contractors interested in investing in the venture or joining a pilot after development completion. The global flooring equipment market is worth billions of dollars, and Groutbot is positioned to capture a significant share.</p>
       <div class="index-cta-actions">
-        <a href="/contact" class="index-cta-btn-primary">דברו עם המייסד</a>
-        <a href="/contact?info=product" class="index-cta-btn-secondary">לחבילת המידע למשקיעים</a>
+        <a href="/en/contact" class="index-cta-btn-primary">Talk to the founder</a>
+        <a href="/contact?info=product" class="index-cta-btn-secondary">For investor information package</a>
       </div>
     </div>
   </div>
@@ -2091,7 +2155,7 @@ html[dir="rtl"] body {
       <!-- Company Info -->
       <div class="footer-col footer-brand">
         <img src="/assets/groutbot-logo.webp" alt="Groutbot" class="logo" data-element-type="image" data-element-id="img-1776611602951-lmlss9xj3" data-zappy-footer-image="true">
-        <p class="footer-tagline">טכנולוגיה חכמה לענף הבניה — מדויק, מהיר, מקצועי.</p>
+        <p class="footer-tagline">Smart technology for the construction industry — precise, fast, professional.</p>
         <div class="footer-social">
           <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram" style="display:none !important;"><i class="fab fa-instagram"></i></a>
@@ -2102,28 +2166,28 @@ html[dir="rtl"] body {
 
       <!-- Quick Links -->
       <div class="footer-col">
-        <h4 class="footer-heading">ניווט מהיר</h4>
+        <h4 class="footer-heading">Quick Navigation</h4>
         <ul class="footer-nav">
           
-          <li>אודות</li>
-          <li>צור קשר</li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </div>
 
       <!-- Contact Info -->
       <div class="footer-col">
-        <h4 class="footer-heading">יצירת קשר</h4>
-        <ul class="footer-contact"><li>[email&nbsp;protected]</li><li>
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact"><li>[email protected]</li><li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776611602950-ah8g3pj7x" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><a href="tel:0556842533">0556842533</a></span>
-          </li><li>מחוז מרכז, 7180118, ישראל</li></ul>
+          </li><li>Central District, 7180118, Israel</li></ul>
       </div>
 
       <!-- Accent / CTA Column -->
       <div class="footer-col footer-cta-col">
         <div class="footer-cta-card">
-          <p>משקיע או קבלן? בואו נדבר</p><p class="footer-cta-text">משקיעים — שמעוניינים להצטרף לגיוס הנוכחי. קבלנים — הירשמו לפיילוט לאחר השלמת הפיתוח. מלאו את הטופס ונחזור אליכם בהקדם.</p>
-          <p>למילוי טופס פנייה</p></div>
+          <p>Investor or contractor? Let's talk</p><p class="footer-cta-text">Investors — interested in joining the current funding round. Contractors — register for the pilot after development completion. Fill out the form and we'll get back to you soon.</p>
+          <p>Fill out contact form</p></div>
       </div>
 
     </div>
@@ -2132,12 +2196,12 @@ html[dir="rtl"] body {
 
     <!-- Bottom Bar -->
     <div class="footer-bottom">
-      <p class="footer-copyright">© 2026 Groutbot. כל הזכויות שמורות.</p>
+      <p class="footer-copyright">© 2026 Groutbot. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="/privacy">מדיניות פרטיות</a>
-        <a href="/terms">תנאי שימוש</a>
-        <a href="/accessibility">נגישות</a>
-        <a href="https://zappy5.com" target="_blank" class="zappy-attribution">נוצר באמצעות Zappy</a>
+        <a href="/en/privacy">Privacy Policy</a>
+        <a href="/en/terms">Terms of Use</a>
+        <a href="/en/accessibility">Accessibility</a>
+        <a href="https://zappy5.com" target="_blank" class="zappy-attribution">Created with Zappy</a>
       </div>
     </div>
   </div>
