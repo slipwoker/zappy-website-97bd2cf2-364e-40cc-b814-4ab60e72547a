@@ -246,18 +246,27 @@
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-hero-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow: visible;
   display: flex;
   align-items: center;
-  overflow: visible;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
   padding-bottom: 80px;
+}
+
+.index-hero-section .index-hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .index-hero-section .index-hero-bg {
@@ -265,10 +274,9 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-  background-color: var(--bg-dark);
   background-size: cover;
   background-position: center center;
+  z-index: 0;
 }
 
 .index-hero-section .index-hero-scrim {
@@ -277,11 +285,11 @@
   z-index: 1;
   pointer-events: none;
   background-image:
-    linear-gradient(270deg, rgba(44,36,30,0.88) 0%, rgba(44,36,30,0.72) 40%, rgba(44,36,30,0.30) 70%, rgba(44,36,30,0.10) 100%),
-    linear-gradient(180deg, rgba(44,36,30,0.15) 0%, rgba(44,36,30,0.55) 100%);
+    linear-gradient(to left, rgba(44,36,30,0.92) 0%, rgba(44,36,30,0.78) 45%, rgba(44,36,30,0.30) 75%, rgba(44,36,30,0.10) 100%),
+    linear-gradient(to top, rgba(44,36,30,0.72) 0%, rgba(44,36,30,0.0) 50%);
 }
 
-.index-hero-section .index-hero-container {
+.index-hero-section .index-hero-inner {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -290,13 +298,16 @@
   padding: 0 40px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .index-hero-section .index-hero-content {
   max-width: 620px;
   width: 100%;
   text-align: right;
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .index-hero-section .index-hero-label {
@@ -307,30 +318,30 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-light);
-  background: rgba(122,143,88,0.28);
-  border: 1px solid rgba(122,143,88,0.55);
+  opacity: 0.65;
+  margin-bottom: 20px;
+  padding: 6px 14px;
+  border: 1px solid rgba(247,242,235,0.25);
   border-radius: 999px;
-  padding: 6px 16px;
-  margin-bottom: 24px;
-  opacity: 0.92;
+  background: rgba(247,242,235,0.07);
 }
 
 .index-hero-section .index-hero-h1 {
   font-family: 'Manrope', 'Georgia', serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
   color: var(--text-light);
   margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
   text-shadow: 0 2px 24px rgba(0,0,0,0.45);
 }
 
 .index-hero-section .index-hero-h3 {
   font-family: 'Manrope', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.55;
   color: var(--text-light);
   opacity: 0.88;
   margin: 0 0 24px 0;
@@ -340,20 +351,20 @@
 .index-hero-section .index-hero-body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.75;
   color: var(--text-light);
-  opacity: 0.80;
+  opacity: 0.78;
   margin: 0 0 36px 0;
   max-width: 520px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.30);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 .index-hero-section .index-hero-ctas {
   display: flex;
   flex-direction: row;
+  gap: 14px;
   align-items: center;
-  gap: 16px;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -364,20 +375,21 @@
   font-weight: 600;
   line-height: 1;
   color: #FFFDF9;
-  background: #7A8F58;
-  padding: 15px 28px;
+  background: #78763D;
+  padding: 14px 26px;
   border-radius: 6px;
-  border: none;
   text-decoration: none;
-  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-  box-shadow: 0 8px 24px rgba(122,143,88,0.35);
+  border: none;
+  box-shadow: 0 4px 20px rgba(120,118,61,0.35);
+  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .index-hero-section .index-hero-btn-primary:hover {
-  background: #6a7e4a;
+  background: #6E6D36;
   transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(122,143,88,0.45);
+  box-shadow: 0 8px 28px rgba(120,118,61,0.45);
+  color: #FFFDF9;
 }
 
 .index-hero-section .index-hero-btn-secondary {
@@ -387,22 +399,24 @@
   font-weight: 500;
   line-height: 1;
   color: var(--text-light);
-  background: transparent;
-  padding: 14px 26px;
+  background: rgba(247,242,235,0.10);
+  padding: 13px 24px;
   border-radius: 6px;
-  border: 1px solid rgba(247,242,235,0.45);
   text-decoration: none;
-  transition: border-color 0.25s ease, background 0.25s ease, transform 0.2s ease;
+  border: 1px solid rgba(247,242,235,0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .index-hero-section .index-hero-btn-secondary:hover {
-  border-color: rgba(247,242,235,0.85);
-  background: rgba(247,242,235,0.08);
+  background: rgba(247,242,235,0.18);
+  border-color: rgba(247,242,235,0.6);
   transform: translateY(-3px);
+  color: var(--text-light);
 }
 
-/* Bottom Divider */
 .index-hero-section .index-hero-divider-wrapper {
   position: absolute;
   bottom: 0;
@@ -419,43 +433,40 @@
   height: 100%;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .index-hero-section {
     min-height: 100vh;
     padding-bottom: 80px;
-    align-items: flex-end;
   }
 
   .index-hero-section .index-hero-scrim {
     background-image:
-      linear-gradient(180deg, rgba(44,36,30,0.25) 0%, rgba(44,36,30,0.92) 60%, rgba(44,36,30,0.97) 100%);
+      linear-gradient(to top, rgba(44,36,30,0.92) 0%, rgba(44,36,30,0.55) 50%, rgba(44,36,30,0.30) 100%);
   }
 
-  .index-hero-section .index-hero-container {
-    padding: 0 20px;
-    padding-bottom: 40px;
+  .index-hero-section .index-hero-inner {
+    padding: 0 16px;
+    align-items: flex-end;
+    min-height: 100vh;
   }
 
   .index-hero-section .index-hero-content {
     max-width: 100%;
-    padding-top: 100px;
+    padding-top: 110px;
+    padding-bottom: 40px;
   }
 
   .index-hero-section .index-hero-h1 {
-    font-size: 32px;
-    line-height: 1.25;
-    margin-bottom: 14px;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .index-hero-section .index-hero-h3 {
-    font-size: 17px;
-    margin-bottom: 16px;
+    font-size: 1.05rem;
   }
 
   .index-hero-section .index-hero-body {
     font-size: 15px;
-    margin-bottom: 28px;
     max-width: 100%;
   }
 
@@ -474,7 +485,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .index-hero-section .index-hero-h1 {
-    font-size: 40px;
+    font-size: 2.4rem;
   }
 
   .index-hero-section .index-hero-content {
@@ -1030,15 +1041,13 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="index-hero-section">
-  <!-- Background Image Layer -->
-  <div class="index-hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-card" data-zappy-section="true" id="index-hero-section">
+  <div class="index-hero-bg-wrapper">
+    <div class="index-hero-bg" style="background-image: url('assets/groutbot-hero-1776590824236-nst9zb.webp?v=1776590825856'); background-size: cover; background-position: center;"></div>
+    <div class="index-hero-scrim"></div>
+  </div>
 
-  <!-- Scrim Overlay -->
-  <div class="index-hero-scrim" aria-hidden="true"></div>
-
-  <!-- Content Layer -->
-  <div class="index-hero-container">
+  <div class="index-hero-inner">
     <div class="index-hero-content">
       <span class="index-hero-label">טכנולוגיית בניה שמשנה את הכללים</span>
       <h1 class="index-hero-h1">הזרקת רובה חשמלית —<br>מהירה, נקייה, מקצועית</h1>
@@ -1049,12 +1058,11 @@
         <a href="/contact" class="index-hero-btn-secondary">צרו קשר עם הצוות</a>
       </div>
     </div>
-  <img src="/assets/groutbot-hero-1776590824236-nst9zb.webp?v=1776590825856" alt="Groutbot" style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></div>
+  </div>
 
-  <!-- Bottom Divider -->
   <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,48 Q80,38 160,50 T320,44 Q400,38 480,50 T640,44 Q720,38 800,50 T960,44 Q1040,38 1120,50 T1200,46 L1200,80 Z" fill="#F8F3EA"></path>
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,48 Q120,32 240,44 T480,36 Q600,28 720,40 T960,34 Q1080,26 1200,38 T1440,44 L1440,80 Z" fill="#F8F3EA"></path>
     </svg>
   </div>
 </section>
