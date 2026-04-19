@@ -8037,6 +8037,33 @@ body.accessibility-widget-visible ._access-menu {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+.index-hero-section .index-hero-logo-overlay {
+  position: absolute;
+  top: 32px;
+  left: 48px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.index-hero-section .index-hero-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-logo-overlay {
+  top: 18px;
+  left: 20px;
+}
+
+.index-hero-section .index-hero-logo-img {
+  height: 38px;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
