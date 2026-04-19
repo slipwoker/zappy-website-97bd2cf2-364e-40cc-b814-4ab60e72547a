@@ -6180,24 +6180,16 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
-/* Bottom Divider */
-
-/* Mobile Styles */
-
-/* ═══════════════════════════════════════════════════════════
-   V2 REGENERATED SECTION CSS (בית-hero)
-   Added: 2026-04-19T09:33:09.948Z
-   ═══════════════════════════════════════════════════════════ */
 .index-hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   background: var(--bg-dark);
   color: var(--text-light);
   overflow: visible;
   display: flex;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 .index-hero-section .index-hero-bg-wrapper {
@@ -6237,7 +6229,7 @@ body.accessibility-widget-visible ._access-menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .index-hero-section .index-hero-content {
@@ -6363,6 +6355,7 @@ body.accessibility-widget-visible ._access-menu {
   height: 80px;
   pointer-events: none;
   z-index: 5;
+  display: none;
 }
 
 .index-hero-section .index-hero-divider-wrapper svg {
