@@ -33,249 +33,7 @@
 
 
 
-<style data-zappy-section-v2-css="true">
-/* V2 Regenerated Section CSS */
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: var(--bg-dark);
-  color: var(--text-light);
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  padding-bottom: 80px;
-}
 
-.index-hero-section .index-hero-bg-wrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.index-hero-section .index-hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  z-index: 0;
-}
-
-.index-hero-section .index-hero-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background-image:
-    linear-gradient(to left, rgba(44,36,30,0.92) 0%, rgba(44,36,30,0.78) 45%, rgba(44,36,30,0.30) 75%, rgba(44,36,30,0.10) 100%),
-    linear-gradient(to top, rgba(44,36,30,0.72) 0%, rgba(44,36,30,0.0) 50%);
-}
-
-.index-hero-section .index-hero-inner {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.index-hero-section .index-hero-content {max-width: 620px;
-  width: 100%;
-  
-  padding-top: 80px;
-  padding-bottom: 40px;}html[dir="rtl"] .index-hero-section .index-hero-content{text-align: right;}
-
-.index-hero-section .index-hero-label {
-  display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-light);
-  opacity: 0.65;
-  margin-bottom: 20px;
-  padding: 6px 14px;
-  border: 1px solid rgba(247,242,235,0.25);
-  border-radius: 999px;
-  background: rgba(247,242,235,0.07);
-}
-
-.index-hero-section .index-hero-h1 {
-  font-family: 'Manrope', 'Georgia', serif;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.15;
-  color: var(--text-light);
-  margin: 0 0 20px 0;
-  letter-spacing: -0.02em;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.45);
-}
-
-.index-hero-section .index-hero-h3 {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.55;
-  color: var(--text-light);
-  opacity: 0.88;
-  margin: 0 0 24px 0;
-  text-shadow: 0 1px 12px rgba(0,0,0,0.35);
-}
-
-.index-hero-section .index-hero-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--text-light);
-  opacity: 0.78;
-  margin: 0 0 36px 0;
-  max-width: 520px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
-}
-
-.index-hero-section .index-hero-ctas {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.index-hero-section .index-hero-btn-primary {
-  display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
-  color: #FFFDF9;
-  background: #78763D;
-  padding: 14px 26px;
-  border-radius: 6px;
-  text-decoration: none;
-  border: none;
-  box-shadow: 0 4px 20px rgba(120,118,61,0.35);
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.index-hero-section .index-hero-btn-primary:hover {
-  background: #6E6D36;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(120,118,61,0.45);
-  color: #FFFDF9;
-}
-
-.index-hero-section .index-hero-btn-secondary {
-  display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  color: var(--text-light);
-  background: rgba(247,242,235,0.10);
-  padding: 13px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  border: 1px solid rgba(247,242,235,0.35);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.index-hero-section .index-hero-btn-secondary:hover {
-  background: rgba(247,242,235,0.18);
-  border-color: rgba(247,242,235,0.6);
-  transform: translateY(-3px);
-  color: var(--text-light);
-}
-
-.index-hero-section .index-hero-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.index-hero-section .index-hero-divider-wrapper svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 100vh;
-    padding-bottom: 80px;
-  }
-
-  .index-hero-section .index-hero-scrim {
-    background-image:
-      linear-gradient(to top, rgba(44,36,30,0.92) 0%, rgba(44,36,30,0.55) 50%, rgba(44,36,30,0.30) 100%);
-  }
-
-  .index-hero-section .index-hero-inner {
-    padding: 0 16px;
-    align-items: flex-end;
-    min-height: 100vh;
-  }
-
-  .index-hero-section .index-hero-content {
-    max-width: 100%;
-    padding-top: 110px;
-    padding-bottom: 40px;
-  }
-
-  .index-hero-section .index-hero-h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .index-hero-section .index-hero-h3 {
-    font-size: 1.05rem;
-  }
-
-  .index-hero-section .index-hero-body {
-    font-size: 15px;
-    max-width: 100%;
-  }
-
-  .index-hero-section .index-hero-ctas {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-  .index-hero-section .index-hero-btn-primary,
-  .index-hero-section .index-hero-btn-secondary {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .index-hero-section .index-hero-h1 {
-    font-size: 2.4rem;
-  }
-
-  .index-hero-section .index-hero-content {
-    max-width: 560px;
-  }
-}
-</style>
 
 
 
@@ -1162,6 +920,242 @@ html[dir="rtl"] body {
   }
 }
 </style>
+
+<style data-zappy-section-v2-css="true">html[dir="rtl"] /* V2 Regenerated Section CSS */
+.index-hero-section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding-bottom: 80px;
+  direction: rtl;
+}
+
+.index-hero-section .index-hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-hero-section .index-hero-bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.index-hero-section .index-hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba(44, 36, 30, 0.88) 0%,
+      rgba(44, 36, 30, 0.72) 40%,
+      rgba(44, 36, 30, 0.30) 75%,
+      rgba(44, 36, 30, 0.10) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(44, 36, 30, 0.70) 0%,
+      rgba(44, 36, 30, 0.00) 50%
+    );
+}
+
+.index-hero-section .index-hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 48px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.index-hero-section .index-hero-content {max-width: 580px;}html[dir="rtl"] .index-hero-section .index-hero-content{text-align: right;}
+
+.index-hero-section .index-hero-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding: 6px 14px;
+  border: 1px solid rgba(201, 111, 74, 0.45);
+  border-radius: 4px;
+  background: rgba(201, 111, 74, 0.10);
+}
+
+.index-hero-section .index-hero-h1 {
+  font-family: 'Manrope', 'Georgia', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(44, 36, 30, 0.55);
+}
+
+.index-hero-section .index-hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-light);
+  opacity: 0.88;
+  margin: 0 0 36px;
+  text-shadow: 0 1px 10px rgba(44, 36, 30, 0.50);
+  max-width: 480px;
+}
+
+.index-hero-section .index-hero-cta-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.index-hero-section .index-hero-btn-primary {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #FFFDF9;
+  background: #78763D;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(120, 118, 61, 0.35);
+}
+
+.index-hero-section .index-hero-btn-primary:hover {
+  background: #6E6D36;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(120, 118, 61, 0.45);
+}
+
+.index-hero-section .index-hero-btn-secondary {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-light);
+  background: transparent;
+  padding: 13px 26px;
+  border-radius: 6px;
+  border: 1px solid rgba(247, 242, 235, 0.50);
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.index-hero-section .index-hero-btn-secondary:hover {
+  background: rgba(247, 242, 235, 0.10);
+  border-color: rgba(247, 242, 235, 0.80);
+  transform: translateY(-3px);
+}
+
+.index-hero-section .index-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-hero-section .index-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100svh;
+    align-items: flex-end;
+    padding-bottom: 80px;
+  }
+
+  .index-hero-section .index-hero-scrim {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(44, 36, 30, 0.92) 0%,
+        rgba(44, 36, 30, 0.70) 45%,
+        rgba(44, 36, 30, 0.20) 100%
+      );
+  }
+
+  .index-hero-section .index-hero-content-wrapper {
+    padding: 100px 20px 48px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .index-hero-section .index-hero-content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .index-hero-section .index-hero-h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .index-hero-section .index-hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  .index-hero-section .index-hero-cta-group {
+    gap: 12px;
+  }
+
+  .index-hero-section .index-hero-btn-primary,
+  .index-hero-section .index-hero-btn-secondary {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .index-hero-content-wrapper {
+    padding: 140px 36px 60px;
+  }
+
+  .index-hero-section .index-hero-h1 {
+    font-size: 2.5rem;
+  }
+}
+</style>
 <!-- hreflang tags for SEO -->
 <link rel="alternate" hreflang="he" href="https://groutbot.co.il/">
 <link rel="alternate" hreflang="en" href="https://groutbot.co.il/en">
@@ -1719,27 +1713,27 @@ html[dir="ltr"] .lang-switcher {
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-card" data-zappy-section="true" id="zappy-section-0-dup-1776622093641" style="opacity: 1; direction: rtl; background-color: rgb(250, 246, 240); background-image: none; position: relative; overflow: hidden; --zappy-bg-color: #FAF6F0;" data-zappy-bg-color="#FAF6F0" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-bg-type="color">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0-dup-1776622093641">
   <div class="index-hero-bg-wrapper">
-    <div class="index-hero-bg" style="background-image: url('assets/groutbot-hero-1776590824236-nst9zb.webp?v=1776590825856'); background-size: cover; background-position: center;"></div>
-    <div class="index-hero-scrim"></div>
+    <img data-hero-bg="true" class="index-hero-bg-img" data-context="A professional construction worker using an advanced electric grout injection device between large-format floor tiles on a modern construction site. The scene is warm and atmospheric, with soft natural light filtering through a partially completed building. The tile work is precise and clean, showing the contrast between traditional craftsmanship and modern technology. The device is sleek and professional-grade. Warm earth tones dominate — terracotta tiles, concrete floors, dusty beige walls. The mood is calm, expert, and purposeful." width="1200" height="700" src="/assets/groutbot-section-בית-hero-index-hero-image-1.webp" alt="מכשיר גראוטבוט להזרקת מילוי בין אריחים באתר בנייה מקצועי">
+    <div class="index-hero-scrim" aria-hidden="true"></div>
   </div>
 
-  <div class="index-hero-inner">
+  <div class="index-hero-content-wrapper">
     <div class="index-hero-content">
-      
-      
-      
-      <div class="index-hero-ctas">
-        
-        
+      <span class="index-hero-eyebrow">Technology for the Construction Industry</span>
+      <h1 class="index-hero-h1">Revolution in Grout<br>Injection Between Tiles</h1>
+      <h3 class="index-hero-subtitle">GroutBot automatic, precise and professional — saves time and labor on every tiling project</h3>
+      <div class="index-hero-cta-group">
+        <a href="#product" class="index-hero-btn-primary">Discover the Product</a>
+        <a href="#contact" class="index-hero-btn-secondary">Contact</a>
       </div>
     </div>
   </div>
 
-  <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,48 Q120,32 240,44 T480,36 Q600,28 720,40 T960,34 Q1080,26 1200,38 T1440,44 L1440,80 Z" fill="var(--bg-light)"></path>
+  <div class="index-hero-divider-wrapper" aria-hidden="true">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,48 Q60,36 120,44 T240,40 Q300,44 360,36 T480,42 Q540,36 600,44 T720,38 Q780,44 840,36 T960,42 Q1020,36 1080,44 T1200,40 L1200,80 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
@@ -2626,6 +2620,8 @@ html[dir="ltr"] .lang-switcher {
   <script src="/script.js"></script>
 
     <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
