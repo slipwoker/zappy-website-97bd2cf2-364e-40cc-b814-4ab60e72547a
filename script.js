@@ -739,6 +739,33 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+/* Animate stat bars on scroll */
+(function() {
+  const bars = document.querySelectorAll('.gb-stat-bar-fill');
+  if (!bars.length) return;
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const targetWidth = bar.classList.contains('gb-stat-manual') ? '37%' : '87%';
+        bar.style.width = '0%';
+        setTimeout(function() {
+          bar.style.width = targetWidth;
+        }, 200);
+        observer.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  bars.forEach(function(bar) {
+    bar.style.width = '0%';
+    observer.observe(bar);
+  });
+})();
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
