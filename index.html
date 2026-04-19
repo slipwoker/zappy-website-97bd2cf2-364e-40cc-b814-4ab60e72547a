@@ -352,7 +352,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/groutbot-logo-1776589585675-b1a6ie.webp?v=1776589586487-53m2cq" alt="Groutbot" class="logo">
+        <img src="/assets/groutbot-logo-1776589674085-1yxmsb.webp?v=1776589674510-o91mve" alt="Groutbot" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="nav-home">בית</a></li><li><a href="/technology">טכנולוגיה</a></li><li><a href="/about">אודות</a></li></ul></div>
 
@@ -399,12 +399,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -417,7 +417,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -553,7 +553,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -744,7 +744,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '0556842533';
         
@@ -761,7 +761,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -793,10 +793,10 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="index-hero-section">
   <!-- Background Image -->
   <div class="index-hero-bg">
-    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A professional tile installer using an electric grout injection device on large format floor tiles in a modern construction site. Warm natural light fills the scene. The worker guides the sleek electric grout injector along grout lines between beige and cream large-format porcelain tiles. The setting feels calm and professional — a renovated interior with warm olive, sand, and terracotta tones. The device is clearly visible and central to the composition. Cinematic depth of field, realistic documentary photography style, warm golden-hour lighting from a nearby window." width="1400" height="900" src="/assets/site-index-hero-image-1.webp" alt="מקצוען מפעיל מכשיר הזרקת רובה חשמלי בין מרצפות גדולות">
+    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A professional tile installer using an electric grout injection device on large format floor tiles in a modern construction site. Warm natural light fills the scene. The worker guides the sleek electric grout injector along grout lines between beige and cream large-format porcelain tiles. The setting feels calm and professional — a renovated interior with warm olive, sand, and terracotta tones. The device is clearly visible and central to the composition. Cinematic depth of field, realistic documentary photography style, warm golden-hour lighting from a nearby window." width="1400" height="900" src="/assets/site-index-hero-image-1.webp" alt="מקצוען מפעיל מכשיר הזרקת רובה חשמלי בין מרצפות גדולות" data-hero-background="true" data-element-type="image" data-element-id="img-1776589595398-uyxr3sexa">
   </div>
 
   <!-- Scrim Overlay -->
@@ -805,13 +805,13 @@
   <!-- Content Card -->
   <div class="index-hero-content-wrapper">
     <div class="index-hero-card">
-      <span class="index-hero-intro-label">טכנולוגיית בניה שמשנה את הכללים</span>
-      <h1 class="index-hero-h1">הזרקת רובה חשמלית —<br><br>מהירה, נקייה, מקצועית</h1>
+      <p><span class="index-hero-intro-label">טכנולוגיית בניה שמשנה את הכללים</span>
+      </p><h1 class="index-hero-h1" style="">הזרקת רובה חשמלית —<br><br>מהירה, נקייה, מקצועית</h1>
       <h3 class="index-hero-subtitle">פחות עבודת ידיים. יותר עקביות. תוצאה שמדברת בעד עצמה.</h3>
       <p class="index-hero-body">Groutbot מחליף את תהליך הרובה הידני המייגע במכשיר חשמלי חכם שמזריק רובה בין מרצפות בדיוק ובמהירות. פחות כוח אדם, פחות בזבוז חומר, ויותר אחידות בכל פרויקט.</p>
       <div class="index-hero-ctas">
-        <a href="/contact" class="index-hero-btn-primary">לקבלת מידע על המוצר</a>
-        <a href="/contact" class="index-hero-btn-secondary">צרו קשר עם הצוות</a>
+        <a href="/contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1776589595392-8wcp7j19s" data-native-element="true">לקבלת מידע על המוצר</a>
+        <a href="/contact" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1776589595392-fyxyt7f6f" data-native-element="true">צרו קשר עם הצוות</a>
       </div>
     </div>
   </div>
@@ -834,7 +834,7 @@
     <div class="ips-content-col">
       <div class="ips-intro">
         <p><span class="ips-eyebrow">האתגר שמאחורי כל פרויקט</span>
-        </p><h2 class="ips-heading" >מהזרקה ידנית לאוטומציה מדויקת — מכשיר הזרקת רובה חשמלי למרצפות</h2>
+        </p><h2 class="ips-heading" style="">מהזרקה ידנית לאוטומציה מדויקת — מכשיר הזרקת רובה חשמלי למרצפות</h2>
         <p class="ips-lead">Groutbot נולד מתוך הבנה עמוקה של שטח העבודה האמיתי. הוא לא מחליף את המיומנות של הקבלן — הוא משחרר אותה מהמגבלות שמעכבות אותה. הגשר בין מלאכת יד לאוטומציה תעשייתית כבר כאן.</p>
       </div>
 
