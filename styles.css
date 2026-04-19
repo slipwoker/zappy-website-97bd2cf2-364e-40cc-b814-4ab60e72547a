@@ -8008,6 +8008,393 @@ body.accessibility-widget-visible ._access-menu {
     left: 0;
   }
 }
+
+/* AI-generated section */
+/* =============================================
+   INVESTOR SECTION — Groutbot
+   ============================================= */
+
+.inv-investor-section {
+  position: relative;
+  background: #0f1410;
+  padding: 100px 24px 110px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  overflow: hidden;
+}
+
+/* Subtle radial gradient background glow */
+.inv-investor-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(122, 143, 88, 0.13) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(110, 109, 54, 0.09) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 10% 60%, rgba(134, 132, 68, 0.07) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Subtle grid texture */
+.inv-investor-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(122, 143, 88, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 143, 88, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.inv-bg-overlay {
+  display: none;
+}
+
+/* Container */
+.inv-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1060px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---- Badge ---- */
+.inv-badge-wrapper {
+  margin-bottom: 28px;
+}
+
+.inv-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(122, 143, 88, 0.12);
+  border: 1px solid rgba(122, 143, 88, 0.4);
+  color: #a8c07c;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 8px 18px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.inv-badge-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* ---- Heading ---- */
+.inv-heading {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #f0ede6;
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+
+.inv-heading-accent {
+  background: var(--gradient-primary, linear-gradient(135deg, #868444 0%, #6E6D36 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline;
+}
+
+/* ---- Description ---- */
+.inv-description {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.8;
+  color: #b0b8a4;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+/* ---- Feature Grid ---- */
+.inv-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 60px;
+  text-align: right;
+}
+
+/* ---- Feature Card ---- */
+.inv-feature-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(122, 143, 88, 0.22);
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+  cursor: default;
+}
+
+.inv-feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(122, 143, 88, 0.5);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(122, 143, 88, 0.15);
+}
+
+.inv-feature-card:hover .inv-card-glow {
+  opacity: 1;
+}
+
+/* Card glow effect */
+.inv-card-glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(122, 143, 88, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+/* Card Icon Wrap */
+.inv-card-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: rgba(122, 143, 88, 0.12);
+  border: 1px solid rgba(122, 143, 88, 0.25);
+  border-radius: 14px;
+  margin-bottom: 20px;
+  color: #a8c07c;
+  transition: background 0.28s ease, border-color 0.28s ease;
+}
+
+.inv-feature-card:hover .inv-card-icon-wrap {
+  background: rgba(122, 143, 88, 0.2);
+  border-color: rgba(122, 143, 88, 0.45);
+}
+
+.inv-card-icon {
+  width: 30px;
+  height: 30px;
+  color: #a8c07c;
+}
+
+/* Card Content */
+.inv-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.inv-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e8e4da;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.inv-card-text {
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: #8e9e82;
+  margin: 0;
+}
+
+/* ---- Divider ---- */
+.inv-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(122, 143, 88, 0.3) 30%, rgba(122, 143, 88, 0.3) 70%, transparent 100%);
+  margin-bottom: 52px;
+}
+
+/* ---- CTA Block ---- */
+.inv-cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* CTA Button */
+.inv-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--gradient-primary, linear-gradient(135deg, #868444 0%, #6E6D36 100%));
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 28px rgba(110, 109, 54, 0.35), 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.inv-cta-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.22s ease;
+  border-radius: 12px;
+}
+
+.inv-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(110, 109, 54, 0.5), 0 4px 16px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.08);
+}
+
+.inv-cta-btn:hover::before {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.inv-cta-btn:focus-visible {
+  outline: 3px solid #a8c07c;
+  outline-offset: 4px;
+}
+
+.inv-cta-btn:active {
+  transform: translateY(-1px);
+}
+
+.inv-cta-btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+.inv-cta-btn-arrow {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.22s ease;
+  /* Arrow points left for RTL visual clarity */
+  transform: scaleX(-1);
+}
+
+.inv-cta-btn:hover .inv-cta-btn-arrow {
+  transform: scaleX(-1) translateX(-4px);
+}
+
+/* CTA Note */
+.inv-cta-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  color: #6e7a65;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.inv-note-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: #6e7a65;
+}
+
+/* =============================================
+   RESPONSIVE — Tablet
+   ============================================= */
+@media (max-width: 900px) {
+  .inv-investor-section {
+    padding: 80px 20px 90px;
+  }
+
+  .inv-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inv-feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 22px;
+    text-align: right;
+  }
+
+  .inv-card-icon-wrap {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — Mobile
+   ============================================= */
+@media (max-width: 600px) {
+  .inv-investor-section {
+    padding: 64px 16px 72px;
+  }
+
+  .inv-heading {
+    font-size: 1.75rem;
+  }
+
+  .inv-description {
+    font-size: 0.97rem;
+    margin-bottom: 44px;
+  }
+
+  .inv-features-grid {
+    max-width: 100%;
+    margin-bottom: 44px;
+  }
+
+  .inv-feature-card {
+    padding: 20px 18px;
+    gap: 16px;
+  }
+
+  .inv-card-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  .inv-card-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .inv-card-title {
+    font-size: 1rem;
+  }
+
+  .inv-cta-btn {
+    font-size: 0.97rem;
+    padding: 16px 30px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .inv-divider {
+    margin-bottom: 40px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
