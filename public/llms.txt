@@ -1,60 +1,47 @@
-# GroutBot — Generative Engine Optimization Map
-
-> A construction technology company that manufactures an innovative electric device designed to inject grout between floor tiles. The product automates and simplifies a traditionally manual and labor-intensive process in the construction and tiling industry, suggesting a focus on efficiency, precision, and professional-grade solutions for contractors and builders.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### בית
-https://groutbot.zappy5.app
+https://groutbot.co.il
 GroutBot מציגה את עתיד ענף הריצוף: מכשיר הזרקת רובה חשמלי למרצפות שמחליף עבודת ידיים בדיוק אוטומטי. חסכו זמן, הורידו עלויות והעלו את רמת הגימור בכל פרויקט. גלו עכשיו!
 
 ### טכנולוגיה
-https://groutbot.zappy5.app/technology
+https://groutbot.co.il/technology
 גלו כיצד מנוע החדשנות של GroutBot עובד: טכנולוגיה לרובה מרצפות בנייה בת קיימא המשלבת אוטומציה חכמה, לחץ מבוקר ודיוק מקסימלי לכל סוגי האריחים. הצצה מלאה לתוך המכשיר שמשנה את הענף.
 
 ### אודות
-https://groutbot.zappy5.app/about
+https://groutbot.co.il/about
 GroutBot נולדה מתוך הבנה עמוקה של אתגרי הקבלנים והרצפנים בשטח. למדו על החזון, הצוות והמשימה שלנו להפוך את הזרקת הרובה לתהליך מדויק, מהיר וחסכוני לכל פרויקט בנייה בישראל ובעולם.
 
 ### צור קשר
-https://groutbot.zappy5.app/contact
+https://groutbot.co.il/contact
 רוצים לשדרג את הפרויקט הבא שלכם עם מכשיר הזרקת רובה חשמלי למרצפות? צוות GroutBot זמין לייעוץ מקצועי, הדגמות ומידע על רכישה. השאירו פרטים ונחזור אליכם במהירות – הפתרון שחיפשתם כבר כאן.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://groutbot.zappy5.app/privacy
+https://groutbot.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://groutbot.zappy5.app/terms
+https://groutbot.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://groutbot.zappy5.app/accessibility
+https://groutbot.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About GroutBot
-A construction technology company that manufactures an innovative electric device designed to inject grout between floor tiles. The product automates and simplifies a traditionally manual and labor-intensive process in the construction and tiling industry, suggesting a focus on efficiency, precision, and professional-grade solutions for contractors and builders.
-
-## Target Audience
-- מנהלי פרויקטים בקנה מידה גדול
-- אדריכלים בפיתוח עירוני
-- ספקי ציוד בנייה
-- תומכי בנייה בת קיימא
-
-## Industry
-טכנולוגיה לענף הבניה
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://groutbot.zappy5.app/sitemap.xml
-- **Robots.txt**: https://groutbot.zappy5.app/robots.txt
+- **Sitemap**: https://groutbot.co.il/sitemap.xml
+- **Robots.txt**: https://groutbot.co.il/robots.txt
