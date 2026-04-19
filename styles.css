@@ -8032,6 +8032,11 @@ body.accessibility-widget-visible ._access-menu {
     margin-bottom: 40px;
   }
 }
+
+#ai-section-1776609854290-e93couh .prob-hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
