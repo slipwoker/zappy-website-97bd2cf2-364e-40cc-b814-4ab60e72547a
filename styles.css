@@ -8064,6 +8064,31 @@ body.accessibility-widget-visible ._access-menu {
   height: 38px;
 }
 }
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper {
+  background: var(--bg-light) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper .prob-section-label h3 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper .prob-card {
+  background: #fff !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper .prob-card h4 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper .prob-card p {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper .prob-card-emoji {
+  color: var(--text-dark) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
