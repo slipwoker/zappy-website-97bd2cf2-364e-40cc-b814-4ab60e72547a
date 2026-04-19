@@ -8064,22 +8064,6 @@ body.accessibility-widget-visible ._access-menu {
   height: 38px;
 }
 }
-
-.index-hero-section .index-hero-logo-overlay {
-  position: relative;
-  z-index: 20;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 24px;
-}
-
-.index-hero-section .index-hero-logo-img {
-  width: 280px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
-}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
