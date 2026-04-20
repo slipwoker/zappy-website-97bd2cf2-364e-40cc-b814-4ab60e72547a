@@ -8410,6 +8410,263 @@ body.accessibility-widget-visible ._access-menu {
   color: var(--text-muted) !important;
   font-weight: 600;
 }
+
+#ai-section-1776609854290-e93couh .prob-card h4 {
+  color: #F8FAFC !important;
+  font-size: 1.05rem !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-card p {
+  color: rgba(248, 250, 252, 0.88) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-hero-h2 {
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-hero-sub {
+  color: rgba(248, 250, 252, 0.92) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-row-card .comp-row-desc {
+  color: var(--text-dark) !important;
+  opacity: 1 !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-col-manual .comp-row-card,
+#ai-section-1776609854290-e93couh .comp-col-robot .comp-row-card {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-col-manual .comp-row-card .comp-row-value {
+  color: #92400e !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-col-robot .comp-row-card .comp-row-value {
+  color: var(--primary) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-comparison-header h2 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-comparison-header p {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-stat-pill .s-lbl {
+  color: var(--text-dark) !important;
+  font-weight: 600 !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-stat-pill .s-val {
+  color: var(--primary) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-name {
+  color: #F8FAFC !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-label {
+  color: rgba(248, 250, 252, 0.78) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-center .multiplier {
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-center .multiplier-label {
+  color: rgba(248, 250, 252, 0.72) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-header h2 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-header .prob-adv-subtitle {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-extra-stat .stat-val {
+  color: var(--primary) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-extra-stat .stat-lbl {
+  color: var(--text-dark) !important;
+  font-weight: 600 !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-section-label h3 {
+  color: var(--background-color) !important;
+}
+
+.index-features-section .index-features-title {
+  color: var(--text-light) !important;
+}
+
+.index-features-section .index-features-subtitle {
+  color: rgba(248, 250, 252, 0.75) !important;
+}
+
+.index-features-section .index-feature-title {
+  color: var(--text-light) !important;
+}
+
+.index-features-section .index-feature-desc {
+  color: rgba(248, 250, 252, 0.68) !important;
+}
+
+.index-features-section .index-stat-label {
+  color: rgba(248, 250, 252, 0.65) !important;
+}
+
+.index-workflow-section .workflow-title {
+  color: var(--text-dark) !important;
+}
+
+.index-workflow-section .workflow-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-workflow-section .step-title {
+  color: var(--text-dark) !important;
+}
+
+.index-workflow-section .step-desc {
+  color: var(--text-muted) !important;
+}
+
+.index-workflow-section .step-color-label {
+  color: var(--text-muted) !important;
+}
+
+.about-values-section .about-value-title {
+  color: var(--text-dark) !important;
+}
+
+.about-values-section .about-value-text {
+  color: var(--text-muted) !important;
+}
+
+.about-values-section .about-value-tag {
+  color: var(--text-muted) !important;
+}
+
+.about-values-section .about-values-heading {
+  color: var(--text-dark) !important;
+}
+
+.about-values-section .about-values-subtext {
+  color: var(--text-muted) !important;
+}
+
+.about-values-section .about-values-eyebrow {
+  color: var(--accent) !important;
+}
+
+.about-story-section .about-story-h1 {
+  color: var(--text-dark) !important;
+}
+
+.about-story-section .about-story-body {
+  color: var(--text-muted) !important;
+}
+
+.about-story-section .about-story-intro {
+  color: var(--text-muted) !important;
+}
+
+.about-manufacturing-section .about-mfg-h2 {
+  color: var(--text-light) !important;
+}
+
+.about-manufacturing-section .about-mfg-lead {
+  color: rgba(248, 250, 252, 0.85) !important;
+}
+
+.about-manufacturing-section .about-mfg-eyebrow {
+  color: var(--accent) !important;
+}
+
+.about-manufacturing-section .about-mfg-h3 {
+  color: var(--text-light) !important;
+}
+
+.about-manufacturing-section .about-mfg-subblock-content p {
+  color: rgba(248, 250, 252, 0.82) !important;
+}
+
+.contact-contact-form-section .ccf-title {
+  color: var(--text-dark) !important;
+}
+
+.contact-contact-form-section .ccf-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.contact-contact-form-section .ccf-label {
+  color: var(--text-dark) !important;
+  font-weight: 600 !important;
+}
+
+.contact-contact-form-section .ccf-input {
+  color: var(--text-dark) !important;
+  background-color: var(--background-color) !important;
+  border: 1.5px solid var(--border-light) !important;
+}
+
+.contact-contact-form-section .ccf-input::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.7 !important;
+}
+
+.contact-contact-form-section .ccf-support-title {
+  color: var(--text-dark) !important;
+}
+
+.contact-contact-form-section .ccf-support-text {
+  color: var(--text-muted) !important;
+}
+
+.contact-contact-form-section .ccf-contact-link {
+  color: var(--primary) !important;
+}
+
+.contact-contact-form-section .ccf-contact-item {
+  color: var(--text-dark) !important;
+}
+
+.contact-contact-form-section .ccf-badge {
+  color: var(--text-muted) !important;
+}
+
+.inv-investor-section .inv-heading {
+  color: var(--background-color) !important;
+}
+
+.inv-investor-section .inv-description {
+  color: rgba(248, 250, 252, 0.88) !important;
+}
+
+.inv-investor-section .inv-card-title {
+  color: var(--background-color) !important;
+}
+
+.inv-investor-section .inv-card-text {
+  color: rgba(248, 250, 252, 0.82) !important;
+}
+
+.inv-investor-section .inv-cta-note {
+  color: rgba(248, 250, 252, 0.75) !important;
+}
+
+.inv-investor-section .inv-badge {
+  color: var(--accent) !important;
+}
+
+.inv-investor-section .inv-heading-accent {
+  color: var(--accent) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
