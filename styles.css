@@ -8310,6 +8310,106 @@ body.accessibility-widget-visible ._access-menu {
 .prob-section-label h3 {
   color: var(--background-color) !important;
 }
+
+#ai-section-1776609854290-e93couh .prob-card h4 {
+  color: #F8FAFC !important;
+  font-size: 1.05rem;
+}
+
+#ai-section-1776609854290-e93couh .prob-card p {
+  color: rgba(248, 250, 252, 0.85) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-section-label h3 {
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-hero-h2 {
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-hero-sub {
+  color: rgba(248, 250, 252, 0.92) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-row-card .comp-row-desc {
+  color: var(--text-dark) !important;
+  opacity: 1 !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-col-manual .comp-row-card {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-col-robot .comp-row-card {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-comparison-header h2 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-comparison-header p {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .comp-stat-pill .s-lbl {
+  color: var(--text-dark) !important;
+  font-weight: 600;
+}
+
+#ai-section-1776609854290-e93couh .comp-stat-pill .s-val {
+  color: var(--primary) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-name {
+  color: #F8FAFC !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-label {
+  color: rgba(248, 250, 252, 0.75) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-center .multiplier {
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-stat-center .multiplier-label {
+  color: rgba(248, 250, 252, 0.7) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-card h4 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-card p {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-compare-item.old {
+  color: #92400e !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-compare-item.new {
+  color: #1d4ed8 !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-header h2 {
+  color: var(--text-dark) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-adv-header .prob-adv-subtitle {
+  color: var(--text-muted) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-extra-stat .stat-val {
+  color: var(--primary) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-extra-stat .stat-lbl {
+  color: var(--text-muted) !important;
+  font-weight: 600;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
