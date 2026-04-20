@@ -8306,6 +8306,10 @@ body.accessibility-widget-visible ._access-menu {
   content: '';
   height: 28px !important;
 }
+
+.prob-section-label h3 {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
