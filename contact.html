@@ -441,7 +441,7 @@ div.lang-switcher-dropdown,
 .lang-switcher .lang-switcher-dropdown[style*="position:absolute"],
 .nav-cta-container .lang-switcher .lang-switcher-dropdown[style],
 .navbar .nav-cta-container .lang-switcher-dropdown[style],
-div.lang-switcher &amp;gt; div.lang-switcher-dropdown[style] {
+div.lang-switcher &amp;amp;gt; div.lang-switcher-dropdown[style] {
   position: absolute !important;
   top: 100% !important;
   /* Default LTR: align to left */
@@ -951,7 +951,7 @@ html[dir="rtl"] body {
     <button class="lang-option" data-lang="en" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;background:none;border:none;text-align:left;cursor:pointer;font-size:14px;color:#333;"><img src="https://api.iconify.design/circle-flags/us.svg" width="20" height="20" alt="United States flag icon for English language selection" style="display:inline-block;vertical-align:middle;border-radius:50%;"></img> English</button>
   </div>
 </div>
-<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&amp;amp;&amp;amp;c!=='rgb(0, 0, 0)'&amp;amp;&amp;amp;c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&amp;amp;&amp;amp;s!=='rgba(0, 0, 0, 0)'&amp;amp;&amp;amp;s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l&amp;gt;0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container">
+<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&amp;amp;amp;&amp;amp;amp;c!=='rgb(0, 0, 0)'&amp;amp;amp;&amp;amp;amp;c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&amp;amp;amp;&amp;amp;amp;s!=='rgba(0, 0, 0, 0)'&amp;amp;amp;&amp;amp;amp;s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l&amp;amp;gt;0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container">
       <a href="/contact" class="nav-cta-btn" data-i18n="home_nav_133">צור קשר</a>
     </div>
   </div>
@@ -992,12 +992,12 @@ html[dir="rtl"] body {
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;amp;&amp;amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') &amp;amp;amp;&amp;amp;amp; bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;amp;&amp;amp; bgImage !== 'none') {
+      if (bgImage &amp;amp;amp;&amp;amp;amp; bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -1010,7 +1010,7 @@ html[dir="rtl"] body {
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;amp;&amp;amp; rgb.length &amp;gt;= 3) {
+    if (rgb &amp;amp;amp;&amp;amp;amp; rgb.length &amp;amp;gt;= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -1146,7 +1146,7 @@ html[dir="rtl"] body {
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &amp;lt;= 768;
+      const isMobileViewport = window.innerWidth &amp;amp;lt;= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -1337,7 +1337,7 @@ html[dir="rtl"] body {
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &amp;gt; 0 
+        const phoneNumber = phoneLinks.length &amp;amp;gt; 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '0556842533';
         
@@ -1354,7 +1354,7 @@ html[dir="rtl"] body {
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &amp;gt;= 769;
+        const isDesktop = window.innerWidth &amp;amp;gt;= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -1438,7 +1438,7 @@ html[dir="rtl"] body {
           </svg>
         </div>
         <h3 class="ccf-support-title" data-i18n="contact_h3_8">מענה מקצועי ומהיר</h3>
-        <p class="ccf-support-text" data-i18n="contact_p_22" >&amp;amp;nbsp;אנחנו כאן לענות על כל שאלה הנוגעת לטכנולוגיית הזרקת הרובה, לתנאי הרכישה, ולהתאמת הפתרון לצרכי הפרויקט שלכם.</p>
+        <p class="ccf-support-text" data-i18n="contact_p_22" >&amp;amp;amp;nbsp;אנחנו כאן לענות על כל שאלה הנוגעת לטכנולוגיית הזרקת הרובה, לתנאי הרכישה, ולהתאמת הפתרון לצרכי הפרויקט שלכם.</p>
 
         <div class="ccf-contact-list">
           <div class="ccf-contact-item">
@@ -1480,7 +1480,7 @@ html[dir="rtl"] body {
 
     <!-- Main Heading -->
     <h2 class="inv-heading" id="inv-main-heading" data-i18n="contact_h2_4">
-      הצטרפו למסע —<br></br><br></br><br></br><br></br>
+      הצטרפו למסע —<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <span class="inv-heading-accent">הזדמנות לשותפות אסטרטגית</span>
     </h2>
 
@@ -1603,11 +1603,11 @@ html[dir="rtl"] body {
         <h4 class="footer-heading" data-i18n="home_h4_22">יצירת קשר</h4>
         <ul class="footer-contact" ><li data-i18n="home_li_115">
             <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776611602950-4s49q0ild" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
-            <span class="contact-text"><a href="/cdn-cgi/l/email-protection#b4d3c6dbc1c0d6dbc0f4d3d9d5ddd89ad7dbd9"  data-i18n="home_link_102"><span class="__cf_email__" data-cfemail="47203528323325283307202a262e2b6924282a"><span class="__cf_email__" data-cfemail="ed8a9f8298998f8299ad8a808c8481c38e8280">[email&amp;amp;nbsp;protected]</span></span></a></span>
+            <span class="contact-text"><a href="/cdn-cgi/l/email-protection#b4d3c6dbc1c0d6dbc0f4d3d9d5ddd89ad7dbd9"  data-i18n="home_link_102"><span class="__cf_email__" data-cfemail="47203528323325283307202a262e2b6924282a"><span class="__cf_email__" data-cfemail="ed8a9f8298998f8299ad8a808c8481c38e8280">[email&amp;amp;amp;nbsp;protected]</span></span></a></span>
           </li><li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776611602950-ah8g3pj7x" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><a href="tel:0556842533">0556842533</a></span>
-          </li><li data-i18n="home_li_116"><a href="/" style="display: flex; align-items: flex-start; gap: inherit;" data-i18n="home_link_103"><span class="contact-icon"><i class="fas fa-map-marker-alt zappy-native-element" style="cursor: pointer;" data-element-type="icon" data-element-id="native-icon-1776616636126-pgjee9erb"></i></span><br></br><br></br><br></br><br></br>            <span class="contact-text">מחוז מרכז, 7180118, ישראל</span></a></li></ul>
+          </li><li data-i18n="home_li_116"><a href="/" style="display: flex; align-items: flex-start; gap: inherit;" data-i18n="home_link_103"><span class="contact-icon"><i class="fas fa-map-marker-alt zappy-native-element" style="cursor: pointer;" data-element-type="icon" data-element-id="native-icon-1776616636126-pgjee9erb"></i></span><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>            <span class="contact-text">מחוז מרכז, 7180118, ישראל</span></a></li></ul>
       </div>
 
       <!-- Accent / CTA Column -->
@@ -1635,6 +1635,8 @@ html[dir="rtl"] body {
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
