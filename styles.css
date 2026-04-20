@@ -4452,8 +4452,8 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--primary);
-  background: rgba(122,143,88,0.10);
-  border: 1px solid rgba(122,143,88,0.22);
+  background: rgba(37,99,235,0.10);
+  border: 1px solid rgba(37,99,235,0.22);
   border-radius: 8px;
   padding: 5px 12px;
   align-self: flex-start;
