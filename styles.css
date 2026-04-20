@@ -8233,6 +8233,79 @@ body.accessibility-widget-visible ._access-menu {
 .index-workflow-section .step-img {
   height: 220px !important;
 }
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper {
+  background: var(--bg-dark) !important;
+  padding: 40px 0 0 !important;
+  position: relative;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-inner {
+  padding: 0 24px 48px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-section-label {
+  margin-bottom: 28px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-section-label h3 {
+  font-size: 1.2rem !important;
+  color: var(--text-light) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 30%, rgba(14, 165, 233, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(245, 158, 11, 0.07) 0%, transparent 45%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#ai-section-1776609854290-e93couh .prob-problems-inner {
+  position: relative;
+  z-index: 1;
+}
+
+#ai-section-1776609854290-e93couh .prob-card {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  padding: 20px 20px !important;
+  border-radius: 16px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-card:hover {
+  background: rgba(255,255,255,0.09) !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-card .prob-card-emoji,
+#ai-section-1776609854290-e93couh .prob-card p:first-of-type {
+  font-size: 1.6rem !important;
+  margin-bottom: 8px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-card h4 {
+  font-size: 0.92rem !important;
+  color: var(--text-light) !important;
+  margin-bottom: 6px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-card p {
+  font-size: 0.82rem !important;
+  color: rgba(247,242,235,0.65) !important;
+  line-height: 1.55 !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-grid {
+  gap: 14px !important;
+}
+
+#ai-section-1776609854290-e93couh .prob-section-label::before {
+  content: '';
+  height: 28px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
