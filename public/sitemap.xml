@@ -56,24 +56,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/contact" />
   </url>
   <url>
-    <loc>https://groutbot.co.il/thank-you</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/thank-you" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/thank-you" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/thank-you" />
-  </url>
-  <url>
-    <loc>https://groutbot.co.il/en/thank-you</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/thank-you" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/thank-you" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/thank-you" />
-  </url>
-  <url>
     <loc>https://groutbot.co.il/privacy</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
