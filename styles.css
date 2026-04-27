@@ -8866,6 +8866,265 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
 .nav-cta-btn { color: #FFFFFF !important; }
 /* === BUTTON TEXT OVERRIDES END === */
 
+
+#ai-section-1776609854290-e93couh .gp-hero-overlay {
+  background: linear-gradient(120deg, rgba(10,20,40,0.82) 40%, rgba(10,20,40,0.45) 100%) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-hero-title,
+#ai-section-1776609854290-e93couh .gp-pain-label h3,
+#ai-section-1776609854290-e93couh .gp-pain-text h4 {
+  color: var(--text-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-card {
+  background: var(--surface-color) !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-card:hover {
+  background: #EFF6FF !important;
+  border-color: var(--accent-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-text p {
+  color: var(--text-secondary-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-label span.badge {
+  background: rgba(29,78,216,0.10) !important;
+  border-color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-card::before {
+  content: '';
+  background: var(--accent-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-outer {
+  background: #F1F5F9 !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-heading h2,
+#ai-section-1776609854290-e93couh .gp-compare-col-header h3,
+#ai-section-1776609854290-e93couh .gp-compare-row-content .row-value {
+  color: var(--text-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-heading p,
+#ai-section-1776609854290-e93couh .gp-compare-row-content .row-note {
+  color: var(--text-secondary-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-col--manual .gp-compare-col-header {
+  background: rgba(0,0,0,0.04) !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-col--bot .gp-compare-col-header {
+  background: rgba(29,78,216,0.08) !important;
+  border-bottom: 1px solid rgba(29,78,216,0.2) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-col--bot .row-value {
+  color: var(--accent-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-row {
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-col--manual .gp-compare-row {
+  background: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-col--bot .gp-compare-row {
+  background: rgba(29,78,216,0.03) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-compare-row-content .row-label {
+  color: #9CA3AF !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-stat-card {
+  background: var(--background-color) !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-stat-value {
+  color: var(--accent-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-stat-label {
+  color: var(--text-secondary-color) !important;
+}
+
+.index-features-section {
+  background-color: var(--background-color) !important;
+}
+
+.index-features-section .index-features-title,
+.index-features-section .index-feature-title {
+  color: var(--text-color) !important;
+}
+
+.index-features-section .index-features-intro,
+.index-features-section .index-feature-body {
+  color: var(--text-secondary-color) !important;
+}
+
+.index-features-section .index-features-specs {
+  border-color: #E5E7EB !important;
+}
+
+.index-features-section .index-spec-divider {
+  background: #E5E7EB !important;
+}
+
+.index-features-section .index-spec-label {
+  color: #9CA3AF !important;
+}
+
+.index-workflow-section {
+  background-color: var(--surface-color) !important;
+}
+
+.index-workflow-section .index-workflow-title,
+.index-workflow-section .index-workflow-card-title {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .index-workflow-intro,
+.index-workflow-section .index-workflow-card-desc,
+.index-workflow-section .index-workflow-step-label {
+  color: var(--text-secondary-color) !important;
+}
+
+.index-workflow-section .index-workflow-divider {
+  background-color: #E5E7EB !important;
+}
+
+.index-cta-section {
+  background-color: var(--accent-color) !important;
+  background-image: none !important;
+}
+
+.index-cta-section .index-cta-heading,
+.index-cta-section .index-cta-stat-number {
+  color: var(--background-color) !important;
+}
+
+.index-cta-section .index-cta-body {
+  color: rgba(255,255,255,0.80) !important;
+}
+
+.index-cta-section .index-cta-sublabel {
+  color: rgba(255,255,255,0.75) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+}
+
+.index-cta-section .index-cta-badge {
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.35) !important;
+  color: var(--background-color) !important;
+}
+
+.index-cta-section .index-cta-badge-dot {
+  background: var(--background-color) !important;
+}
+
+.index-cta-section .index-cta-divider {
+  background: rgba(255,255,255,0.3) !important;
+}
+
+.index-cta-section .index-cta-stat-icon {
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.3) !important;
+  color: var(--background-color) !important;
+}
+
+.index-cta-section .index-cta-stat-label,
+.index-cta-section .index-cta-stat-sub {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+.index-cta-section .index-cta-partner-note {
+  color: rgba(255,255,255,0.55) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+}
+
+.index-cta-section .index-cta-btn-primary {
+  background: var(--background-color) !important;
+  color: var(--accent-color) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+}
+
+.index-cta-section .index-cta-btn-primary:hover {
+  background: #F0F6FF !important;
+}
+
+.index-cta-section .index-cta-btn-ghost {
+  border-color: rgba(255,255,255,0.45) !important;
+  color: var(--background-color) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-eyebrow {
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 2px solid var(--accent-color) !important;
+  padding: 0 0 4px 0 !important;
+  color: var(--background-color) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.14em !important;
+}
+
+.index-features-section .index-features-subtitle {
+  color: var(--text-color) !important;
+}
+
+.index-features-section .index-feature-title {
+  color: var(--text-color) !important;
+}
+
+.index-features-section .index-feature-desc {
+  color: var(--text-color) !important;
+}
+
+.index-features-section .index-stat-label {
+  color: var(--text-color) !important;
+}
+
+#index-features-section.index-features-section {
+  color: var(--text-color) !important;
+}
+
+.index-features-section .index-features-title {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .workflow-title {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .workflow-subtitle {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .step-title {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .step-desc {
+  color: var(--text-color) !important;
+}
+
+.index-workflow-section .step-color-label {
+  color: var(--text-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
