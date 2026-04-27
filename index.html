@@ -2246,11 +2246,38 @@
   </div>
 </footer>
   
-  <a href="https://wa.me/972556842533" class="whatsapp-float" aria-label="WhatsApp" >
+  <style id="whatsapp-float-fix">
+    a.whatsapp-float, body a.whatsapp-float, html body a.whatsapp-float {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      position: fixed !important;
+      bottom: 20px !important;
+      right: 20px !important;
+      left: auto !important;
+      z-index: 99999 !important;
+      width: 60px !important;
+      height: 60px !important;
+      background: #25D366 !important;
+      border-radius: 50% !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #fff !important;
+      font-size: 28px !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+      text-decoration: none !important;
+      pointer-events: auto !important;
+    }
+  </style>
+  <a href="https://wa.me/972556842533" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
+
+
 
 
 
