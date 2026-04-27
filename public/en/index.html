@@ -256,7 +256,7 @@ div.lang-switcher-dropdown,
 .lang-switcher .lang-switcher-dropdown[style*="position:absolute"],
 .nav-cta-container .lang-switcher .lang-switcher-dropdown[style],
 .navbar .nav-cta-container .lang-switcher-dropdown[style],
-div.lang-switcher &gt; div.lang-switcher-dropdown[style] {
+div.lang-switcher > div.lang-switcher-dropdown[style] {
   position: absolute !important;
   top: 100% !important;
   /* Default LTR: align to left */
@@ -1547,7 +1547,7 @@ html[dir="ltr"] .lang-switcher {
       </style>
       <script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&&c!=='rgb(0, 0, 0)'&&c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&&s!=='rgba(0, 0, 0, 0)'&&s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l>0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script>
     
-<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&amp;&amp;c!=='rgb(0, 0, 0)'&amp;&amp;c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&amp;&amp;s!=='rgba(0, 0, 0, 0)'&amp;&amp;s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l&gt;0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container" style="align-items: center;"><div class="lang-switcher" data-icon-color="#F7F2EB" style="position:relative;display:inline-flex;align-items:center;margin-left:auto;margin-right:8px;">
+<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&&c!=='rgb(0, 0, 0)'&&c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&&s!=='rgba(0, 0, 0, 0)'&&s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l>0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container" style="align-items: center;"><div class="lang-switcher" data-icon-color="#F7F2EB" style="position:relative;display:inline-flex;align-items:center;margin-left:auto;margin-right:8px;">
         <button class="lang-switcher-current" type="button" style="display:flex;align-items:center;justify-content:center;gap:6px;background:transparent;border:none;cursor:pointer;padding:8px;border-radius:8px;color:inherit;">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421,6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"></path></svg>
         </button>
@@ -1595,12 +1595,12 @@ html[dir="ltr"] .lang-switcher {
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -1613,7 +1613,7 @@ html[dir="ltr"] .lang-switcher {
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -1749,7 +1749,7 @@ html[dir="ltr"] .lang-switcher {
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -1940,7 +1940,7 @@ html[dir="ltr"] .lang-switcher {
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '0556842533';
         
@@ -1957,7 +1957,7 @@ html[dir="ltr"] .lang-switcher {
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -1996,858 +1996,628 @@ html[dir="ltr"] .lang-switcher {
 
 
 
-<section style="width: 100%; max-width: 100%; box-sizing: border-box; background: var(--bg-light); font-family: system-ui, sans-serif; direction: rtl; overflow: visible; position: relative; min-height: 2739.66px !important;" data-zappy-section="true" class="section" id="ai-section-1776609854290-e93couh">
+<section style="width:100%;max-width:100%;box-sizing:border-box;background:var(--bg-dark);color:var(--text-light);font-family:system-ui,sans-serif;direction:rtl;position:relative;overflow:visible;" data-zappy-section="true" class="section" id="ai-section-1776609854290-e93couh">
 <style>
-  .prob-section {
+  .groutbot-problem-section {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    overflow: visible;
     position: relative;
   }
 
-  /* ── HERO BANNER ── */
-  .prob-hero {
-    width: 100%;
+  /* ── HERO BAND ── */
+  .gp-hero {
+    position: relative;
     min-height: 70vh;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
-  .prob-hero-bg {
+  .gp-hero-bg {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
     z-index: 0;
-    background-size: cover;
-    background-position: center;
   }
-  .prob-hero-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(135deg, rgba(44,36,30,0.88) 0%, rgba(44,36,30,0.55) 60%, rgba(122,143,88,0.45) 100%);
-  }
-  .prob-hero-content {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    padding: 80px 24px 60px;
-    max-width: 860px;
-  }
-  .prob-hero-tag {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 6px 18px;
-    border-radius: 100px;
-    margin-bottom: 20px;
-  }
-  .prob-hero-h2 {
-    font-size: clamp(1.8rem, 5vw, 3.2rem);
-    font-weight: 900;
-    color: var(--text-light);
-    line-height: 1.25;
-    margin: 0 0 20px;
-  }
-  .prob-hero-sub {
-    font-size: clamp(1rem, 2.2vw, 1.2rem);
-    color: rgba(247,242,235,0.85);
-    line-height: 1.7;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-
-  /* ── PROBLEMS ZIGZAG ── */
-  .prob-problems-wrapper {
-    background: var(--bg-dark);
-    padding: 80px 0 0;
-    position: relative;
-  }
-  .prob-problems-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px 80px;
-  }
-  .prob-section-label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 48px;
-  }
-  .prob-section-label::before {
-    content: '';
-    display: block;
-    width: 4px;
-    height: 36px;
-    background: var(--accent);
-    border-radius: 4px;
-    flex-shrink: 0;
-  }
-  .prob-section-label h3 {
-    font-size: clamp(1.2rem, 3vw, 1.7rem);
-    font-weight: 800;
-    color: var(--text-light);
-    margin: 0;
-  }
-  .prob-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .prob-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: var(--radius-card);
-    padding: 28px 28px 28px 28px;
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition-default);
-  }
-  .prob-card:hover {
-    background: rgba(255,255,255,0.07);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-elevated);
-  }
-  .prob-card-emoji {
-    font-size: 2.2rem;
-    display: block;
-    margin-bottom: 14px;
-    line-height: 1;
-  }
-  .prob-card h4 {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: var(--text-light);
-    margin: 0 0 10px;
-  }
-  .prob-card p {
-    font-size: 0.9rem;
-    color: rgba(247,242,235,0.65);
-    line-height: 1.6;
-    margin: 0;
-  }
-  .prob-card-accent {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 3px;
-    border-radius: 0 0 0 4px;
-  }
-  .prob-card:nth-child(1) .prob-card-accent { background: #e06b4a; }
-  .prob-card:nth-child(2) .prob-card-accent { background: #b06af0; }
-  .prob-card:nth-child(3) .prob-card-accent { background: #f0c04a; }
-  .prob-card:nth-child(4) .prob-card-accent { background: #4ab8f0; }
-
-  /* ── VS DIVIDER ── */
-  .prob-vs-divider {
-    background: var(--bg-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 24px 60px;
-    position: relative;
-  }
-  .prob-vs-inner {
-    max-width: 1200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 24px;
-    align-items: center;
-  }
-  .prob-vs-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  .prob-vs-img-wrap {
-    width: 100%;
-    max-width: 420px;
-    height: 280px;
-    border-radius: var(--radius-card);
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--shadow-elevated);
-  }
-  .prob-vs-img-wrap img {
+  .gp-hero-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
   }
-  .prob-vs-img-wrap:hover img {
-    transform: scale(1.04);
+  .gp-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(44,36,30,0.92) 40%, rgba(44,36,30,0.55) 100%);
+    z-index: 1;
   }
-  .prob-vs-label {
-    font-size: 0.95rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    padding: 8px 20px;
-    border-radius: 100px;
-  }
-  .prob-vs-label-manual {
-    background: rgba(201,111,74,0.2);
-    color: var(--accent);
-    border: 1px solid rgba(201,111,74,0.35);
-  }
-  .prob-vs-label-robot {
-    background: rgba(122,143,88,0.2);
-    color: var(--primary);
-    border: 1px solid rgba(122,143,88,0.35);
-  }
-  .prob-vs-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 900;
-    letter-spacing: 0.02em;
-    box-shadow: 0 4px 20px rgba(201,111,74,0.45);
-    flex-shrink: 0;
-  }
-
-  /* ── ADVANTAGES SECTION ── */
-  .prob-adv-section {
-    background: var(--gradient-light-section);
-    padding: 90px 0;
+  .gp-hero-content {
     position: relative;
-  }
-  .prob-adv-inner {
+    z-index: 10;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 80px 48px;
+    width: 100%;
+    box-sizing: border-box;
   }
-  .prob-adv-header {
-    text-align: center;
-    margin-bottom: 60px;
+  .gp-eyebrow {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 40px;
+    margin-bottom: 22px;
   }
-  .prob-adv-header h2 {
-    font-size: clamp(1.6rem, 4vw, 2.8rem);
+  .gp-hero-title {
+    font-size: clamp(1.9rem, 4.5vw, 3.4rem);
     font-weight: 900;
-    color: var(--text-dark);
-    margin: 0 0 12px;
+    line-height: 1.15;
+    color: var(--text-light);
+    margin: 0 0 20px;
+    max-width: 700px;
   }
-  .prob-adv-header .prob-adv-subtitle {
-    font-size: 1rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-
-  /* Stats banner */
-  .prob-stats-bar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0;
-    background: var(--bg-dark);
-    border-radius: var(--radius-card);
-    overflow: hidden;
-    margin-bottom: 48px;
-    box-shadow: var(--shadow-elevated);
-  }
-  .prob-stat-side {
-    padding: 32px 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    text-align: center;
-  }
-  .prob-stat-side.manual { background: rgba(201,111,74,0.12); border-left: 1px solid rgba(201,111,74,0.2); }
-  .prob-stat-side.robot { background: rgba(122,143,88,0.12); border-right: 1px solid rgba(122,143,88,0.2); }
-  .prob-stat-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-  .prob-stat-name { font-size: 1.05rem; font-weight: 800; color: var(--text-light); }
-  .prob-stat-value-manual { font-size: 2rem; font-weight: 900; color: var(--accent); }
-  .prob-stat-value-robot { font-size: 2rem; font-weight: 900; color: var(--primary); }
-  .prob-stat-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 28px;
-    background: var(--bg-dark);
-    gap: 4px;
-  }
-  .prob-stat-center .multiplier { font-size: 2.4rem; font-weight: 900; color: #fff; }
-  .prob-stat-center .multiplier-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
-
-  /* Advantage cards */
-  .prob-adv-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-  .prob-adv-card {
-    background: #fff;
-    border-radius: var(--radius-card);
-    padding: 32px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--shadow-card);
-    border: 1px solid var(--border-light);
-    transition: var(--transition-hover);
-  }
-  .prob-adv-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-elevated);
-  }
-  .prob-adv-card-top {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 18px;
-  }
-  .prob-adv-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: var(--bg-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    border: 1px solid var(--border-light);
-  }
-  .prob-adv-card h4 {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin: 0 0 2px;
-    line-height: 1.3;
-  }
-  .prob-adv-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.65;
+  .gp-hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(247,242,235,0.75);
+    max-width: 560px;
+    line-height: 1.7;
     margin: 0;
   }
-  .prob-adv-compare {
-    margin-top: 18px;
+
+  /* ── PAIN CARDS GRID ── */
+  .gp-pain-section {
+    background: var(--bg-dark);
+    padding: 80px 48px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .gp-pain-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .gp-pain-label span.badge {
+    background: rgba(201,111,74,0.18);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 5px 14px;
+    border-radius: 40px;
+  }
+  .gp-pain-label h3 {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 800;
+    color: var(--text-light);
+    margin: 0;
+  }
+  .gp-pain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .gp-pain-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-card);
+    padding: 30px 28px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: var(--transition-default);
+    position: relative;
+    overflow: hidden;
+  }
+  .gp-pain-card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 0 var(--radius-card) var(--radius-card) 0;
+    opacity: 0.6;
+  }
+  .gp-pain-card:hover {
+    background: rgba(201,111,74,0.09);
+    border-color: rgba(201,111,74,0.3);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card);
+  }
+  .gp-pain-emoji {
+    font-size: 2rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 3px;
+  }
+  .gp-pain-text h4 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin: 0 0 8px;
+  }
+  .gp-pain-text p {
+    font-size: 0.9rem;
+    color: rgba(247,242,235,0.65);
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* ── PHOTO STRIP ── */
+  .gp-photo-strip {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 0;
+    height: 340px;
+    overflow: hidden;
+  }
+  .gp-photo-strip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .gp-photo-strip > div:hover .gp-photo-strip-img {
+    transform: scale(1.04);
+  }
+  .gp-photo-strip > div {
+    overflow: hidden;
+    position: relative;
+  }
+  .gp-photo-strip-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(44,36,30,0.75) 0%, transparent 100%);
+    padding: 18px 20px;
+    font-size: 0.8rem;
+    color: rgba(247,242,235,0.8);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  /* ── COMPARISON TABLE SECTION ── */
+  .gp-compare-outer {
+    position: relative;
+    background: var(--gradient-dark-section);
+    padding: 80px 48px 80px;
+    box-sizing: border-box;
+  }
+  .gp-compare-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .gp-compare-heading {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .gp-compare-heading h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 900;
+    color: var(--text-light);
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+  .gp-compare-heading p {
+    font-size: 1rem;
+    color: rgba(247,242,235,0.6);
+    margin: 0;
+  }
+
+  /* Two-column comparison */
+  .gp-compare-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 24px;
+    margin-bottom: 48px;
   }
-  .prob-adv-compare-item {
-    padding: 10px 14px;
-    border-radius: var(--radius-sm);
-    font-size: 0.82rem;
-    font-weight: 700;
+  .gp-compare-col {
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+  .gp-compare-col-header {
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .gp-compare-col--manual .gp-compare-col-header {
+    background: rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .gp-compare-col--bot .gp-compare-col-header {
+    background: linear-gradient(135deg, rgba(122,143,88,0.25), rgba(122,143,88,0.12));
+    border-bottom: 1px solid rgba(122,143,88,0.3);
+  }
+  .gp-compare-col-header .col-badge {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 40px;
+    text-transform: uppercase;
+  }
+  .gp-compare-col--manual .col-badge {
+    background: rgba(201,111,74,0.2);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .gp-compare-col--bot .col-badge {
+    background: rgba(122,143,88,0.25);
+    color: #a3c469;
+    border: 1px solid var(--primary);
+  }
+  .gp-compare-col-header h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin: 0;
+  }
+  .gp-compare-row {
+    padding: 18px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+  .gp-compare-col--manual .gp-compare-row {
+    background: rgba(255,255,255,0.02);
+  }
+  .gp-compare-col--bot .gp-compare-row {
+    background: rgba(122,143,88,0.05);
+  }
+  .gp-compare-col--manual .gp-compare-row:hover {
+    background: rgba(201,111,74,0.06);
+  }
+  .gp-compare-col--bot .gp-compare-row:hover {
+    background: rgba(122,143,88,0.1);
+  }
+  .gp-compare-row-icon {
+    font-size: 1.3rem;
+    width: 36px;
     text-align: center;
   }
-  .prob-adv-compare-item.old {
-    background: rgba(201,111,74,0.1);
-    color: var(--accent);
-    border: 1px solid rgba(201,111,74,0.2);
+  .gp-compare-row-content .row-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(247,242,235,0.45);
+    margin-bottom: 3px;
   }
-  .prob-adv-compare-item.new {
-    background: rgba(122,143,88,0.1);
-    color: var(--primary);
-    border: 1px solid rgba(122,143,88,0.2);
+  .gp-compare-row-content .row-value {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-light);
   }
-  .prob-adv-card-stripe {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: var(--radius-card) 0 var(--radius-card) 0;
-    opacity: 0.06;
+  .gp-compare-row-content .row-note {
+    font-size: 0.82rem;
+    color: rgba(247,242,235,0.55);
+    margin-top: 3px;
+    line-height: 1.5;
   }
-  .prob-adv-card:nth-child(1) .prob-adv-card-stripe { background: #e06b4a; }
-  .prob-adv-card:nth-child(2) .prob-adv-card-stripe { background: #2563EB; }
-  .prob-adv-card:nth-child(3) .prob-adv-card-stripe { background: #0EA5E9; }
-  .prob-adv-card:nth-child(4) .prob-adv-card-stripe { background: #f0c04a; }
+  .gp-compare-col--bot .row-value {
+    color: #a3c469;
+  }
 
-  /* Extra stats row */
-  .prob-extra-stats {
-    margin-top: 40px;
+  /* ── STATS STRIP ── */
+  .gp-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+    margin-top: 16px;
   }
-  .prob-extra-stat {
-    background: #fff;
-    border: 1px solid var(--border-light);
+  .gp-stat-card {
+    background: linear-gradient(135deg, rgba(122,143,88,0.15), rgba(122,143,88,0.06));
+    border: 1px solid rgba(122,143,88,0.25);
     border-radius: var(--radius-card);
-    padding: 20px 16px;
+    padding: 28px 20px;
     text-align: center;
-    box-shadow: var(--shadow-subtle);
     transition: var(--transition-hover);
   }
-  .prob-extra-stat:hover {
+  .gp-stat-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--primary);
   }
-  .prob-extra-stat .stat-val {
-    font-size: 1.8rem;
+  .gp-stat-value {
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 900;
-    color: var(--primary);
-    display: block;
+    color: #a3c469;
     line-height: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
-  .prob-extra-stat .stat-lbl {
-    font-size: 0.78rem;
+  .gp-stat-label {
+    font-size: 0.85rem;
+    color: rgba(247,242,235,0.65);
     font-weight: 600;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
   }
 
-  /* Responsive */
+  /* ── GROUTBOT PHOTO HERO ── */
+  .gp-bot-showcase {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .gp-bot-showcase-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .gp-bot-showcase-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .gp-bot-showcase-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(44,36,30,0.93) 50%, rgba(44,36,30,0.3) 100%);
+    z-index: 1;
+  }
+  .gp-bot-showcase-content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 48px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .gp-bot-showcase-content .eyebrow {
+    display: inline-block;
+    background: rgba(122,143,88,0.2);
+    border: 1px solid var(--primary);
+    color: #a3c469;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  .gp-bot-showcase-content h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 900;
+    color: var(--text-light);
+    margin: 0 0 14px;
+    max-width: 500px;
+    line-height: 1.2;
+  }
+  .gp-bot-showcase-content p {
+    font-size: 1rem;
+    color: rgba(247,242,235,0.7);
+    max-width: 440px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    .prob-grid { grid-template-columns: 1fr; }
-    .prob-adv-grid { grid-template-columns: 1fr; }
-    .prob-extra-stats { grid-template-columns: repeat(2, 1fr); }
-    .prob-vs-inner { grid-template-columns: 1fr; gap: 16px; }
-    .prob-vs-badge { width: 56px; height: 56px; font-size: 1rem; }
-    .prob-stats-bar { grid-template-columns: 1fr; border-radius: var(--radius-card); }
-    .prob-stat-side.manual { border-left: none; border-bottom: 1px solid rgba(201,111,74,0.2); }
-    .prob-stat-side.robot { border-right: none; border-top: 1px solid rgba(122,143,88,0.2); }
+    .gp-pain-grid { grid-template-columns: 1fr; }
+    .gp-compare-cols { grid-template-columns: 1fr; }
+    .gp-stats { grid-template-columns: repeat(2, 1fr); }
+    .gp-photo-strip { grid-template-columns: 1fr; height: auto; }
+    .gp-photo-strip > div { height: 220px; }
   }
-  @media (max-width: 600px) {
-    .prob-hero-content { padding-top: 100px; }
-    .prob-extra-stats { grid-template-columns: repeat(2, 1fr); }
-    .prob-adv-compare { grid-template-columns: 1fr; }
-    .prob-vs-img-wrap { height: 200px; }
+  @media (max-width: 768px) {
+    .gp-hero-content { padding: 100px 24px 60px; }
+    .gp-pain-section { padding: 56px 24px 40px; }
+    .gp-compare-outer { padding: 56px 24px 56px; }
+    .gp-bot-showcase-content { padding: 60px 24px 48px; }
+    .gp-stats { grid-template-columns: repeat(2, 1fr); }
   }
-
-  /* Animated entry */
-  @keyframes prob-fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
+  @media (max-width: 480px) {
+    .gp-stats { grid-template-columns: 1fr 1fr; }
+    .gp-pain-card { flex-direction: column; gap: 10px; }
   }
-  .prob-animate { animation: prob-fadeUp 0.6s ease both; }
-  .prob-animate-delay-1 { animation-delay: 0.1s; }
-  .prob-animate-delay-2 { animation-delay: 0.2s; }
-  .prob-animate-delay-3 { animation-delay: 0.3s; }
-  .prob-animate-delay-4 { animation-delay: 0.4s; }
 </style>
 
-<!-- ══ HERO ══ -->
-<div class="prob-hero">
-  <div class="prob-hero-bg" style="background-image: url('assets/ai-section-1776609844731-0-37022be0-1776677257346-snobit.webp?v=1776677257346'); background-size:cover;background-position:center;"></div>
-  <div class="prob-hero-overlay"></div>
-  <div class="prob-hero-content">
-    <div style="margin-bottom: 28px;">
-      <div style="font-family: 'Manrope', 'Georgia', serif; font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 900; color: #FFFFFF; letter-spacing: 0.06em; text-transform: uppercase; text-shadow: 0 4px 32px rgba(0,0,0,0.55); line-height: 1;">GROUTBOT</div>
-      <div style="font-family: 'Inter', sans-serif; font-size: clamp(1rem, 2.2vw, 1.3rem); color: var(--accent); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 8px; text-shadow: 0 2px 12px rgba(0,0,0,0.4);">מכונה חשמלית להזרקת רובה בין מרצפות</div>
+<div class="groutbot-problem-section">
+
+  <!-- ── HERO ── -->
+  <div class="gp-hero">
+    <div class="gp-hero-bg">
+      <img alt="עבודת רובה ידנית — אדם על ברכיו מורח רובה בין מרצפות בכלי ידני" style="width:100%;height:100%;object-fit:cover;display:block;" src="/assets/ai-section-1776609844731-0-37022be0-1776678090995-a11e2s.webp?v=1776678090995" data-placeholder="manual-grouting-photo">
     </div>
-    <h1 class="prob-hero-h2">The Problem We're Solving — And the Market Waiting for a Solution</h1>
-    <p class="prob-hero-sub" style="">The manpower shortage in the construction industry, worker attrition, and high costs — these are real pain points that the industry is seeking solutions for.&nbsp;</p>
+    <div class="gp-hero-overlay"></div>
+    <div class="gp-hero-content">
+      <span class="gp-eyebrow">GROUTBOT — Electric machine for grout injection between tiles</span>
+      <h1 class="gp-hero-title">The Problem We're Solving — And the Market Waiting for a Solution</h1>
+      <p class="gp-hero-sub">The manpower shortage in the construction industry, worker attrition, and high costs — these are real pain points that the industry is seeking solutions for.&nbsp;</p>
+    </div>
   </div>
-</div>
 
-<!-- ══ PROBLEMS ══ -->
-<div class="prob-problems-wrapper">
-  <div class="prob-problems-inner" style="max-width:1200px;margin:0 auto;padding:0 24px 64px;position:relative;z-index:1;">
-
-    <!-- Split layout: image left, cards right -->
-    <div style="--zappy-grid-cols: 1fr 1fr; display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items: stretch !important;" data-zappy-explicit-columns="true" class="zappy-preserve-css-grid" data-zappy-grid-align="start" data-original-item-width="552" data-original-gap="48px">
-
-      <!-- Left: Image + label -->
-      <div style="display:flex;flex-direction:column;gap:20px;" data-grid-item-index="0">
-        <div class="prob-section-label" style="margin-bottom:0;">
-          <h3 style="color: rgb(255, 255, 255); font-size: 2rem;">The Challenges of the Existing Manual Method</h3>
-        </div>
-        
-        <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.45);flex-shrink:0;">
-          <img src="/assets/ai-section-1776609844731-0-37022be0-1776678090995-a11e2s.webp?v=1776678090995" alt="עבודת רובה ידנית — אדם על ברכיו מורח רובה בין מרצפות בכלי ידני" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-prob-manual-grouting" data-placeholder="manual-grouting-photo" style="width: 100%; height: 360px; object-fit: cover; display: block; border-radius: 16px;">
-          <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(to top,rgba(15,23,42,0.85) 0%,transparent 100%);border-radius:0 0 16px 16px;"><span style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);">Current Situation</span></div>
-        </div>
-        <!-- Mini stat strip under image -->
-        
-      </div>
-
-      <!-- Right: 4 problem cards in 2x2 grid -->
-      <div style="--zappy-grid-cols: 1fr 1fr; display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start;padding-top:64px;" data-zappy-explicit-columns="true" class="zappy-grid-item-nested-grid" data-grid-item-index="1">
-        <div class="prob-card prob-animate prob-animate-delay-1">
-          <div class="prob-card-accent"></div>
-          <p style="font-size:1.6rem;margin-bottom:8px;">⏱️</p>
+  <!-- ── PAIN POINTS ── -->
+  <div class="gp-pain-section">
+    <div class="gp-pain-label">
+      <span class="badge">⚠️ Current situation</span>
+      <h3>The Challenges of the Existing Manual Method</h3>
+    </div>
+    <div class="gp-pain-grid">
+      <div class="gp-pain-card">
+        <div class="gp-pain-emoji">⏱️</div>
+        <div class="gp-pain-text">
           <h4><strong>זמן רב ובזבוז משאבים</strong></h4>
           <p>Filling grout between tiles requires extensive time in the construction finishing process because the work is done manually on knees</p>
         </div>
-        <div class="prob-card prob-animate prob-animate-delay-2">
-          <div class="prob-card-accent"></div>
-          <p style="font-size:1.6rem;margin-bottom:8px;">🦵</p>
+      </div>
+      <div class="gp-pain-card">
+        <div class="gp-pain-emoji">🦵</div>
+        <div class="gp-pain-text">
           <h4><strong>עייפות, כאבים ושחיקה</strong></h4>
           <p>Workers are forced to work on their knees for long periods, leading to fatigue, pain and professional burnout</p>
         </div>
-        <div class="prob-card prob-animate prob-animate-delay-3">
-          <div class="prob-card-accent"></div>
-          <p style="font-size:1.6rem;margin-bottom:8px;">💸</p>
+      </div>
+      <div class="gp-pain-card">
+        <div class="gp-pain-emoji">💸</div>
+        <div class="gp-pain-text">
           <h4><strong>כוח אדם יקר וקשה להשגה</strong></h4>
           <p>In the industry's labor shortage, a worker for manual grout filling is expensive and very difficult to find</p>
         </div>
-        <div class="prob-card prob-animate prob-animate-delay-4">
-          <div class="prob-card-accent"></div>
-          <p style="font-size:1.6rem;margin-bottom:8px;">🧪</p>
+      </div>
+      <div class="gp-pain-card">
+        <div class="gp-pain-emoji">🧪</div>
+        <div class="gp-pain-text">
           <h4><strong>לכלוך וצורך בניקוי חומצה</strong></h4>
           <p>The manual filling process leaves mess on site, requiring the use of acid for cleaning — which can damage the tiles</p>
         </div>
       </div>
-
     </div>
   </div>
-</div>
 
-<!-- ══ ADVANTAGES ══ -->
-<div class="prob-adv-section">
-  <style>html[dir="rtl"] /* ── COMPARISON SECTION REBUILD ── */
-    .prob-comparison-wrap{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-      direction: rtl;
-    }
-    .prob-comparison-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-    .prob-comparison-header .comp-eyebrow {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(245,158,11,0.1);
-      border: 1px solid rgba(245,158,11,0.25);
-      border-radius: 100px;
-      padding: 5px 16px;
-      margin-bottom: 16px;
-    }
-    .prob-comparison-header h2 {
-      font-size: clamp(1.7rem, 4vw, 2.6rem);
-      font-weight: 900;
-      color: var(--text-dark);
-      margin: 0 0 12px;
-      line-height: 1.25;
-    }
-    .prob-comparison-header p {
-      font-size: 1rem;
-      color: var(--text-muted);
-      max-width: 560px;
-      margin: 0 auto;
-      line-height: 1.65;
-    }
+  <!-- ── PHOTO STRIP ── -->
+  <div class="gp-photo-strip">
+    <div>
+      <img alt="Person's hand applying grey grout between light grey floor tiles with a small trowel." class="gp-photo-strip-img" src="/assets/ai-section-1776609844731-0-37022be0-1776678090995-a11e2s.webp?v=1776678090995" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      <div class="gp-photo-strip-overlay">Manual work — current situation</div>
+    </div>
+    <div>
+      <div style="background-image: url('assets/ai-section-1776609844731-0-37022be0-1776677257346-snobit.webp?v=1776677257346'); background-size:cover;background-position:center;min-height:400px;width:100%;height:100%;"></div>
+    </div>
+  </div>
 
-    /* ── TWO-COLUMN COMPARE LAYOUT ── */
-    .comp-columns {
-      display: grid;
-      grid-template-columns: 1fr 80px 1fr;
-      gap: 0;
-      align-items: start;
-    }
-    .comp-col {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    /* Image block */
-    .comp-img-block {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 48px rgba(0,0,0,0.22);
-      margin-bottom: 24px;
-    }
-    .comp-img-block img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s ease;
-    }
-    .comp-img-block:hover img { transform: scale(1.03); }
-    .comp-img-label {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      padding: 14px 18px;
-      background: linear-gradient(to top, rgba(10,15,30,0.88) 0%, transparent 100%);
-      font-size: 0.85rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .comp-col-manual .comp-img-label { color: #ff9a6c; }
-    .comp-col-robot .comp-img-label { color: #7dd3fc; }
+  <!-- ── COMPARISON + STATS ── -->
+  <div class="gp-compare-outer">
+    <div class="gp-compare-inner">
+      <div class="gp-compare-heading">
+        <h2>Groutbot Advantages Over Manual Work</h2>
+        <p>Fundamental differences that change the rules of the game in the flooring industry</p>
+      </div>
 
-    /* Column header badge */
-    .comp-col-title {
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 800;
-      padding: 10px 0 20px;
-    }
-    .comp-col-manual .comp-col-title { color: #c2410c; }
-    .comp-col-robot .comp-col-title { color: var(--primary); }
+      <div class="gp-compare-cols">
+        <!-- MANUAL -->
+        <div class="gp-compare-col gp-compare-col--manual">
+          <div class="gp-compare-col-header">
+            <span class="col-badge">Manual</span>
+            <h3>⚠️ Manual Work — Current State</h3>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">⏱️</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Daily output</div>
+              <div class="row-value">~74 sqm per day</div>
+              <div class="row-note">Depends on worker, fatigue and field conditions</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">🔄</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Work pace</div>
+              <div class="row-value">Variable</div>
+              <div class="row-note">Decreases as the worker gets tired throughout the day</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">✅</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Finish quality</div>
+              <div class="row-value">Worker dependent</div>
+              <div class="row-note">Quality gaps between workers and different work hours</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">🦵</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Physical load</div>
+              <div class="row-value">Very high</div>
+              <div class="row-note">Working on knees for long hours — wear and injuries</div>
+            </div>
+          </div>
+        </div>
 
-    /* VS center divider */
-    .comp-vs-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 0;
-      gap: 0;
-    }
-    .comp-vs-badge {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--accent);
-      color: #fff;
-      font-size: 0.95rem;
-      font-weight: 900;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 18px rgba(245,158,11,0.45);
-      margin-top: calc(280px / 2 - 28px + 24px);
-      flex-shrink: 0;
-      z-index: 2;
-    }
-    .comp-vs-line {
-      width: 2px;
-      flex: 1;
-      background: linear-gradient(to bottom, rgba(245,158,11,0.4) 0%, rgba(245,158,11,0.05) 100%);
-      margin: 0 auto;
-      min-height: 40px;
-    }
+        <!-- GROUTBOT -->
+        <div class="gp-compare-col gp-compare-col--bot">
+          <div class="gp-compare-col-header">
+            <span class="col-badge">Groutbot</span>
+            <h3>✅ Groutbot — The Revolution in the Field</h3>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">⚡</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Daily output</div>
+              <div class="row-value">~175 sqm per day</div>
+              <div class="row-note">2.5x more area in the same work time</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">🎯</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Work pace</div>
+              <div class="row-value">100% Consistent</div>
+              <div class="row-note">Fixed and predefined pace — electrically controlled</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">🏆</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Finish quality</div>
+              <div class="row-value">עקבי תמיד</div>
+              <div class="row-note">Uniform and precise filling in every joint, on every surface</div>
+            </div>
+          </div>
+          <div class="gp-compare-row">
+            <div class="gp-compare-row-icon">🤖</div>
+            <div class="gp-compare-row-content">
+              <div class="row-label">Worker load</div>
+              <div class="row-value">Minimal</div>
+              <div class="row-note">The machine does the work — the operator navigates and supervises</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    /* Comparison rows */
-    .comp-rows {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-    .comp-row-card {
-      border-radius: 14px;
-      padding: 18px 20px;
-      font-size: 0.88rem;
-      line-height: 1.55;
-      position: relative;
-      overflow: hidden;
-    }
-    .comp-row-card .comp-row-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .comp-row-card .comp-row-value {
-      font-size: 1.15rem;
-      font-weight: 900;
-      margin-bottom: 4px;
-      line-height: 1.2;
-    }
-    .comp-row-card .comp-row-desc {
-      font-size: 0.82rem;
-      line-height: 1.5;
-      opacity: 0.75;
-    }
-    /* Manual side cards */
-    .comp-col-manual .comp-row-card {
-      background: rgba(220,75,20,0.07);
-      border: 1px solid rgba(220,75,20,0.18);
-      color: var(--text-dark);
-    }
-    .comp-col-manual .comp-row-card .comp-row-label { color: #c2410c; }
-    .comp-col-manual .comp-row-card .comp-row-value { color: #9a3412; }
-    /* Robot side cards */
-    .comp-col-robot .comp-row-card {
-      background: rgba(37,99,235,0.06);
-      border: 1px solid rgba(37,99,235,0.18);
-      color: var(--text-dark);
-    }
-    .comp-col-robot .comp-row-card .comp-row-label { color: var(--primary); }
-    .comp-col-robot .comp-row-card .comp-row-value { color: var(--primary); }
+      <!-- STATS -->
+      <div class="gp-stats">
+        <div class="gp-stat-card">
+          <div class="gp-stat-value">×2.5</div>
+          <div class="gp-stat-label">Daily output</div>
+        </div>
+        <div class="gp-stat-card">
+          <div class="gp-stat-value">100%</div>
+          <div class="gp-stat-label">Consistent pace</div>
+        </div>
+        <div class="gp-stat-card">
+          <div class="gp-stat-value" style="font-size:clamp(1.2rem,2.5vw,1.8rem);color:#a3c469;">Less</div>
+          <div class="gp-stat-label">עבודה על ברכיים</div>
+        </div>
+        <div class="gp-stat-card">
+          <div class="gp-stat-value" style="font-size:clamp(1.2rem,2.5vw,1.8rem);color:#a3c469;">Less</div>
+          <div class="gp-stat-label">Dependence on manpower</div>
+        </div>
+      </div>
 
-    /* Row label connector (center column) */
-    .comp-vs-col .comp-category-labels {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-top: 0;
-      padding-top: 0;
-      width: 100%;
-    }
-    .comp-vs-col .comp-cat-label {
-      background: var(--bg-dark);
-      color: var(--text-light);
-      border-radius: 8px;
-      padding: 0 8px;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 80px;
-      line-height: 1.3;
-    }
+      <!-- ניתוח השוואתי label -->
+      <div style="text-align:center;margin-top:32px;">Comparative Analysis</div>
+    </div>
+  </div>
 
-    /* Bottom stats strip */
-    .comp-stats-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 48px;
-    }
-    .comp-stat-pill {
-      background: #fff;
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      padding: 22px 16px;
-      text-align: center;
-      box-shadow: 0 4px 16px rgba(101,78,52,0.08);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .comp-stat-pill:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 28px rgba(101,78,52,0.14);
-    }
-    .comp-stat-pill .s-val {
-      display: block;
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--primary);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .comp-stat-pill .s-lbl {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .comp-columns {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-      .comp-vs-col { display: none; }
-      .comp-stats-strip { grid-template-columns: repeat(2,1fr); }
-      .comp-img-block img { height: 220px; }
-    }
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .comp-columns { grid-template-columns: 1fr 60px 1fr; }
-    }
-  </style>
-
-  <div class="prob-comparison-wrap">
-    <!-- Header -->
-    <div class="prob-comparison-header">
-      <div class="comp-eyebrow">Comparative Analysis</div>
+  <!-- ── GROUTBOT SHOWCASE ── -->
+  <div class="gp-bot-showcase">
+    <div class="gp-bot-showcase-bg">
+      <img alt="Smiling man using a yellow grouting machine to finish laying grey floor tiles on a construction site." style="width:100%;height:100%;object-fit:cover;display:block;" src="/assets/ai-section-1776609850459-1-4d66a708-1776677189759-4xs2jf.webp?v=1776677189759">
+    </div>
+    <div class="gp-bot-showcase-overlay"></div>
+    <div class="gp-bot-showcase-content">
+      <span class="eyebrow">✅ Groutbot in action</span>
       <h2>Groutbot Advantages Over Manual Work</h2>
       <p>Fundamental differences that change the rules of the game in the flooring industry</p>
     </div>
-
-    <!-- Two-column comparison -->
-    <div class="comp-columns">
-
-      <!-- MANUAL column -->
-      <div class="comp-col comp-col-manual">
-        <div class="comp-img-block">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776632898926-wytjbrkvl" data-element-type="image" data-zappy-zoom-wrapper-width="366px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="border-radius: 20px; position: relative !important; overflow: hidden !important; width: 366px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;"><img alt="Person's hand applying grey grout between light grey floor tiles with a small trowel." style="object-position: 50% 50%; width: 104% !important; height: 135.943% !important; object-fit: cover !important; display: block !important; margin: 0px !important; max-width: none !important; position: absolute !important; left: -2% !important; top: -17.9714% !important; max-height: none !important" src="/assets/ai-section-1776609844731-0-37022be0-1776678090995-a11e2s.webp?v=1776678090995" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1776632898926-wytjbrkvl" data-zappy-zoom="1.04"></div>
-          <div class="comp-img-label">⚠️ Manual Work — Current State</div>
-        </div>
-        <div class="comp-col-title">Manual</div>
-        <div class="comp-rows">
-          <div class="comp-row-card">
-            <div class="comp-row-label">⏱️ Daily Output</div>
-            <div class="comp-row-value">~74 sqm per day</div>
-            <div class="comp-row-desc">Depends on worker, fatigue and field conditions</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">🔄 Work Pace</div>
-            <div class="comp-row-value">Variable</div>
-            <div class="comp-row-desc">Decreases as the worker gets tired throughout the day</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">✅ Finish Quality</div>
-            <div class="comp-row-value">Worker dependent</div>
-            <div class="comp-row-desc">Quality gaps between workers and different work hours</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">🦵 Physical Load</div>
-            <div class="comp-row-value">Very high</div>
-            <div class="comp-row-desc">Working on knees for long hours — wear and injuries</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- VS center -->
-      <div class="comp-vs-col">
-        <div class="comp-vs-badge">VS</div>
-        <div class="comp-vs-line"></div>
-      </div>
-
-      <!-- GROUTBOT column -->
-      <div class="comp-col comp-col-robot">
-        <div class="comp-img-block">
-          <img alt="Smiling man using a yellow grouting machine to finish laying grey floor tiles on a construction site." style="width: 100%; height: 280px; object-fit: cover; display: block;" src="/assets/ai-section-1776609850459-1-4d66a708-1776677189759-4xs2jf.webp?v=1776677189759" data-zappy-editable-image="true" data-element-type="image" data-element-id="img-1776632898926-b0v1n5uze">
-          <div class="comp-img-label">✅ Groutbot — The Revolution in the Field</div>
-        </div>
-        <div class="comp-col-title">Groutbot</div>
-        <div class="comp-rows">
-          <div class="comp-row-card">
-            <div class="comp-row-label">⚡ Daily Output</div>
-            <div class="comp-row-value">~175 sqm per day</div>
-            <div class="comp-row-desc">2.5x more area in the same work time</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">🎯 Work Pace</div>
-            <div class="comp-row-value">100% Consistent</div>
-            <div class="comp-row-desc">Fixed and predefined pace — electrically controlled</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">🏆 Finish Quality</div>
-            <div class="comp-row-value">עקבי תמיד</div>
-            <div class="comp-row-desc">Uniform and precise filling in every joint, on every surface</div>
-          </div>
-          <div class="comp-row-card">
-            <div class="comp-row-label">🤖 Load on Worker</div>
-            <div class="comp-row-value">Minimal</div>
-            <div class="comp-row-desc">The machine does the work — the operator navigates and supervises</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Stats strip -->
-    <div class="comp-stats-strip zappy-preserve-css-grid" id="zappy-auto-grid-1776679283024-2av0l6" data-zappy-auto-grid="true" data-original-item-width="276" data-original-gap="16px" style="display: grid; --zappy-grid-cols: repeat(4, minmax(0, 1fr)); grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
-      <div class="comp-stat-pill" data-grid-item-index="0"><span class="s-val">×2.5</span><span class="s-lbl">Daily Output</span></div>
-      <div class="comp-stat-pill" data-grid-item-index="1"><span class="s-val">100%</span><span class="s-lbl">Consistent Pace</span></div>
-      <div class="comp-stat-pill" data-grid-item-index="2"><span class="s-val">0</span><span class="s-lbl">Work on Knees</span></div>
-      <div class="comp-stat-pill" data-grid-item-index="3"><span class="s-val">Less</span><span class="s-lbl">Dependence on Manpower</span></div>
-    </div>
   </div>
+
 </div>
 </section>
 
@@ -2866,7 +2636,7 @@ html[dir="ltr"] .lang-switcher {
 
     <!-- Header -->
     <div class="index-features-header">
-      <p style="">Prototype in action</p><h2 class="index-features-title">The Technological Advantage — Foundation for Growth</h2>
+      <p>Prototype in action</p><h2 class="index-features-title">The Technological Advantage — Foundation for Growth</h2>
       <p class="index-features-subtitle">Groutbot's development plan is meticulously detailed. The technologies are based on research and preliminary testing that demonstrate a clear and measurable advantage over any existing solution — this is the foundation for a high-potential investment.</p>
     </div>
 
@@ -2954,7 +2724,7 @@ html[dir="ltr"] .lang-switcher {
       <article class="workflow-step">
         <div class="step-image-wrap">
           <div class="step-number-badge">First stage</div>
-          <img alt="טעינת חומר הרובה למכשיר Groutbot" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <img alt="טעינת חומר הרובה למכשיר Groutbot" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
         </div>
         <div class="step-content">
           <div class="step-index"><span>01</span></div>
@@ -2988,7 +2758,7 @@ html[dir="ltr"] .lang-switcher {
         </div>
         <div class="step-image-wrap">
           <div class="step-number-badge">Second stage</div>
-          <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
         </div>
       </article>
 
@@ -3003,7 +2773,7 @@ html[dir="ltr"] .lang-switcher {
       <article class="workflow-step">
         <div class="step-image-wrap">
           <div class="step-number-badge">Third stage</div>
-          <img alt="גימור נקי ואחיד של הרובה בין המרצפות" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
+          <img alt="גימור נקי ואחיד של הרובה בין המרצפות" class="step-img" width="600" height="400" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
         </div>
         <div class="step-content">
           <div class="step-index"><span>03</span></div>
@@ -3026,9 +2796,9 @@ html[dir="ltr"] .lang-switcher {
 <section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" id="index-cta-section" style="direction: rtl;">
   <div class="index-cta-inner">
     <div class="index-cta-container">
-      <p style="">Groutbot is raising investors for the next development phase</p><h2 class="index-cta-heading">Investors and Strategic Partners — Let's Build the Future of the Industry Together</h2>
+      <p>Groutbot is raising investors for the next development phase</p><h2 class="index-cta-heading">Investors and Strategic Partners — Let's Build the Future of the Industry Together</h2>
       <p class="index-cta-body">The physical development plan is finalized and ready for execution. We are seeking investors and strategic partners — including contractors interested in investing in the venture or joining a pilot after development completion. The global flooring equipment market is worth billions of dollars, and Groutbot is positioned to capture a significant share.</p>
-      <div class="index-cta-actions" style="">
+      <div class="index-cta-actions">
         <a href="/en/contact" class="index-cta-btn-primary" data-element-type="button" data-element-id="btn-1776636873446-tfo0ym0lb" data-native-element="true" style="outline: none;">Talk to the founder</a>
         <a href="/assets/________________________-_RobaSmart-1776680445445-u5cm78.pdf" class="index-cta-btn-secondary" data-element-type="button" data-element-id="btn-1776636873446-4xxw5zffv" data-native-element="true" style="outline: none; border-color: rgb(111, 143, 175) !important; color: var(--light-text, #ffffff) !important; background-color: rgb(111, 143, 175) !important; background-image: none !important;" data-text-color="light" target="_blank" rel="noopener noreferrer">For investor information package</a>
       </div>
@@ -3074,7 +2844,7 @@ html[dir="ltr"] .lang-switcher {
       <!-- Contact Info -->
       <div class="footer-col">
         <h4 class="footer-heading">Contact Us</h4>
-        <ul class="footer-contact" style=""><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776611602950-4s49q0ild" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><br>            <span class="contact-text"><a href="/cdn-cgi/l/email-protection#7c1b0e1309081e13083c1b111d1510521f1311" style=""><span class="__cf_email__" data-cfemail="47203528323325283307202a262e2b6924282a"><span class="__cf_email__" data-cfemail="ed8a9f8298998f8299ad8a808c8481c38e8280">[email&nbsp;protected]</span></span></a></span></li><li>
+        <ul class="footer-contact"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776611602950-4s49q0ild" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><br>            <span class="contact-text"><a href="/cdn-cgi/l/email-protection#7c1b0e1309081e13083c1b111d1510521f1311" style=""><span class="__cf_email__" data-cfemail="47203528323325283307202a262e2b6924282a"><span class="__cf_email__" data-cfemail="ed8a9f8298998f8299ad8a808c8481c38e8280">[email&nbsp;protected]</span></span></a></span></li><li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776611602950-ah8g3pj7x" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><a href="tel:0556842533">0556842533</a></span>
           </li><li><a href="/en" style="display: flex; align-items: flex-start; gap: inherit;"><span class="contact-icon"><i class="fas fa-map-marker-alt zappy-native-element" style="cursor: pointer;" data-element-type="icon" data-element-id="native-icon-1776616636126-pgjee9erb"></i></span><br>            <span class="contact-text">מחוז מרכז, 7180118, ישראל</span></a></li></ul>
@@ -3310,782 +3080,9 @@ html[dir="ltr"] .lang-switcher {
 
 
 
-<!-- i18next Multi-Language Support (Dynamic Loader) -->
-<script>
-(function() {
-  // Configuration (no translations embedded - fetched dynamically)
-  const websiteId = '97bd2cf2-364e-40cc-b814-4ab60e72547a';
-  const defaultLang = 'he';
-  const availableLanguages = ["he","en"];
-  const rtlLanguages = ["he"];
-  
-  // Language display info with SVG flag images for cross-platform compatibility
-  const languageInfo = {"he":{"name":"Hebrew","nativeName":"עברית","flag":"🇮🇱","flagIcon":"circle-flags:il","dir":"rtl","flagImg":"<img src=\"https://api.iconify.design/circle-flags/il.svg\" width=\"20\" height=\"20\" alt=\"\" style=\"display:inline-block;vertical-align:middle;border-radius:50%;\" />"},"en":{"name":"English","nativeName":"English","flag":"🇺🇸","flagIcon":"circle-flags:us","dir":"ltr","flagImg":"<img src=\"https://api.iconify.design/circle-flags/us.svg\" width=\"20\" height=\"20\" alt=\"\" style=\"display:inline-block;vertical-align:middle;border-radius:50%;\" />"}};
-  
-  // Detect stored language preference
-  function detectLanguage() {
-    const stored = localStorage.getItem('zappy_lang');
-    if (stored && availableLanguages.includes(stored)) return stored;
-    return defaultLang;
-  }
-  
-  // Callbacks for language change events (e.g., e-commerce content refresh)
-  const languageChangeCallbacks = [];
-  
-  // Simple i18n implementation with async loading
-  const zappyI18n = {
-    language: detectLanguage(),
-    translations: {},
-    loading: false,
-    loaded: false,
-    
-    t: function(key) {
-      if (this.translations[key]) {
-        return this.translations[key];
-      }
-      return key;
-    },
-    
-    loadTranslations: function(lang) {
-      return new Promise((resolve, reject) => {
-        // Always use the preview API endpoint since this loader script is only used for preview
-        // Published sites use embedded translations (generateI18nextScript) instead
-        // Note: Preview routes are mounted under /api/website/
-        // Cache-bust: append timestamp to prevent stale browser fetch() cache
-        const baseUrl = '/api/website/preview/' + websiteId + '/i18n/' + lang + '?_t=' + Date.now();
-        
-        fetch(baseUrl)
-          .then(res => {
-            if (!res.ok) throw new Error('Failed to load translations');
-            return res.json();
-          })
-          .then(data => {
-            this.translations = data;
-            this.loaded = true;
-            resolve(data);
-          })
-          .catch(err => {
-            console.error('[i18n] Failed to load translations for ' + lang + ':', err);
-            reject(err);
-          });
-      });
-    },
-    
-    changeLanguage: function(lang) {
-      if (!availableLanguages.includes(lang)) return Promise.resolve();
-      
-      var oldLang = this.language;
-      this.language = lang;
-      localStorage.setItem('zappy_lang', lang);
-      
-      return this.loadTranslations(lang).then(() => {
-        updateContent();
-        updateDirection();
-        fixLanguageSwitcherColor();
-        setTimeout(fixLanguageSwitcherColor, 100);
-        
-        // Call all registered language change callbacks (e.g., e-commerce content refresh)
-        languageChangeCallbacks.forEach(function(callback) {
-          try {
-            callback(lang, oldLang);
-          } catch (e) {
-            console.error('[i18n] Language change callback error:', e);
-          }
-        });
-      });
-    },
-    
-    getCurrentLanguage: function() { return this.language; },
-    getAvailableLanguages: function() { return availableLanguages; },
-    // Register a callback to be called when language changes
-    onLanguageChange: function(callback) {
-      if (typeof callback === 'function') {
-        languageChangeCallbacks.push(callback);
-      }
-    }
-  };
-  
-  // Update all translatable content
-  function updateContent() {
-    var newlineChar = String.fromCharCode(10);
-    var htmlTagPattern = /<(font|b|i|u|strong|em|span|br|a|sub|sup|mark|del|ins|s|small|big)[^>]*>/i;
 
-    document.querySelectorAll('[data-i18n]').forEach(function(el) {
-      var key = el.getAttribute('data-i18n');
-      var translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        if (el.querySelector('[data-i18n]')) return;
 
-        // Preserve child SVGs (e.g., decorative dropdown arrows in nav links)
-        // by only replacing direct text nodes instead of overwriting all content.
-        if (el.querySelector('svg')) {
-          var svgNodes = el.childNodes;
-          var svgTextUpdated = false;
-          for (var si = 0; si < svgNodes.length; si++) {
-            if (svgNodes[si].nodeType === 3 && svgNodes[si].textContent.trim()) {
-              if (!svgTextUpdated) {
-                svgNodes[si].textContent = translation;
-                svgTextUpdated = true;
-              } else {
-                svgNodes[si].textContent = '';
-              }
-            }
-          }
-          if (!svgTextUpdated) {
-            el.insertBefore(document.createTextNode(translation), el.firstChild);
-          }
-          return;
-        }
 
-        // Preserve empty decorative child elements (e.g., <span class="accent-line">,
-        // structural markers) that are not part of the translation text but would
-        // otherwise be wiped out by innerHTML/textContent replacement.
-        var preservedChildren = [];
-        var kids = el.children;
-        for (var ki = 0; ki < kids.length; ki++) {
-          var kid = kids[ki];
-          if (kid.tagName !== 'BR' && kid.tagName !== 'SCRIPT' && kid.textContent.trim() === '' && !kid.querySelector('img, svg, picture, video, iframe')) {
-            preservedChildren.push({ node: kid.cloneNode(true), wasFirst: ki === 0 });
-          }
-        }
-
-        var hasNewlines = translation.indexOf(newlineChar) !== -1;
-        var hasHtmlTags = htmlTagPattern.test(translation);
-        var hasEntities = /&[a-zA-Z]+;|&#\d+;|&#x[0-9a-fA-F]+;/.test(translation);
-        var elementHasBr = /<br\s*\/?>/i.test(el.innerHTML);
-
-        if (hasNewlines || hasHtmlTags || hasEntities || elementHasBr) {
-          el.innerHTML = translation.split(newlineChar).join('<br>');
-        } else {
-          el.textContent = translation;
-        }
-
-        // Re-insert preserved decorative children. Children originally at the
-        // start of the element are prepended; others are appended.
-        for (var pi = 0; pi < preservedChildren.length; pi++) {
-          var entry = preservedChildren[pi];
-          if (entry.wasFirst) {
-            el.insertBefore(entry.node, el.firstChild);
-          } else {
-            el.appendChild(entry.node);
-          }
-        }
-      }
-    });
-
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
-      const key = el.getAttribute('data-i18n-placeholder');
-      const translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        el.setAttribute('placeholder', translation);
-      }
-    });
-
-    document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
-      const key = el.getAttribute('data-i18n-alt');
-      const translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        el.setAttribute('alt', translation);
-      }
-    });
-    
-    document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
-      const key = el.getAttribute('data-i18n-title');
-      const translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        el.setAttribute('title', translation);
-      }
-    });
-    
-    document.querySelectorAll('[data-i18n-content]').forEach(function(el) {
-      const key = el.getAttribute('data-i18n-content');
-      const translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        el.setAttribute('content', translation);
-      }
-    });
-    
-    const titleEl = document.querySelector('title[data-i18n]');
-    if (titleEl) {
-      const key = titleEl.getAttribute('data-i18n');
-      const translation = zappyI18n.t(key);
-      if (translation && translation !== key) {
-        document.title = translation;
-      }
-    }
-  }
-  
-  // Update document direction based on language
-  function updateDirection() {
-    const currentLang = zappyI18n.language;
-    const isRTL = rtlLanguages.includes(currentLang);
-    const html = document.documentElement;
-    const body = document.body;
-    const newDir = isRTL ? 'rtl' : 'ltr';
-    
-    html.setAttribute('lang', currentLang);
-    html.setAttribute('dir', newDir);
-    html.style.direction = newDir;
-    
-    if (body) {
-      body.setAttribute('dir', newDir);
-      body.style.direction = newDir;
-    }
-    
-    document.querySelectorAll('main, article, section, footer, aside, .content, .container, .wrapper').forEach(function(el) {
-      el.style.direction = newDir;
-      if (el.hasAttribute('dir')) el.setAttribute('dir', newDir);
-    });
-    
-    document.querySelectorAll('.legal-content, .terms-content, .privacy-content').forEach(function(el) {
-      el.style.direction = newDir;
-      el.style.textAlign = isRTL ? 'right' : 'left';
-    });
-    
-    // Swap inline text-align on content elements when direction changes.
-    // RTL-primary sites have text-align:right baked into inline styles;
-    // these must become text-align:left when viewing in LTR, and vice versa.
-    var defaultIsRTL = rtlLanguages.includes(defaultLang);
-    var needsSwap = isRTL !== defaultIsRTL;
-    document.querySelectorAll('[style]').forEach(function(el) {
-      if (el.closest('header') || el.closest('nav') || el.closest('.navbar') || el.closest('.lang-switcher')) return;
-      if (el.closest('.legal-content') || el.closest('.terms-content') || el.closest('.privacy-content')) return;
-      var ta = el.style.textAlign;
-      if (!ta || ta === 'center' || ta === 'justify' || ta === 'start' || ta === 'end') return;
-      if (!el.hasAttribute('data-ta-orig')) {
-        el.setAttribute('data-ta-orig', ta);
-      }
-      var origTA = el.getAttribute('data-ta-orig');
-      if (needsSwap) {
-        el.style.textAlign = origTA === 'right' ? 'left' : 'right';
-      } else {
-        el.style.textAlign = origTA;
-      }
-    });
-
-    // Swap text-align in CSS stylesheet rules when direction changes.
-    if (!window.__zappyOrigTA) window.__zappyOrigTA = new WeakMap();
-    var origTAMap = window.__zappyOrigTA;
-    for (var si = 0; si < document.styleSheets.length; si++) {
-      try {
-        var sheetRules = document.styleSheets[si].cssRules;
-        for (var ri = 0; ri < sheetRules.length; ri++) {
-          var cssRule = sheetRules[ri];
-          if (!cssRule.style || !cssRule.selectorText) continue;
-          var rta = cssRule.style.textAlign;
-          if (!rta || rta === 'center' || rta === 'justify' || rta === 'start' || rta === 'end') continue;
-          if (cssRule.selectorText.indexOf('[dir=') !== -1) continue;
-          if (/direction\s*:/i.test(cssRule.cssText)) continue;
-          if (/^(html|body)\s*,?\s*(html|body)?\s*$/.test(cssRule.selectorText.trim())) continue;
-          if (/\.(lang-option|lang-switcher|mobile-lang)/.test(cssRule.selectorText)) continue;
-          if (!origTAMap.has(cssRule)) {
-            origTAMap.set(cssRule, rta);
-          }
-          var origRTA = origTAMap.get(cssRule);
-          if (needsSwap) {
-            cssRule.style.textAlign = origRTA === 'right' ? 'left' : 'right';
-          } else {
-            cssRule.style.textAlign = origRTA;
-          }
-        }
-      } catch(e) {}
-    }
-
-    // Update catalog menu RTL class to match current direction
-    document.querySelectorAll('.zappy-catalog-menu').forEach(function(el) {
-      if (isRTL) {
-        el.classList.add('rtl');
-        el.setAttribute('dir', 'rtl');
-      } else {
-        el.classList.remove('rtl');
-        el.removeAttribute('dir');
-      }
-    });
-    
-    document.querySelectorAll('header, nav, .navbar, .nav-container, .header-container, .nav-links, .menu, nav ul, header ul, #navMenu').forEach(function(el) {
-      el.removeAttribute('dir');
-      el.style.removeProperty('direction');
-      el.style.removeProperty('flex-direction');
-      el.style.removeProperty('justify-content');
-      el.style.removeProperty('margin-left');
-      el.style.removeProperty('margin-right');
-    });
-    
-    document.querySelectorAll('.nav-menu, #navMenu, .nav-right-group').forEach(function(el) {
-      el.removeAttribute('dir');
-      el.style.removeProperty('direction');
-      el.style.removeProperty('flex-direction');
-      el.style.removeProperty('justify-content');
-      if (isRTL) {
-        el.style.removeProperty('margin-left');
-        el.style.removeProperty('margin-right');
-      } else {
-        el.style.setProperty('margin-left', '0', 'important');
-        el.style.removeProperty('margin-right');
-      }
-    });
-    
-    document.querySelectorAll('.lang-switcher').forEach(function(el) {
-      var ctaContainer = el.parentElement ? el.parentElement.querySelector('.nav-cta-container') : null;
-      if (ctaContainer && el.parentElement === ctaContainer.parentElement) {
-        ctaContainer.insertBefore(el, ctaContainer.firstChild);
-        // Ensure vertical alignment when lang-switcher and CTA button are siblings
-        ctaContainer.style.setProperty('align-items', 'center', 'important');
-      }
-      el.style.removeProperty('margin-left');
-      el.style.removeProperty('margin-right');
-    });
-    
-    // E-commerce fix: Move lang-switcher inside nav-icons-left near search box
-    document.querySelectorAll('.lang-switcher').forEach(function(el) {
-      var navIconsLeft = document.querySelector('.nav-icons-left');
-      var searchBox = document.querySelector('.nav-search-box');
-      if (navIconsLeft && searchBox && !el.closest('.nav-icons-left')) {
-        navIconsLeft.insertBefore(el, searchBox);
-      }
-    });
-    
-    document.querySelectorAll('header > a, nav > a, .nav-menu > a, .nav-links > a, nav ul li, header ul li, .logo, .site-logo, .brand, .navbar-brand, .nav-brand').forEach(function(el) {
-      el.style.removeProperty('margin-left');
-      el.style.removeProperty('margin-right');
-    });
-    
-    document.querySelectorAll('header .btn, header .button, header .cta, nav .btn, nav .button, .navbar .btn, .nav-cta-container, .cta-container, .header-cta, .nav-cta').forEach(function(el) {
-      el.style.removeProperty('margin-left');
-      el.style.removeProperty('margin-right');
-    });
-    
-    // Globe icon SVG - uses currentColor so it adopts whatever color is set on the button
-    var globeIconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421-6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>';
-    
-    // Match the button color to a sibling nav link so the globe contrasts with the nav bg
-    var currentLangEl = document.querySelector('.lang-switcher-current');
-    if (currentLangEl) {
-      var navContainer = currentLangEl.closest('nav') || currentLangEl.closest('header') || currentLangEl.closest('.navbar');
-      if (navContainer) {
-        var navLink = navContainer.querySelector('.nav-menu a, .nav-links a');
-        if (!navLink) navLink = navContainer.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');
-        if (navLink) {
-          var linkColor = getComputedStyle(navLink).color;
-          if (linkColor && linkColor !== 'rgb(0, 0, 0)' && linkColor !== 'rgba(0, 0, 0, 0)') {
-            currentLangEl.style.color = linkColor;
-          }
-        }
-      }
-      currentLangEl.innerHTML = globeIconSvg;
-    }
-    
-    document.querySelectorAll('.lang-switcher-dropdown').forEach(function(dropdown) {
-      dropdown.innerHTML = availableLanguages
-        .filter(function(lang) { return lang !== currentLang; })
-        .map(function(lang) {
-          const info = languageInfo[lang] || { flag: '🌐', flagImg: '🌐', nativeName: lang };
-          return '<button class="lang-option" data-lang="' + lang + '" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;background:none;border:none;text-align:left;cursor:pointer;font-size:14px;color:#333;">' + (info.flagImg || info.flag) + ' ' + info.nativeName + '</button>';
-        })
-        .join('');
-      
-      dropdown.querySelectorAll('.lang-option').forEach(function(option) {
-        option.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          const lang = this.getAttribute('data-lang');
-          zappyI18n.changeLanguage(lang);
-          dropdown.style.opacity = '0';
-          dropdown.style.visibility = 'hidden';
-          dropdown.style.transform = 'translateY(-8px)';
-        });
-      });
-    });
-    
-    if (window.innerWidth < 768) {
-      var mobileToggle = document.querySelector('.mobile-toggle');
-      var phoneBtn = document.querySelector('.phone-header-btn');
-      var navCtaContainer = document.querySelector('.nav-cta-container');
-      
-      if (mobileToggle) {
-        mobileToggle.style.removeProperty('left');
-        mobileToggle.style.removeProperty('right');
-      }
-      
-      if (phoneBtn) {
-        phoneBtn.style.removeProperty('left');
-        phoneBtn.style.removeProperty('right');
-      }
-      
-      if (navCtaContainer) {
-        navCtaContainer.style.removeProperty('left');
-        navCtaContainer.style.removeProperty('right');
-      }
-    }
-    
-    // Update mobile language submenu in hamburger
-    updateMobileLangMenu();
-  }
-  
-  function initLanguageSwitcher() {
-    // Guard against multiple initializations (multiple scripts on page)
-    if (window._zappyLangSwitcherInitialized) return;
-    window._zappyLangSwitcherInitialized = true;
-    
-    const switchers = document.querySelectorAll('.lang-switcher');
-    if (!switchers.length) return;
-    
-    switchers.forEach(function(switcher) {
-      const dropdown = switcher.querySelector('.lang-switcher-dropdown');
-      const current = switcher.querySelector('.lang-switcher-current');
-      
-      if (!current || !dropdown) return;
-      
-      // Ensure proper positioning
-      switcher.style.position = 'relative';
-      dropdown.style.cssText = 'opacity: 0; visibility: hidden; transform: translateY(-8px); pointer-events: none; display: none;';
-      
-      current.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        const isOpen = dropdown.style.opacity === '1';
-        if (isOpen) {
-          dropdown.style.cssText = 'opacity: 0; visibility: hidden; transform: translateY(-8px); pointer-events: none; display: none;';
-        } else {
-          dropdown.style.cssText = 'opacity: 1; visibility: visible; transform: translateY(0); display: block; position: absolute; z-index: 99999; pointer-events: auto; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); min-width: 140px; padding: 8px 0; top: calc(100% + 4px); left: 0;';
-          dropdown.querySelectorAll('.lang-option').forEach(function(opt) {
-            opt.style.cssText = 'display: flex; opacity: 1; visibility: visible;';
-          });
-        }
-      });
-      
-      dropdown.querySelectorAll('.lang-option').forEach(function(option) {
-        option.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          const lang = this.getAttribute('data-lang');
-          zappyI18n.changeLanguage(lang);
-          dropdown.style.cssText = 'opacity: 0; visibility: hidden; transform: translateY(-8px); pointer-events: none; display: none;';
-        });
-      });
-    });
-    
-    document.addEventListener('click', function() {
-      document.querySelectorAll('.lang-switcher-dropdown').forEach(function(dropdown) {
-        dropdown.style.cssText = 'opacity: 0; visibility: hidden; transform: translateY(-8px); pointer-events: none; display: none;';
-      });
-    });
-  }
-  
-  // ==============================================
-  // MOBILE LANGUAGE SUBMENU (inside hamburger menu)
-  // ==============================================
-  
-  function injectMobileLangCss() {
-    if (document.getElementById('mobile-lang-menu-css')) return;
-    var style = document.createElement('style');
-    style.id = 'mobile-lang-menu-css';
-    style.textContent = '@media (max-width: 768px) {' +
-      '.lang-switcher, .nav-cta-container .lang-switcher, .nav-container .lang-switcher,' +
-      '.navbar .lang-switcher, .navbar .nav-cta-container .lang-switcher,' +
-      '.nav-icons-left .lang-switcher, .nav-ecommerce-icons .lang-switcher { display: none !important; }' +
-      '.zappy-lang-switcher-container { display: none !important; }' +
-      '.mobile-lang-menu { list-style: none !important; width: 100%; border-top: 1px solid rgba(128,128,128,0.2); margin-top: 8px; padding-top: 8px; }' +
-      '.mobile-lang-toggle { display: flex; align-items: center; gap: 10px; width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer; color: inherit; font-size: 15px; font-family: inherit; }' +
-      '.mobile-lang-toggle span { flex: 1; }' +
-      'html[dir="rtl"] .mobile-lang-toggle span, html[lang="he"] .mobile-lang-toggle span, html[lang="ar"] .mobile-lang-toggle span { text-align: right; }' +
-      'html:not([dir="rtl"]) .mobile-lang-toggle span { text-align: left; }' +
-      '.mobile-lang-chevron { transition: transform 0.3s ease; flex-shrink: 0; }' +
-      '.mobile-lang-options { display: none; flex-direction: column; padding: 0 16px 8px 46px; }' +
-      'html[dir="rtl"] .mobile-lang-options, html[lang="he"] .mobile-lang-options, html[lang="ar"] .mobile-lang-options { padding: 0 46px 8px 16px; }' +
-      '.mobile-lang-options.open { display: flex; }' +
-      '.mobile-lang-option { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: none; border: none; cursor: pointer; color: inherit; font-size: 14px; font-family: inherit; border-radius: 6px; transition: background-color 0.2s; width: 100%; }' +
-      'html[dir="rtl"] .mobile-lang-option, html[lang="he"] .mobile-lang-option, html[lang="ar"] .mobile-lang-option { text-align: right; }' +
-      'html:not([dir="rtl"]) .mobile-lang-option { text-align: left; }' +
-      '.mobile-lang-option:hover { background: rgba(128,128,128,0.1); }' +
-      '.mobile-lang-option img { width: 20px; height: 20px; border-radius: 50%; display: inline-block; vertical-align: middle; }' +
-      '}';
-    document.head.appendChild(style);
-  }
-
-  function createMobileLangMenu() {
-    if (window.innerWidth > 768) return;
-    if (document.querySelector('.mobile-lang-menu')) return;
-    if (availableLanguages.length < 2) return;
-    
-    injectMobileLangCss();
-    
-    var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
-    if (!navMenu) return;
-    
-    var currentLang = zappyI18n.language;
-    var currentInfo = languageInfo[currentLang] || { nativeName: currentLang, flagImg: '' };
-    
-    var langSwitcher = document.querySelector('.lang-switcher');
-    var iconColor = langSwitcher ? langSwitcher.getAttribute('data-icon-color') : 'currentColor';
-    if (!iconColor) iconColor = 'currentColor';
-    
-    var optionsHtml = availableLanguages
-      .filter(function(lang) { return lang !== currentLang; })
-      .map(function(lang) {
-        var info = languageInfo[lang] || { nativeName: lang, flagImg: '' };
-        return '<button class="mobile-lang-option" data-lang="' + lang + '">' +
-          (info.flagImg || info.flag || '') + ' ' + info.nativeName + '</button>';
-      })
-      .join('');
-    
-    var li = document.createElement('li');
-    li.className = 'mobile-lang-menu';
-    li.innerHTML =
-      '<button class="mobile-lang-toggle" type="button">' +
-        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="' + iconColor + '" style="flex-shrink:0;"><path d="M12.039,.002s0,0,0,0c-.013,0-.026-.002-.039-.002-.005,0-.009,0-.014,0-.002,0-.003,0-.005,0C5.373,.011,0,5.39,0,12s5.383,12,12,12,12-5.383,12-12S18.638,.023,12.039,.002Zm9.747,6.998h-4.814c-1.067-2.669-2.712-4.781-3.731-5.925,3.734,.421,6.901,2.719,8.546,5.925Zm-4.786,5c0,1.407-.292,2.753-.731,4H7.731c-.439-1.247-.731-2.593-.731-4s.292-2.754,.73-4h8.539c.439,1.247,.731,2.593,.731,4Zm-1.122,5c-1.229,2.838-3.116,4.99-3.878,5.788-.762-.798-2.649-2.95-3.878-5.788h7.755ZM8.121,7c1.229-2.841,3.117-4.992,3.879-5.789,.762,.798,2.649,2.95,3.878,5.789h-7.757ZM10.757,1.075c-1.025,1.15-2.668,3.264-3.73,5.925H2.214C3.859,3.795,7.024,1.498,10.757,1.075ZM1.764,8H6.668c-.403,1.247-.668,2.589-.668,4s.265,2.752,.669,4H1.764c-.487-1.242-.764-2.588-.764-4s.277-2.758,.764-4Zm.45,9H7.029c1.067,2.669,2.712,4.781,3.731,5.925-3.734-.421,6.901-2.719-8.546-5.925Zm11.026,5.925c1.019-1.144,2.664-3.257,3.731-5.925h4.814c-1.645,3.206-4.812,5.504-8.546,5.925Zm8.996-6.925h-4.905c.404-1.248,.669-2.589,.669-4s-.265-2.752-.669-4h4.905c.487,1.242,.764,2.588,.764,4s-.277,2.758-.764,4Z"/></svg>' +
-        '<span>' + currentInfo.nativeName + '</span>' +
-        '<svg class="mobile-lang-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 4 6 8 10 4"></polyline></svg>' +
-      '</button>' +
-      '<div class="mobile-lang-options">' + optionsHtml + '</div>';
-    
-    navMenu.appendChild(li);
-    
-    // Match nav link color for visual consistency
-    var firstNavLink = navMenu.querySelector('li:not(.mobile-lang-menu) > a');
-    if (firstNavLink) {
-      var navLinkColor = window.getComputedStyle(firstNavLink).color;
-      if (navLinkColor && navLinkColor !== 'rgba(0, 0, 0, 0)') {
-        li.style.color = navLinkColor;
-        // Update globe SVG fill to match nav link color
-        var globeSvg = li.querySelector('.mobile-lang-toggle > svg:first-child');
-        if (globeSvg) globeSvg.setAttribute('fill', navLinkColor);
-      }
-    }
-    
-    console.log('[i18n] Mobile language submenu created in hamburger menu');
-  }
-  
-  function initMobileLangSwitcher() {
-    var toggle = document.querySelector('.mobile-lang-toggle');
-    var options = document.querySelector('.mobile-lang-options');
-    if (!toggle || !options) return;
-    
-    var newToggle = toggle.cloneNode(true);
-    toggle.parentNode.replaceChild(newToggle, toggle);
-    var optionsEl = newToggle.parentNode.querySelector('.mobile-lang-options');
-    
-    newToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var isOpen = optionsEl.classList.contains('open');
-      if (isOpen) {
-        optionsEl.classList.remove('open');
-        optionsEl.style.display = 'none';
-      } else {
-        optionsEl.classList.add('open');
-        optionsEl.style.display = 'flex';
-      }
-      var chevron = newToggle.querySelector('.mobile-lang-chevron');
-      if (chevron) chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
-    });
-    
-    optionsEl.querySelectorAll('.mobile-lang-option').forEach(function(option) {
-      option.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var lang = this.getAttribute('data-lang');
-        zappyI18n.changeLanguage(lang);
-        optionsEl.classList.remove('open');
-        optionsEl.style.display = 'none';
-        var chevron = newToggle.querySelector('.mobile-lang-chevron');
-        if (chevron) chevron.style.transform = '';
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
-        if (navMenu) navMenu.classList.remove('active');
-        var hamburgerIcon = document.querySelector('.hamburger-icon');
-        var closeIcon = document.querySelector('.close-icon');
-        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
-        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
-        document.body.style.overflow = '';
-      });
-    });
-  }
-  
-  function updateMobileLangMenu() {
-    var menuItem = document.querySelector('.mobile-lang-menu');
-    if (!menuItem) {
-      createMobileLangMenu();
-      initMobileLangSwitcher();
-      return;
-    }
-    
-    var currentLang = zappyI18n.language;
-    var currentInfo = languageInfo[currentLang] || { nativeName: currentLang };
-    
-    var toggleSpan = menuItem.querySelector('.mobile-lang-toggle span');
-    if (toggleSpan) toggleSpan.textContent = currentInfo.nativeName;
-    
-    var optionsContainer = menuItem.querySelector('.mobile-lang-options');
-    if (!optionsContainer) return;
-    
-    optionsContainer.innerHTML = availableLanguages
-      .filter(function(lang) { return lang !== currentLang; })
-      .map(function(lang) {
-        var info = languageInfo[lang] || { nativeName: lang, flagImg: '' };
-        return '<button class="mobile-lang-option" data-lang="' + lang + '">' +
-          (info.flagImg || info.flag || '') + ' ' + info.nativeName + '</button>';
-      })
-      .join('');
-    
-    optionsContainer.querySelectorAll('.mobile-lang-option').forEach(function(option) {
-      option.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var lang = this.getAttribute('data-lang');
-        zappyI18n.changeLanguage(lang);
-        optionsContainer.classList.remove('open');
-        optionsContainer.style.display = 'none';
-        var chevron = menuItem.querySelector('.mobile-lang-chevron');
-        if (chevron) chevron.style.transform = '';
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
-        if (navMenu) navMenu.classList.remove('active');
-        var hamburgerIcon = document.querySelector('.hamburger-icon');
-        var closeIcon = document.querySelector('.close-icon');
-        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
-        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
-        document.body.style.overflow = '';
-      });
-    });
-    
-    optionsContainer.classList.remove('open');
-    optionsContainer.style.display = 'none';
-  }
-  
-  function fixMobileMenuStyles() {
-    if (window.innerWidth >= 768) return;
-    document.querySelectorAll('.nav-menu, #navMenu, nav ul, header ul').forEach(function(el) {
-      if (el.style.flexDirection) {
-        el.style.removeProperty('flex-direction');
-      }
-    });
-  }
-  
-  function fixMobileButtonPositioning() {
-    if (window.innerWidth >= 768) return;
-    var mobileToggle = document.querySelector('.mobile-toggle');
-    var phoneBtn = document.querySelector('.phone-header-btn');
-    var navCtaContainer = document.querySelector('.nav-cta-container');
-    
-    if (mobileToggle) {
-      mobileToggle.style.removeProperty('left');
-      mobileToggle.style.removeProperty('right');
-    }
-    if (phoneBtn) {
-      phoneBtn.style.removeProperty('left');
-      phoneBtn.style.removeProperty('right');
-    }
-    if (navCtaContainer) {
-      navCtaContainer.style.removeProperty('left');
-      navCtaContainer.style.removeProperty('right');
-    }
-  }
-  
-  function fixLanguageSwitcherColor() {
-    var switcher = document.querySelector('.lang-switcher-current');
-    var svg = switcher ? switcher.querySelector('svg') : null;
-    if (!switcher || !svg) return;
-    
-    var navbar = document.querySelector('.navbar') || document.querySelector('nav') || document.querySelector('header');
-    if (!navbar) return;
-    
-    function getEffectiveBackgroundColor(element) {
-      var el = element;
-      var maxDepth = 10;
-      while (el && maxDepth > 0) {
-        var style = window.getComputedStyle(el);
-        var bg = style.backgroundColor;
-        if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') {
-          return bg;
-        }
-        el = el.parentElement;
-        maxDepth--;
-      }
-      return 'rgb(255, 255, 255)';
-    }
-    
-    function parseColor(colorStr) {
-      if (!colorStr) return null;
-      var rgbMatch = colorStr.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
-      if (rgbMatch) {
-        return { r: parseInt(rgbMatch[1], 10), g: parseInt(rgbMatch[2], 10), b: parseInt(rgbMatch[3], 10) };
-      }
-      var hexMatch = colorStr.match(/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/);
-      if (hexMatch) {
-        return { r: parseInt(hexMatch[1], 16), g: parseInt(hexMatch[2], 16), b: parseInt(hexMatch[3], 16) };
-      }
-      return null;
-    }
-    
-    function getLuminance(rgb) {
-      if (!rgb) return 0.5;
-      var r = rgb.r / 255, g = rgb.g / 255, b = rgb.b / 255;
-      r = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
-      g = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
-      b = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
-      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    }
-    
-    var bgColor = getEffectiveBackgroundColor(navbar);
-    var rgb = parseColor(bgColor);
-    var luminance = getLuminance(rgb);
-    var isLightBackground = luminance > 0.4;
-    var iconColor = isLightBackground ? '#1a1a1a' : '#F3FAFF';
-    
-    svg.style.fill = iconColor;
-    switcher.style.color = iconColor;
-  }
-  
-  // Initialize - load translations then set up UI
-  function init() {
-    zappyI18n.loadTranslations(zappyI18n.language).then(function() {
-      updateContent();
-      updateDirection();
-      initLanguageSwitcher();
-      createMobileLangMenu();
-      initMobileLangSwitcher();
-      fixMobileMenuStyles();
-      fixMobileButtonPositioning();
-      fixLanguageSwitcherColor();
-      
-      window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-          // Desktop: remove mobile lang menu if it exists
-          var mobileLangEl = document.querySelector('.mobile-lang-menu');
-          if (mobileLangEl) mobileLangEl.remove();
-          var mobileCssEl = document.getElementById('mobile-lang-menu-css');
-          if (mobileCssEl) mobileCssEl.remove();
-        } else {
-          createMobileLangMenu();
-          initMobileLangSwitcher();
-        }
-        fixMobileMenuStyles();
-        fixMobileButtonPositioning();
-        fixLanguageSwitcherColor();
-      });
-      
-      setTimeout(fixLanguageSwitcherColor, 500);
-      setTimeout(fixLanguageSwitcherColor, 1500);
-    }).catch(function(err) {
-      console.error('[i18n] Initialization failed:', err);
-      // Still initialize UI even if translations fail
-      initLanguageSwitcher();
-      createMobileLangMenu();
-      initMobileLangSwitcher();
-      fixLanguageSwitcherColor();
-    });
-  }
-  
-  // Expose to global scope
-  window.zappyI18n = zappyI18n;
-  
-  // Run initialization
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 <!-- Zappy Language Switcher Icon Color Fix -->
 <script>

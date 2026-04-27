@@ -1909,7 +1909,7 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
   
   .nav-menu a,
   html[lang="he"] .nav-menu a,
-  html[lang="ar"] .nav-menu a{text-align: right !important;}
+  html[lang="ar"] .nav-menu a{text-align: start !important;}
   
   /* Hide desktop language switcher on mobile - hamburger menu handles it */
   /* High specificity to override stored CSS */
@@ -2548,7 +2548,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.35;
   color: var(--text-dark);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 .index-problem-solution-section .ips-card-text {
@@ -2556,7 +2556,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.7;
   color: var(--text-muted);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 /* ── Image column (END / left) ── */
@@ -2812,7 +2812,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.4;
   color: var(--text-light);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 .index-features-section .index-feature-desc {
@@ -2821,7 +2821,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.7;
   color: rgba(248,250,252,0.6);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 /* ── Bottom Angled Divider ──────────────────────── */
@@ -3159,7 +3159,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   color: var(--text-dark);
   letter-spacing: -0.02em;
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 .technology-overview-section .technology-overview-lead {
@@ -3168,7 +3168,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.8;
   color: #4A443D;
   margin: 0;
-  text-align: right;
+  text-align: start;
   max-width: 560px;
 }
 
@@ -3224,7 +3224,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.4;
   color: var(--text-dark);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 .technology-overview-section .fact-body {
@@ -3232,7 +3232,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.7;
   color: #5C554D;
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 /* ── Image Column ── */
@@ -3459,7 +3459,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-align: right;
+  text-align: start;
   position: relative;
   overflow: hidden;
 }
@@ -3782,7 +3782,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  text-align: right;
+  text-align: start;
 }
 
 .technology-applications-section .ta-panel__label {
@@ -4265,7 +4265,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.4;
   color: var(--text-dark);
   margin: 0 0 14px;
-  text-align: right;
+  text-align: start;
 }
 
 /* ── BODY TEXT ── */
@@ -4274,7 +4274,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.75;
   color: var(--text-muted);
   margin: 0 0 24px;
-  text-align: right;
+  text-align: start;
   flex-grow: 1;
 }
 
@@ -5065,7 +5065,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   color: var(--text-dark);
   text-align: start;
   letter-spacing: 0.01em;
-}.contact-contact-form-section .ccf-input{font-family: 'Rubik', sans-serif;font-size: 16px;line-height: 1.5;color: var(--text-dark);background: #FEFCF9;border: 1px solid var(--border-light);border-radius: 12px;padding: 13px 16px;width: 100%;box-sizing: border-box;transition: border-color 0.25s ease, box-shadow 0.25s ease;outline: none;text-align: right;}html[dir="rtl"] .contact-contact-form-section .ccf-input{direction: rtl;}
+}.contact-contact-form-section .ccf-input{font-family: 'Rubik', sans-serif;font-size: 16px;line-height: 1.5;color: var(--text-dark);background: #FEFCF9;border: 1px solid var(--border-light);border-radius: 12px;padding: 13px 16px;width: 100%;box-sizing: border-box;transition: border-color 0.25s ease, box-shadow 0.25s ease;outline: none;text-align: start;}html[dir="rtl"] .contact-contact-form-section .ccf-input{direction: rtl;}
 
 .contact-contact-form-section .ccf-input::placeholder {
   color: var(--text-muted);
@@ -5099,7 +5099,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-dark);
-  text-align: right;
+  text-align: start;
 }
 
 .contact-contact-form-section .privacy-consent-checkbox {
@@ -5419,7 +5419,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.4;
   color: var(--text-light);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 .contact-response-process-section .crp-card-text {
@@ -5428,7 +5428,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   line-height: 1.7;
   color: rgba(247,242,235,0.68);
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
 /* ── CLOSING ── */
@@ -6232,7 +6232,7 @@ body.accessibility-widget-visible ._access-menu {
 .index-hero-section .index-hero-content {
   max-width: 620px;
   width: 100%;
-  text-align: right;
+  text-align: start;
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -6541,7 +6541,7 @@ body.accessibility-widget-visible ._access-menu {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  text-align: right;
+  text-align: start;
 }
 
 .index-workflow-section .step-meta {
@@ -7743,7 +7743,7 @@ body.accessibility-widget-visible ._access-menu {
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
   margin-bottom: 60px;
-  text-align: right;
+  text-align: start;
 }
 
 /* ---- Feature Card ---- */
@@ -7954,7 +7954,7 @@ body.accessibility-widget-visible ._access-menu {
     align-items: flex-start;
     gap: 20px;
     padding: 24px 22px;
-    text-align: right;
+    text-align: start;
   }
 
   .inv-card-icon-wrap {
@@ -9079,17 +9079,17 @@ nav .sub-menu.zappy-empty-submenu,
     min-width: 0 !important;
   }
   
-  /* CRITICAL: Constrain zoom wrappers on mobile - they often have fixed pixel widths */
+  /* CRITICAL: Constrain zoom wrappers on mobile without breaking saved crop geometry */
   [data-zappy-zoom-wrapper="true"] {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
-    height: auto !important;
+    overflow: hidden !important;
+    position: relative !important;
   }
   
-  /* Fix zoom wrapper images on mobile - make responsive */
-  /* Exclude images with mobile overrides — those are handled by JS to honor user settings */
-  [data-zappy-zoom-wrapper="true"] img:not([data-zappy-mobile-object-position]):not([data-zappy-mobile-zoom]) {
+  /* Legacy zoom wrappers without saved crop data can still fall back to responsive images. */
+  [data-zappy-zoom-wrapper="true"]:not([data-zappy-zoom-wrapper-width]) img:not([data-zappy-mobile-object-position]):not([data-zappy-mobile-zoom]) {
     position: relative !important;
     width: 100% !important;
     height: auto !important;
