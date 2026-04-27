@@ -227,323 +227,280 @@
 /* V2 Regenerated Section CSS */
 .index-workflow-section {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #F8F3EA;
   background-image:
-    radial-gradient(circle at 90% 10%, rgba(29,78,216,0.06) 0%, transparent 55%),
-    radial-gradient(circle at 10% 80%, rgba(37,99,235,0.05) 0%, transparent 50%),
-    linear-gradient(180deg, #FFFFFF 0%, #F8FAFF 100%);
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.9) 0, rgba(255,255,255,0) 42%),
+    radial-gradient(circle at 80% 30%, rgba(214,195,168,0.18) 0, rgba(214,195,168,0) 38%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.45) 0, rgba(255,255,255,0) 46%);
   color: var(--text-dark);
   padding: 100px 24px 80px;
-  overflow: visible;
+  overflow: hidden;
   direction: rtl;
 }
 
-/* Decorative glow */
-.index-workflow-section .wf-glow-decoration {
+/* Decorative radial glow */
+.index-workflow-section .workflow-glow-decoration {
   position: absolute;
-  top: -80px;
-  inset-inline-start: -80px;
+  top: -120px;
+  inset-inline-start: -100px;
   width: 420px;
   height: 420px;
-  background: radial-gradient(circle, rgba(29,78,216,0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29,78,216,0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  border-radius: 50%;
+  aria-hidden: true;
 }
 
 /* Container */
-.index-workflow-section .wf-container {
-  max-width: 1100px;
-  margin: 0 auto;
+.index-workflow-section .workflow-container {
   position: relative;
   z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 /* Header */
-.index-workflow-section .wf-header {
+.index-workflow-section .workflow-header {
   text-align: center;
   margin-bottom: 64px;
-  max-width: 680px;
-  margin-inline: auto;
-  margin-bottom: 64px;
 }
 
-.index-workflow-section .wf-badge {
+.index-workflow-section .workflow-eyebrow {
   display: inline-block;
-  background: rgba(29,78,216,0.08);
-  color: var(--primary);
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 999px;
+  color: var(--primary);
+  background: rgba(29,78,216,0.08);
   border: 1px solid rgba(29,78,216,0.18);
-  margin-bottom: 20px;
+  border-radius: 999px;
+  padding: 5px 16px;
+  margin-bottom: 18px;
 }
 
-.index-workflow-section .wf-headline {
-  font-family: 'Manrope', sans-serif;
+.index-workflow-section .workflow-title {
+  font-family: Manrope, Georgia, 'Times New Roman', serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
-  color: var(--text-dark);
-  margin: 0 0 16px;
+  color: #2D2A26;
   letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  max-width: none !important;
 }
 
-.index-workflow-section .wf-intro {
-  font-family: 'Inter', sans-serif;
+.index-workflow-section .workflow-subtitle {
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--text-muted);
-  margin: 0;
+  color: #4A443D;
+  max-width: 580px;
+  margin: 0 auto;
   text-align: center;
 }
 
 /* Steps wrapper */
-.index-workflow-section .wf-steps {
+.index-workflow-section .workflow-steps {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-/* Individual step row */
-.index-workflow-section .wf-step {
+/* Single step row */
+.index-workflow-section .workflow-step {
   display: grid;
-  grid-template-columns: 80px 240px 1fr;
-  align-items: center;
-  gap: 0 40px;
-  padding: 40px 0;
+  grid-template-columns: 90px 1fr;
+  gap: 0 28px;
+  align-items: stretch;
   position: relative;
 }
 
-/* Step number column */
-.index-workflow-section .wf-step-number-col {
+/* Left column: number + connector */
+.index-workflow-section .step-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0;
-  height: 100%;
-  position: relative;
 }
 
-.index-workflow-section .wf-step-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.index-workflow-section .wf-step-line {
-  width: 2px;
-  flex: 1;
-  min-height: 60px;
-  background: linear-gradient(180deg, rgba(29,78,216,0.35) 0%, rgba(29,78,216,0.08) 100%);
-  margin-top: 8px;
-  border-radius: 2px;
-}
-
-/* Image column */
-.index-workflow-section .wf-step-image-col {
+.index-workflow-section .step-number-block {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 2px;
+  padding-top: 4px;
 }
 
-.index-workflow-section .wf-step-thumb {
-  width: 220px;
-  height: 155px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(29,78,216,0.12), 0 2px 8px rgba(0,0,0,0.07);
-  border: 1px solid rgba(29,78,216,0.10);
-  flex-shrink: 0;
-  background: #e8eef8;
-}
-
-.index-workflow-section .wf-step-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.index-workflow-section .wf-step:hover .wf-step-thumb img {
-  transform: scale(1.04);
-}
-
-/* Content column */
-.index-workflow-section .wf-step-content-col {
-  padding-inline-end: 16px;
-}
-
-.index-workflow-section .wf-step-label {
-  display: inline-block;
-  font-family: 'Manrope', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
+.index-workflow-section .step-label {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary);
   opacity: 0.75;
-  margin-bottom: 8px;
+  white-space: nowrap;
 }
 
-.index-workflow-section .wf-step-title {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.375rem;
+.index-workflow-section .step-number {
+  font-family: Manrope, Georgia, serif;
+  font-size: 42px;
   font-weight: 700;
-  line-height: 1.3;
-  color: var(--text-dark);
-  margin: 0 0 12px;
-  letter-spacing: -0.01em;
+  line-height: 1;
+  color: #2D2A26;
+  opacity: 0.12;
+  letter-spacing: -0.03em;
+  user-select: none;
 }
 
-.index-workflow-section .wf-step-desc {
-  font-family: 'Inter', sans-serif;
+/* Vertical connector line */
+.index-workflow-section .step-connector {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(29,78,216,0.18) 0%, rgba(29,78,216,0.06) 100%);
+  margin: 8px 0;
+  min-height: 40px;
+}
+
+/* Right column: content */
+.index-workflow-section .step-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 0 52px;
+  border-bottom: 1px solid rgba(214,195,168,0.55);
+  margin-bottom: 0;
+}
+
+.index-workflow-section .workflow-step--last .step-content {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Thumbnail image */
+.index-workflow-section .step-image-thumb {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(101,78,52,0.14);
+  border: 1px solid rgba(226,215,200,0.7);
+  background: rgba(255,252,247,0.94);
+}
+
+.index-workflow-section .step-image-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Text block */
+.index-workflow-section .step-text {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.index-workflow-section .step-title {
+  font-family: Manrope, Georgia, 'Times New Roman', serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #2D2A26;
+  margin: 0 0 10px;
+  text-align: start;
+}
+
+.index-workflow-section .step-desc {
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: #4A443D;
   margin: 0;
-  max-width: 480px;
-}
-
-/* Horizontal divider between steps */
-.index-workflow-section .wf-divider {
-  height: 1px;
-  background: linear-gradient(to left, transparent, rgba(29,78,216,0.15) 20%, rgba(29,78,216,0.15) 80%, transparent);
-  margin: 0;
-}
-
-/* Last step has no line connector */
-.index-workflow-section .wf-step--last .wf-step-line {
-  display: none;
-}
-
-/* Hover highlight on step */
-.index-workflow-section .wf-step {
-  transition: background 0.3s ease;
-  border-radius: 12px;
-  padding-inline: 16px;
-}
-
-.index-workflow-section .wf-step:hover {
-  background: rgba(29,78,216,0.03);
+  text-align: start;
 }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 900px) {
-  .index-workflow-section .wf-step {
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: auto auto;
-    gap: 0 24px;
-    padding: 32px 8px;
+@media (min-width: 768px) {
+  .index-workflow-section {
+    padding: 100px 40px 90px;
   }
 
-  .index-workflow-section .wf-step-image-col {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-content: flex-start;
-    margin-bottom: 16px;
+  .index-workflow-section .workflow-title {
+    font-size: 2rem;
   }
 
-  .index-workflow-section .wf-step-number-col {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-  }
-
-  .index-workflow-section .wf-step-content-col {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    padding-inline-end: 0;
-  }
-
-  .index-workflow-section .wf-step-thumb {
-    width: 180px;
-    height: 126px;
+  .index-workflow-section .step-number {
+    font-size: 52px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .index-workflow-section {
     padding: 80px 16px 60px;
   }
 
-  .index-workflow-section .wf-header {
+  .index-workflow-section .workflow-header {
     margin-bottom: 40px;
   }
 
-  .index-workflow-section .wf-headline {
+  .index-workflow-section .workflow-title {
     font-size: 1.5rem;
   }
 
-  .index-workflow-section .wf-step {
+  .index-workflow-section .workflow-subtitle {
+    font-size: 15px;
+  }
+
+  /* On mobile: collapse left column, go full width */
+  .index-workflow-section .workflow-step {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 16px 0;
-    padding: 28px 0;
-    border-radius: 0;
+    gap: 0;
   }
 
-  .index-workflow-section .wf-step:hover {
-    background: transparent;
-  }
-
-  .index-workflow-section .wf-step-number-col {
+  .index-workflow-section .step-left {
     flex-direction: row;
     align-items: center;
-    gap: 12px;
-    height: auto;
-    grid-column: 1;
-    grid-row: auto;
+    gap: 10px;
+    margin-bottom: 14px;
   }
 
-  .index-workflow-section .wf-step-line {
+  .index-workflow-section .step-connector {
     display: none;
   }
 
-  .index-workflow-section .wf-step-image-col {
-    grid-column: 1;
-    grid-row: auto;
-    justify-content: flex-start;
+  .index-workflow-section .step-number-block {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    padding-top: 0;
+  }
+
+  .index-workflow-section .step-number {
+    font-size: 36px;
+    opacity: 0.15;
+  }
+
+  .index-workflow-section .step-content {
+    flex-direction: row;
+    gap: 14px;
+    padding-bottom: 36px;
     margin-bottom: 0;
   }
 
-  .index-workflow-section .wf-step-content-col {
-    grid-column: 1;
-    grid-row: auto;
-    padding-inline-end: 0;
+  .index-workflow-section .step-image-thumb {
+    width: 72px;
+    height: 72px;
   }
 
-  .index-workflow-section .wf-step-thumb {
-    width: 100%;
-    height: 200px;
-  }
-
-  .index-workflow-section .wf-step-number {
-    font-size: 2.2rem;
-  }
-
-  .index-workflow-section .wf-step-desc {
-    max-width: 100%;
-  }
-
-  .index-workflow-section .wf-glow-decoration {
-    width: 220px;
-    height: 220px;
-    top: -40px;
+  .index-workflow-section .step-title {
+    font-size: 1.1rem;
   }
 }
 </style>
@@ -1803,78 +1760,82 @@
 
 <section class="index-workflow-section" data-layout-spec="בית-workflow" dir="rtl" data-zappy-section="true" id="zappy-section-3">
   <!-- Decorative radial glow -->
-  <div class="wf-glow-decoration" aria-hidden="true"></div>
+  <div class="workflow-glow-decoration" aria-hidden="true"></div>
 
-  <div class="wf-container">
+  <div class="workflow-container">
 
     <!-- Section Header -->
-    <div class="wf-header">
-      <span class="wf-badge" data-i18n="home_p_45">תהליך העבודה</span>
-      <h2 class="wf-headline" data-i18n="home_h2_6">שלושה צעדים פשוטים לגימור מרצפות מושלם</h2>
-      <p class="wf-intro" data-i18n="home_p_46">Groutbot מתאים בצורה טבעית לצוותים המכירים עבודות ריצוף — ללא עקומת למידה תלולה, ללא בזבוז חומר, ורק תוצאות עקביות ומקצועיות בכל פרויקט.</p>
+    <div class="workflow-header">
+      <span class="workflow-eyebrow" data-i18n="home_p_45">תהליך העבודה</span>
+      <h2 class="workflow-title" data-i18n="home_h2_6">שלושה צעדים פשוטים לגימור מרצפות מושלם</h2>
+      <p class="workflow-subtitle" data-i18n="home_p_46">Groutbot מתאים בצורה טבעית לצוותים המכירים עבודות ריצוף — ללא עקומת למידה תלולה, ללא בזבוז חומר, ורק תוצאות עקביות ומקצועיות בכל פרויקט.</p>
     </div>
 
     <!-- Steps -->
-    <div class="wf-steps">
+    <div class="workflow-steps">
 
       <!-- Step 1 -->
-      <article class="wf-step">
-        <div class="wf-step-number-col">
-          <div class="wf-step-number">01</div>
-          <div class="wf-step-line" aria-hidden="true"></div>
+      <article class="workflow-step">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_352">
+            <span class="step-label">שלב ראשון</span>
+            <span class="step-number">01</span>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
         </div>
-        <div class="wf-step-image-col">
-          <div class="wf-step-thumb">
-            <img alt="טעינת חומר הרובה למכשיר Groutbot" width="220" height="160" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="טעינת חומר הרובה למכשיר Groutbot" width="90" height="90" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_14">טוענים את החומר</h3>
+            <p class="step-desc" data-i18n="home_p_47">הכניסו את מחסנית הרובה למכשיר בתנועה אחת פשוטה. המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.</p>
           </div>
         </div>
-        <div class="wf-step-content-col">
-          <span class="wf-step-label" data-i18n="home_div_125">שלב ראשון</span>
-          <h3 class="wf-step-title" data-i18n="home_h3_14">טוענים את החומר</h3>
-          <p class="wf-step-desc" data-i18n="home_p_47">הכניסו את מחסנית הרובה למכשיר בתנועה אחת פשוטה. המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.</p>
-        </div>
       </article>
-
-      <div class="wf-divider" aria-hidden="true"></div>
 
       <!-- Step 2 -->
-      <article class="wf-step">
-        <div class="wf-step-number-col">
-          <div class="wf-step-number">02</div>
-          <div class="wf-step-line" aria-hidden="true"></div>
-        </div>
-        <div class="wf-step-image-col">
-          <div class="wf-step-thumb">
-            <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" width="220" height="160" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      <article class="workflow-step">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_353">
+            <span class="step-label">שלב שני</span>
+            <span class="step-number">02</span>
           </div>
+          <div class="step-connector" aria-hidden="true"></div>
         </div>
-        <div class="wf-step-content-col">
-          <span class="wf-step-label" data-i18n="home_div_127">שלב שני</span>
-          <h3 class="wf-step-title" data-i18n="home_h3_15">מנחים לאורך המפגש</h3>
-          <p class="wf-step-desc" data-i18n="home_p_49">הנחו את ראש ההזרקה לאורך פגז הרובה בין האריחים. מנגנון ההזרקה החשמלי מספק לחץ אחיד ורציף — מכשיר הזרקת רובה חשמלי למרצפות שמבטיח עומק ומילוי מדויק בכל קו.</p>
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" width="90" height="90" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_15">מנחים לאורך המפגש</h3>
+            <p class="step-desc" data-i18n="home_p_49">הנחו את ראש ההזרקה לאורך פגז הרובה בין האריחים. מנגנון ההזרקה החשמלי מספק לחץ אחיד ורציף — מכשיר הזרקת רובה חשמלי למרצפות שמבטיח עומק ומילוי מדויק בכל קו.</p>
+          </div>
         </div>
       </article>
 
-      <div class="wf-divider" aria-hidden="true"></div>
-
       <!-- Step 3 -->
-      <article class="wf-step wf-step--last">
-        <div class="wf-step-number-col">
-          <div class="wf-step-number">03</div>
-        </div>
-        <div class="wf-step-image-col">
-          <div class="wf-step-thumb">
-            <img alt="גימור נקי ואחיד של הרובה בין המרצפות" width="220" height="160" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      <article class="workflow-step workflow-step--last">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_354">
+            <span class="step-label">שלב שלישי</span>
+            <span class="step-number">03</span>
           </div>
         </div>
-        <div class="wf-step-content-col">
-          <span class="wf-step-label" data-i18n="home_div_128">שלב שלישי</span>
-          <h3 class="wf-step-title" data-i18n="home_h3_16">גימור נקי ועקבי</h3>
-          <p class="wf-step-desc" data-i18n="home_p_50">התוצאה: קווי רובה אחידים, פחות פסולת, ופחות זמן ניקיון. Groutbot מצמצם את המאמץ הידני ומאפשר לצוות להתקדם מהר יותר — בלי להתפשר על איכות הגימור.</p>
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="גימור נקי ואחיד של הרובה בין המרצפות" width="90" height="90" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_16">גימור נקי ועקבי</h3>
+            <p class="step-desc" data-i18n="home_p_50">התוצאה: קווי רובה אחידים, פחות פסולת, ופחות זמן ניקיון. Groutbot מצמצם את המאמץ הידני ומאפשר לצוות להתקדם מהר יותר — בלי להתפשר על איכות הגימור.</p>
+          </div>
         </div>
       </article>
 
     </div>
+    <!-- /steps -->
+
   </div>
 </section>
 
@@ -2006,6 +1967,8 @@
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
@@ -2510,6 +2473,9 @@
       "new_div_332": "לחץ אחיד ומדויק\n            זרימת רובה קבועה ואחידה לאורך כל השורה — ללא כיסים ריקים",
       "new_div_334": "תואם לקרטושים סטנדרטיים\n            עובד עם כל קרטושי הרובה הנפוצים בשוק — ללא התאמות מיוחדות",
       "new_div_336": "קל משקל ונייד לאתר\n            עיצוב ארגונומי מאפשר עבודה ממושכת ללא עייפות — מושלם לאתרי בנייה",
+      "new_div_352": "<span class=\"step-label\">שלב ראשון</span>\n            <span class=\"step-number\">01</span>",
+      "new_div_353": "<span class=\"step-label\">שלב שני</span>\n            <span class=\"step-number\">02</span>",
+      "new_div_354": "<span class=\"step-label\">שלב שלישי</span>\n            <span class=\"step-number\">03</span>",
       "terms_h2_10": "9. שינוי תנאי השימוש",
       "terms_h2_11": "10. סיום השירות",
       "terms_h2_12": "11. דין חל ויישוב סכסוכים",
@@ -3250,6 +3216,9 @@
       "new_div_332": "<strong>Uniform and Precise Pressure</strong>\n            <span>Consistent and uniform grout flow along the entire line — without empty pockets</span>",
       "new_div_334": "<strong>Compatible with Standard Cartridges</strong>\n            <span>Works with all common grout cartridges on the market — no special adaptations needed</span>",
       "new_div_336": "<strong>Lightweight and Site-Portable</strong>\n            <span>Ergonomic design enables extended work without fatigue — perfect for construction sites</span>",
+      "new_div_352": "<span class=\"step-label\">First Step</span>\n            <span class=\"step-number\">01</span>",
+      "new_div_353": "<span class=\"step-label\">Second Step</span>\n            <span class=\"step-number\">02</span>",
+      "new_div_354": "<span class=\"step-label\">Third Step</span>\n            <span class=\"step-number\">03</span>",
       "terms_h2_10": "9. Modification of Terms of Use",
       "terms_h2_11": "10. Service Termination",
       "terms_h2_12": "11. Applicable Law and Dispute Resolution",
