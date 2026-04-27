@@ -9799,6 +9799,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
   gap: 0 24px !important;
   align-items: flex-start !important;
 }
+
+.about-story-section .about-story-pullquote {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
