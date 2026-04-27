@@ -9763,6 +9763,42 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
   font-size: 16px !important;
   line-height: 1.7 !important;
 }
+
+.index-workflow-section .step-image-thumb {
+  width: 352px !important;
+  height: 352px !important;
+  flex-shrink: 0;
+  border-radius: 14px;
+}
+
+.index-workflow-section .step-image-thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 14px;
+}
+
+.index-workflow-section .step-title {
+  font-size: 0.95rem !important;
+  margin: 0 0 6px !important;
+}
+
+.index-workflow-section .step-desc {
+  font-size: 0.82rem !important;
+  line-height: 1.5 !important;
+}
+
+.index-workflow-section .step-content {
+  gap: 12px !important;
+  padding-bottom: 40px !important;
+  align-items: flex-start;
+}
+
+.index-workflow-section .workflow-step {
+  grid-template-columns: 370px 1fr !important;
+  gap: 0 24px !important;
+  align-items: flex-start !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
