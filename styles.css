@@ -9926,6 +9926,38 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
   height: auto !important;
   padding: 4px 6px !important;
 }
+
+.site-footer .footer-social a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  transition: background 0.2s ease;
+}
+
+.site-footer .footer-social a:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.site-footer .footer-social a[aria-label="WhatsApp"] i {
+  font-size: 18px !important;
+  color: #25D366 !important;
+}
+
+.site-footer .footer-social a[aria-label="LinkedIn"] i {
+  font-size: 18px !important;
+  color: #e0dada !important;
+}
+
+.site-footer .footer-social {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
