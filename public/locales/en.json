@@ -240,7 +240,7 @@
   "new_div_321": "<span class=\"index-workflow-step-num\">01</span>\n            <span class=\"index-workflow-step-label\">First Step</span>",
   "new_div_322": "<span class=\"index-workflow-step-num\">02</span>\n            <span class=\"index-workflow-step-label\">Second Step</span>",
   "new_div_323": "<span class=\"index-workflow-step-num\">03</span>\n            <span class=\"index-workflow-step-label\">Third Step</span>",
-  "new_div_324": "<span class=\"groutbot-intro__badge-icon\">⚡</span>\n          <span class=\"groutbot-intro__badge-text\">100% Electric</span>",
+  "new_div_324": "⚡\n100% Electric",
   "new_div_326": "Meet the Product",
   "new_div_330": "<strong>Automatic Electric Injection</strong>\n            <span>Powerful electric motor completely replaces manual work</span>",
   "new_div_332": "<strong>Uniform and Precise Pressure</strong>\n            <span>Consistent and uniform grout flow along the entire line — without empty pockets</span>",
