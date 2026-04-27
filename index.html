@@ -2138,7 +2138,7 @@
   </div>
 </section>
 
-<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" id="index-cta-section" style="direction: rtl; position: relative; overflow: hidden; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(44, 36, 30); background-image: none; color: rgb(255, 255, 255); padding: 96px 24px; font-family: Inter, sans-serif; --zappy-bg-color: #2C241E;" data-zappy-bg-color="#2C241E" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-bg-type="color">
+<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" id="index-cta-section" style="direction: rtl; position: relative; overflow: hidden; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(44, 36, 30); background-image: none; color: rgb(255, 255, 255); padding: 96px 24px; font-family: Inter, sans-serif; --zappy-bg-color: #2C241E;" data-zappy-bg-color="#2C241E" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-bg-type="color" data-zappy-animate="fade-in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0s">
 
   <div style="--zappy-grid-cols: 1fr 420px; position:relative;z-index:1;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:64px;align-items: stretch !important;direction:rtl;" data-zappy-explicit-columns="true" id="zappy-auto-grid-1777324736083-rl7eve" data-zappy-auto-grid="true" class="zappy-preserve-css-grid" data-zappy-grid-align="center" data-original-item-width="689" data-original-gap="64px">
 
@@ -2584,6 +2584,27 @@
 
 
 
+
+<script data-zappy-animation-observer="">(function() {
+  if (window.__zappyAnimObserver) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var anim = el.getAttribute('data-zappy-animate');
+        var dur = el.getAttribute('data-zappy-anim-duration') || '0.6s';
+        var del = el.getAttribute('data-zappy-anim-delay') || '0s';
+        el.style.animation = 'zappy-' + anim + ' ' + dur + ' ' + del + ' ease forwards';
+        el.classList.add('zappy-animated');
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('[data-zappy-animate]').forEach(function(el) {
+    observer.observe(el);
+  });
+  window.__zappyAnimObserver = observer;
+})();</script>
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -3108,7 +3129,7 @@
       "contact_link_65": "נוצר באמצעות Zappy",
       "contact_span_39": "מענה מקצועי תוך יום עסקים",
       "contact_span_43": "מה קורה אחרי שיוצרים קשר",
-      "contact_span_44": "<font color=\"#ffffff\">הזדמנות השקעה</font>",
+      "contact_span_44": "הזדמנות השקעה",
       "home_page_title": "מכשיר הזרקת רובה חשמלי למרצפות — Groutbot",
       "privacy_link_32": "groutbot@gmail.com",
       "privacy_link_33": "אודות",
