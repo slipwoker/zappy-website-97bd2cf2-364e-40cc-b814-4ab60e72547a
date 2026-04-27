@@ -9837,6 +9837,45 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
   border-radius: 12px;
   padding: 14px 16px;
 }
+
+#groutbot-intro .groutbot-intro__headline {
+  color: var(--background-color) !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5) !important;
+}
+
+#groutbot-intro .groutbot-intro__subtext {
+  color: rgba(226, 232, 240, 0.92) !important;
+}
+
+#groutbot-intro .groutbot-intro__eyebrow {
+  color: #93C5FD !important;
+  background: rgba(147, 197, 253, 0.15) !important;
+  border: 1px solid rgba(147, 197, 253, 0.35) !important;
+  border-radius: 999px !important;
+  padding: 5px 16px !important;
+  display: inline-block !important;
+}
+
+#groutbot-intro .groutbot-intro__feature-text {
+  color: #E2E8F0 !important;
+}
+
+#groutbot-intro .groutbot-intro__feature-item {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  border-radius: 12px !important;
+  padding: 14px 16px !important;
+}
+
+#groutbot-intro .groutbot-intro__image-badge {
+  background: rgba(29, 78, 216, 0.9) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+#groutbot-intro .groutbot-intro__cta {
+  background-color: var(--secondary-color) !important;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.45) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
