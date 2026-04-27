@@ -9125,6 +9125,42 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
 .index-workflow-section .step-color-label {
   color: var(--text-color) !important;
 }
+
+#ai-section-1776609854290-e93couh .gp-hero-overlay {
+  background: linear-gradient(120deg, rgba(10,20,50,0.55) 30%, rgba(10,20,50,0.25) 100%) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-hero-title {
+  color: var(--background-color) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-hero-sub {
+  color: rgba(255,255,255,0.90) !important;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.30) !important;
+}
+
+#ai-section-1776609854290-e93couh .gp-pain-section,
+.groutbot-problem-section .gp-pain-section {
+  background: var(--background-color) !important;
+}
+
+.groutbot-problem-section .gp-pain-card {
+  background: var(--surface-color) !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+.groutbot-problem-section .gp-pain-text h4 {
+  color: var(--text-color) !important;
+}
+
+.groutbot-problem-section .gp-pain-text p {
+  color: var(--text-secondary-color) !important;
+}
+
+.groutbot-problem-section .gp-pain-label h3 {
+  color: var(--text-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
