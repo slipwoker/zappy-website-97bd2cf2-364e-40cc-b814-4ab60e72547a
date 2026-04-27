@@ -1173,52 +1173,46 @@ html[dir="rtl"] body {
 </script>
 <!-- ZAPPY_INTEGRATION_END analytics:add_google_analytics -->
   
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-features-section {
   position: relative;
-  background-color: #0F172A;
+  background-color: #F8F3EA;
   background-image:
-    radial-gradient(ellipse at 15% 20%, rgba(37,99,235,0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 75%, rgba(14,165,233,0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(245,158,11,0.05) 0%, transparent 60%),
-    linear-gradient(180deg, #0F172A 0%, #0a1020 100%);
-  color: var(--text-light);
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.9) 0, rgba(255,255,255,0) 42%),
+    radial-gradient(circle at 80% 30%, rgba(214,195,168,0.18) 0, rgba(214,195,168,0) 38%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.45) 0, rgba(255,255,255,0) 46%);
+  color: var(--text-dark);
   padding: 100px 24px 80px;
   overflow: visible;
   direction: rtl;
 }
 
-.index-features-section .index-features-bg-layer {
+/* Decorative glow */
+.index-features-section .index-features-glow {
   position: absolute;
-  inset: 0;
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 59px,
-      rgba(255,255,255,0.025) 59px,
-      rgba(255,255,255,0.025) 60px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 59px,
-      rgba(255,255,255,0.025) 59px,
-      rgba(255,255,255,0.025) 60px
-    );
+  top: -80px;
+  inset-inline-end: 8%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(120,118,61,0.12) 0%, transparent 70%);
+  border-radius: 50%;
   pointer-events: none;
   z-index: 0;
+  aria-hidden: true;
 }
 
+/* Container */
 .index-features-section .index-features-container {
-  position: relative;
-  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-/* ── Header ── */
+/* Header */
 .index-features-section .index-features-header {
   text-align: center;
   max-width: 720px;
@@ -1230,221 +1224,222 @@ html[dir="rtl"] body {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(245,158,11,0.12);
-  border: 1px solid rgba(245,158,11,0.3);
+  color: #78763D;
+  background: rgba(120,118,61,0.1);
+  border: 1px solid rgba(120,118,61,0.22);
   border-radius: 999px;
-  padding: 6px 18px;
-  margin-bottom: 22px;
+  padding: 5px 16px;
+  margin-bottom: 18px;
 }
 
 .index-features-section .index-features-title {
-  font-family: 'Manrope', 'Georgia', serif;
-  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--text-light);
-  margin: 0 0 20px;
   letter-spacing: -0.01em;
+  color: #2D2A26;
+  margin: 0 0 20px;
 }
 
-.index-features-section .index-features-subtitle {
+.index-features-section .index-features-intro {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  line-height: 1.75;
-  color: rgba(248,250,252,0.65);
+  line-height: 1.7;
+  color: #4A443D;
   margin: 0;
   text-align: center;
 }
 
-/* ── Grid ── */
+/* Features Grid */
 .index-features-section .index-features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
   margin-bottom: 56px;
   direction: rtl;
 }
 
-/* ── Card ── */
+/* Feature Card */
 .index-features-section .index-feature-card {
   position: relative;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
-  padding: 32px 24px 28px;
+  background: rgba(255,252,247,0.94);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(101,78,52,0.14);
+  border: 1px solid rgba(226,215,200,0.7);
+  padding: 36px 32px 40px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-  cursor: default;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .index-features-section .index-feature-card:hover {
-  transform: translateY(-6px);
-  background: rgba(255,255,255,0.07);
-  border-color: rgba(245,158,11,0.35);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(245,158,11,0.15);
+  box-shadow: 0 16px 40px rgba(101,78,52,0.18);
+  transform: translateY(-3px);
 }
 
-.index-features-section .index-feature-card-accent {
+/* Feature Number (decorative) */
+.index-features-section .index-feature-number {
   position: absolute;
-  top: 0;
-  inset-inline-start: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  bottom: 18px;
+  inset-inline-start: 24px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(120,118,61,0.08);
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.03em;
 }
 
-.index-features-section .index-feature-card:hover .index-feature-card-accent {
-  opacity: 1;
-}
-
+/* Icon wrap */
 .index-features-section .index-feature-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 14px;
-  background: rgba(245,158,11,0.12);
-  border: 1px solid rgba(245,158,11,0.25);
-  color: var(--accent);
-  margin-bottom: 22px;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(120,118,61,0.12) 0%, rgba(120,118,61,0.05) 100%);
+  border: 1px solid rgba(120,118,61,0.18);
+  color: #78763D;
+  flex-shrink: 0;
 }
 
-.index-features-section .index-feature-card:hover .index-feature-icon-wrap {
-  background: rgba(245,158,11,0.2);
-  border-color: rgba(245,158,11,0.45);
+.index-features-section .index-feature-icon-wrap svg {
+  display: block;
 }
 
+/* Feature content */
 .index-features-section .index-feature-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex: 1;
 }
 
 .index-features-section .index-feature-title {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.4;
-  color: var(--text-light);
-  margin: 0;
+  line-height: 1.3;
+  color: #2D2A26;
+  margin: 0 0 10px;
   text-align: right;
 }
 
 .index-features-section .index-feature-desc {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
-  color: rgba(248,250,252,0.6);
+  color: #4A443D;
   margin: 0;
   text-align: right;
 }
 
-/* ── Stats Bar ── */
-.index-features-section .index-features-stats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 16px;
-  padding: 40px 32px;
-  direction: rtl;
-  flex-wrap: wrap;
+/* Image Strip */
+.index-features-section .index-features-image-strip {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(101,78,52,0.22);
+  height: 340px;
 }
 
-.index-features-section .index-stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-  min-width: 160px;
-  padding: 0 24px;
+.index-features-section .index-features-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
 }
 
-.index-features-section .index-stat-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-  background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
+.index-features-section .index-features-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(45,42,38,0.72) 0%,
+    rgba(45,42,38,0.18) 50%,
+    transparent 100%
+  );
+  border-radius: 4px;
+  pointer-events: none;
 }
 
-.index-features-section .index-stat-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(248,250,252,0.6);
-  text-align: center;
-  letter-spacing: 0.02em;
+.index-features-section .index-features-img-caption {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  padding: 20px 32px;
+  z-index: 2;
 }
 
-.index-features-section .index-stat-divider {
-  width: 1px;
-  height: 60px;
-  background: rgba(255,255,255,0.12);
-  flex-shrink: 0;
+.index-features-section .index-features-img-caption span {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #F8F3EA;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-align: right;
+  display: block;
 }
 
-/* ── Responsive ── */
+/* ─── Tablet ─── */
 @media (max-width: 1024px) {
+  .index-features-section {
+    padding: 80px 20px 60px;
+  }
   .index-features-section .index-features-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .index-features-section .index-feature-card {
+    padding: 28px 24px 36px;
   }
 }
 
+/* ─── Mobile ─── */
 @media (max-width: 768px) {
   .index-features-section {
-    padding: 100px 16px 60px;
+    padding: 100px 16px 56px;
   }
-
   .index-features-section .index-features-header {
     margin-bottom: 40px;
   }
-
   .index-features-section .index-features-title {
-    font-size: 1.6rem;
+    font-size: 26px;
   }
-
   .index-features-section .index-features-grid {
     grid-template-columns: 1fr !important;
     gap: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
-
   .index-features-section .index-feature-card {
-    padding: 24px 20px;
+    padding: 24px 20px 32px;
   }
-
-  .index-features-section .index-features-stats {
-    flex-direction: column;
-    gap: 32px;
-    padding: 32px 24px;
+  .index-features-section .index-feature-number {
+    font-size: 40px;
+    bottom: 12px;
+    inset-inline-start: 16px;
   }
-
-  .index-features-section .index-stat-divider {
-    width: 60px;
-    height: 1px;
+  .index-features-section .index-features-image-strip {
+    height: 220px;
   }
-
-  .index-features-section .index-stat-number {
-    font-size: 2.4rem;
+  .index-features-section .index-features-img-caption {
+    padding: 14px 18px;
   }
-
-  .index-features-section .index-stat-item {
-    padding: 0;
+  .index-features-section .index-features-img-caption span {
+    font-size: 15px;
+  }
+  .index-features-section .index-features-glow {
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    inset-inline-end: 0;
   }
 }
 </style>
@@ -2384,7 +2379,7 @@ html[dir="rtl"] body {
     <div class="gp-hero-content">
       <span class="gp-eyebrow">GROUTBOT — מכונה חשמלית להזרקת רובה בין מרצפות</span>
       <h1 class="gp-hero-title">הבעיה שאנחנו פותרים — והשוק שמחכה לפתרון</h1>
-      <p class="gp-hero-sub">מצוקת כוח האדם בענף הבנייה, שחיקת הפועלים והעלויות הגבוהות — אלו כאבים אמיתיים שהתעשייה מחפשת להם פתרון.&nbsp;</p>
+      <p class="gp-hero-sub">מצוקת כוח האדם בענף הבנייה, שחיקת הפועלים והעלויות הגבוהות — אלו כאבים אמיתיים שהתעשייה מחפשת להם פתרון.</p>
     </div>
   </div>
 
@@ -2392,7 +2387,7 @@ html[dir="rtl"] body {
   <div class="gp-pain-section">
     <div class="gp-pain-label">
       <span class="badge">⚠️ המצב הנוכחי</span>
-      <h3><font color="#ffffff">האתגרים של השיטה הקיימת הידנית</font></h3>
+      <h3>האתגרים של השיטה הקיימת הידנית</h3>
     </div>
     <div class="gp-pain-grid">
       <div class="gp-pain-card">
@@ -2576,80 +2571,100 @@ html[dir="rtl"] body {
 
 
 
-<section class="index-features-section" data-layout-spec="בית-features" dir="rtl" data-zappy-section="true" id="index-features-section" style="direction: rtl;">
-  <div class="index-features-bg-layer"></div>
+<section class="index-features-section" data-layout-spec="בית-features" dir="rtl" data-zappy-section="true" id="index-features-section">
+  <!-- Decorative radial glow -->
+  <div class="index-features-glow" aria-hidden="true"></div>
 
   <div class="index-features-container">
 
-    <!-- Header -->
-    <div class="index-features-header">
-      <p><font color="#808000">אב-הטיפוס בפעולה</font></p><h2 class="index-features-title">היתרון הטכנולוגי — הבסיס לצמיחה</h2>
-      <p class="index-features-subtitle">תוכנית הפיתוח של Groutbot מגובשת לפרטי פרטים. הטכנולוגיות מבוססות על מחקר ובדיקות מוקדמות המוכיחות יתרון ברור ומדיד על פני כל פתרון קיים — וזהו הבסיס להשקעה בעלת פוטנציאל גבוה.</p>
-    </div>
+    <!-- Section Header -->
+    <header class="index-features-header">
+      <span class="index-features-eyebrow"><font color="#808000">אב-הטיפוס בפעולה</font></span>
+      <h2 class="index-features-title">היתרון הטכנולוגי — הבסיס לצמיחה</h2>
+      <p class="index-features-intro">תוכנית הפיתוח של Groutbot מגובשת לפרטי פרטים. הטכנולוגיות מבוססות על מחקר ובדיקות מוקדמות המוכיחות יתרון ברור ומדיד על פני כל פתרון קיים — וזהו הבסיס להשקעה בעלת פוטנציאל גבוה.</p>
+    </header>
 
-    <!-- Feature Cards Grid -->
-    <div class="index-features-grid zappy-preserve-css-grid" id="zappy-auto-grid-1776680911390-4a1ci9" data-zappy-auto-grid="true" data-original-item-width="575" data-original-gap="24px" style="display: grid; --zappy-grid-cols: 574.667px 574.667px; grid-template-columns: 574.667px 574.667px; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <!-- Features Grid -->
+    <div class="index-features-grid">
 
-      <article class="index-feature-card" style="direction: rtl;" data-grid-item-index="0">
+      <!-- Feature 1 -->
+      <article class="index-feature-card">
         <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 6v8M24 34v8M6 24h8M34 24h8"></path>
+            <circle cx="24" cy="24" r="8"></circle>
+            <path d="M10.1 10.1l5.66 5.66M32.24 32.24l5.66 5.66M37.9 10.1l-5.66 5.66M15.76 32.24l-5.66 5.66"></path>
           </svg>
         </div>
         <div class="index-feature-content">
           <h3 class="index-feature-title">זרימה חשמלית מבוקרת</h3>
           <p class="index-feature-desc">מנגנון ההזרקה החשמלי מספק לחץ אחיד ומדויק לאורך כל הפוגה — ללא עייפות, ללא חוסר עקביות. כמות הרובה המוזרקת נשלטת בצורה מדויקת בכל מעבר.</p>
         </div>
-        <div class="index-feature-card-accent"></div>
+        <div class="index-feature-number" aria-hidden="true">01</div>
       </article>
 
-      <article class="index-feature-card" style="direction: rtl;" data-grid-item-index="1">
+      <!-- Feature 2 -->
+      <article class="index-feature-card">
         <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-            <path d="M3 9h18M3 15h18M9 3v18M15 3v18"></path>
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="6" width="36" height="36" rx="3"></rect>
+            <line x1="6" y1="18" x2="42" y2="18"></line>
+            <line x1="6" y1="30" x2="42" y2="30"></line>
+            <line x1="18" y1="6" x2="18" y2="42"></line>
+            <line x1="30" y1="6" x2="30" y2="42"></line>
           </svg>
         </div>
         <div class="index-feature-content">
           <h3 class="index-feature-title">פוגות נקיות ואחידות</h3>
           <p class="index-feature-desc">הרובה מוזרק ישירות לתוך הפוגה בעומק ובמילוי אחיד, ללא עודפים מיותרים על פני האריח. הגימור הסופי נראה מקצועי, נקי ועמיד לאורך זמן.</p>
         </div>
-        <div class="index-feature-card-accent"></div>
+        <div class="index-feature-number" aria-hidden="true">02</div>
       </article>
 
-      <article class="index-feature-card" style="direction: rtl;" data-grid-item-index="2">
+      <!-- Feature 3 -->
+      <article class="index-feature-card">
         <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 10c-7.732 0-14 6.268-14 14s6.268 14 14 14 14-6.268 14-14"></path>
+            <path d="M30 10l8 0 0 8"></path>
+            <path d="M38 10l-8 8"></path>
+            <path d="M20 24l3 3 6-6"></path>
           </svg>
         </div>
         <div class="index-feature-content">
           <h3 class="index-feature-title">הפחתת עומס על הפועל</h3>
           <p class="index-feature-desc">תהליך הרובה הידני דורש מאמץ פיזי רב וגורם לעייפות מצטברת. Groutbot לוקח על עצמו את העבודה הפיזית, מאפשר לצוות לעבוד מהר יותר ולאורך שעות ארוכות יותר ללא פגיעה בבריאות.</p>
         </div>
-        <div class="index-feature-card-accent"></div>
+        <div class="index-feature-number" aria-hidden="true">03</div>
       </article>
 
-      <article class="index-feature-card" style="direction: rtl;" data-grid-item-index="3">
+      <!-- Feature 4 -->
+      <article class="index-feature-card">
         <div class="index-feature-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="10" y="14" width="20" height="28" rx="2"></rect>
+            <path d="M30 20h4a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-4"></path>
+            <path d="M14 8h12"></path>
+            <path d="M20 8v6"></path>
+            <circle cx="20" cy="32" r="3"></circle>
           </svg>
         </div>
         <div class="index-feature-content">
           <h3 class="index-feature-title">מוכן לאתר הבנייה</h3>
           <p class="index-feature-desc">המכשיר תוכנן לעמוד בתנאי שטח קשים — קומפקטי, קל לנשיאה ועמיד לאבק ולחות. מעבר מהיר בין אזורי עבודה, הפעלה פשוטה וניקוי קל בסיום המשמרת.</p>
         </div>
-        <div class="index-feature-card-accent"></div>
+        <div class="index-feature-number" aria-hidden="true">04</div>
       </article>
 
     </div>
+    <!-- /Features Grid -->
 
-    <!-- Stats Bar -->
-    
+    <!-- Bottom image strip -->
+    <div class="index-features-image-strip">
+      <img data-placeholder="index-features-image-1" data-context="Professional construction worker using an electric grout injection device between floor tiles on a modern construction site. The device is compact and handheld, injecting white grout precisely into tile joints. The scene shows clean, uniform grout lines on large format floor tiles. Warm, professional lighting with a sense of precision and craftsmanship." width="1200" height="420" src="" alt="מכשיר Groutbot להזרקת רובה בין אריחי רצפה באתר בנייה" class="index-features-main-img" style="object-fit: cover; object-position: center;">
+      <div class="index-features-img-overlay" aria-hidden="true"></div>
+      <div class="index-features-img-caption"><span>טכנולוגיה מדויקת — תוצאות מקצועיות</span></div>
+    </div>
 
   </div>
 </section>
@@ -2824,6 +2839,8 @@ html[dir="rtl"] body {
   <script src="/script.js"></script>
 
     <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
