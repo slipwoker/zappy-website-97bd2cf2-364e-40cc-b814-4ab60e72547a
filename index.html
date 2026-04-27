@@ -229,264 +229,278 @@
   position: relative;
   background-color: #F8F3EA;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0) 44%),
-    radial-gradient(circle at 85% 75%, rgba(214,195,168,0.22) 0%, rgba(214,195,168,0) 40%),
-    linear-gradient(180deg, #FBF7F0 0%, #F1E8DB 100%);
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.9) 0, rgba(255,255,255,0) 42%),
+    radial-gradient(circle at 80% 30%, rgba(214,195,168,0.18) 0, rgba(214,195,168,0) 38%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,255,0.45) 0, rgba(255,255,255,0) 46%);
   color: var(--text-dark);
-  padding: 80px 20px 72px;
-  overflow: visible;
+  padding: 100px 24px 80px;
+  overflow: hidden;
   direction: rtl;
 }
 
-/* Decorative glow */
-.index-workflow-section .workflow-glow-top {
+/* Decorative radial glow */
+.index-workflow-section .workflow-glow-decoration {
   position: absolute;
-  top: -80px;
-  inset-inline-end: 60px;
+  top: -120px;
+  inset-inline-start: -100px;
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0) 70%);
+  background: radial-gradient(circle, rgba(29,78,216,0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.12;
+  aria-hidden: true;
 }
 
 /* Container */
 .index-workflow-section .workflow-container {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
+  max-width: 820px;
   margin: 0 auto;
 }
 
 /* Header */
 .index-workflow-section .workflow-header {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 56px;
+  margin-bottom: 64px;
 }
 
 .index-workflow-section .workflow-eyebrow {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  background: rgba(214,195,168,0.35);
-  border: 1px solid rgba(214,195,168,0.6);
+  color: var(--primary);
+  background: rgba(29,78,216,0.08);
+  border: 1px solid rgba(29,78,216,0.18);
   border-radius: 999px;
   padding: 5px 16px;
   margin-bottom: 18px;
 }
 
 .index-workflow-section .workflow-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 32px;
+  font-family: Manrope, Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.3;
   color: #2D2A26;
   letter-spacing: -0.01em;
   margin: 0 0 18px;
+  max-width: none !important;
 }
 
 .index-workflow-section .workflow-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #4A443D;
-  margin: 0;
+  max-width: 580px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* Steps grid */
+/* Steps wrapper */
 .index-workflow-section .workflow-steps {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  align-items: start;
-  direction: rtl;
-}
-
-/* Connector lines (desktop) */
-.index-workflow-section .workflow-connector {
-  display: none;
-}
-
-@media (min-width: 900px) {
-  .index-workflow-section .workflow-connector {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 44px;
-    width: calc(33.333% - 80px);
-    z-index: 2;
-    pointer-events: none;
-    gap: 4px;
-  }
-
-  .index-workflow-section .connector-1 {
-    inset-inline-end: calc(66.666% + 16px);
-  }
-
-  .index-workflow-section .connector-2 {
-    inset-inline-end: calc(33.333% + 16px);
-  }
-
-  .index-workflow-section .connector-arrow {
-    font-size: 16px;
-    color: #C4A882;
-    line-height: 1;
-    flex-shrink: 0;
-  }
-}
-
-/* Cards */
-.index-workflow-section .workflow-card {
-  background: rgba(255, 252, 247, 0.94);
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(101, 78, 52, 0.14);
-  border: 1px solid rgba(226, 215, 200, 0.7);
-  padding: 28px 26px 26px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  gap: 0;
+}
+
+/* Single step row */
+.index-workflow-section .workflow-step {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0 28px;
+  align-items: stretch;
   position: relative;
-  overflow: hidden;
-  min-width: 0;
 }
 
-.index-workflow-section .workflow-card:hover {
-  box-shadow: 0 16px 40px rgba(101, 78, 52, 0.2);
-  transform: translateY(-3px);
-}
-
-.index-workflow-section .workflow-card--accent {
-  background: linear-gradient(145deg, rgba(255,252,247,0.98) 0%, rgba(248,240,228,0.98) 100%);
-  border-color: rgba(197, 106, 61, 0.25);
-}
-
-.index-workflow-section .workflow-card--accent::before {
-  content: '';
-  position: absolute;
-  inset-inline-end: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, #D9794A 0%, #BF6239 100%);
-  border-radius: 0 4px 4px 0;
-}
-
-/* Step badge row */
-.index-workflow-section .card-step-badge {
+/* Left column: number + connector */
+.index-workflow-section .step-left {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  gap: 0;
+}
+
+.index-workflow-section .step-number-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding-top: 4px;
 }
 
 .index-workflow-section .step-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--primary);
+  opacity: 0.75;
+  white-space: nowrap;
 }
 
 .index-workflow-section .step-number {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 28px;
+  font-family: Manrope, Georgia, serif;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1;
-  color: rgba(197, 106, 61, 0.22);
-  letter-spacing: -0.02em;
+  color: #2D2A26;
+  opacity: 0.12;
+  letter-spacing: -0.03em;
+  user-select: none;
 }
 
-/* Thumbnail */
-.index-workflow-section .card-thumb {
-  width: 56px;
-  height: 56px;
-  border-radius: 6px;
-  overflow: hidden;
+/* Vertical connector line */
+.index-workflow-section .step-connector {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(29,78,216,0.18) 0%, rgba(29,78,216,0.06) 100%);
+  margin: 8px 0;
+  min-height: 40px;
+}
+
+/* Right column: content */
+.index-workflow-section .step-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 0 52px;
+  border-bottom: 1px solid rgba(214,195,168,0.55);
+  margin-bottom: 0;
+}
+
+.index-workflow-section .workflow-step--last .step-content {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Thumbnail image */
+.index-workflow-section .step-image-thumb {
   flex-shrink: 0;
-  border: 1px solid rgba(226, 215, 200, 0.8);
-  background: #EDE4D8;
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(101,78,52,0.14);
+  border: 1px solid rgba(226,215,200,0.7);
+  background: rgba(255,252,247,0.94);
 }
 
-.index-workflow-section .card-thumb img {
+.index-workflow-section .step-image-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 10px;
 }
 
-/* Card body */
-.index-workflow-section .card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Text block */
+.index-workflow-section .step-text {
+  flex: 1;
+  padding-top: 4px;
 }
 
-.index-workflow-section .card-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 22px;
+.index-workflow-section .step-title {
+  font-family: Manrope, Georgia, 'Times New Roman', serif;
+  font-size: 1.375rem;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.4;
   color: #2D2A26;
-  margin: 0;
-  text-align: right;
+  margin: 0 0 10px;
+  text-align: start;
 }
 
-.index-workflow-section .card-desc {
-  font-family: 'Inter', sans-serif;
+.index-workflow-section .step-desc {
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #4A443D;
   margin: 0;
-  text-align: right;
+  text-align: start;
 }
 
-/* ── Responsive ── */
-@media (max-width: 899px) {
-  .index-workflow-section .workflow-steps {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 640px) {
+/* ─── RESPONSIVE ─── */
+@media (min-width: 768px) {
   .index-workflow-section {
-    padding: 60px 16px 56px;
-  }
-
-  .index-workflow-section .workflow-header {
-    margin-bottom: 36px;
+    padding: 100px 40px 90px;
   }
 
   .index-workflow-section .workflow-title {
-    font-size: 26px;
+    font-size: 2rem;
   }
 
-  .index-workflow-section .workflow-steps {
+  .index-workflow-section .step-number {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .index-workflow-section {
+    padding: 80px 16px 60px;
+  }
+
+  .index-workflow-section .workflow-header {
+    margin-bottom: 40px;
+  }
+
+  .index-workflow-section .workflow-title {
+    font-size: 1.5rem;
+  }
+
+  .index-workflow-section .workflow-subtitle {
+    font-size: 15px;
+  }
+
+  /* On mobile: collapse left column, go full width */
+  .index-workflow-section .workflow-step {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 0;
   }
 
-  .index-workflow-section .workflow-card {
-    padding: 22px 20px;
+  .index-workflow-section .step-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
   }
 
-  .index-workflow-section .workflow-card--accent::before {
-    width: 100%;
-    height: 4px;
-    top: 0;
-    inset-inline-end: 0;
-    border-radius: 4px 4px 0 0;
+  .index-workflow-section .step-connector {
+    display: none;
+  }
+
+  .index-workflow-section .step-number-block {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    padding-top: 0;
+  }
+
+  .index-workflow-section .step-number {
+    font-size: 36px;
+    opacity: 0.15;
+  }
+
+  .index-workflow-section .step-content {
+    flex-direction: row;
+    gap: 14px;
+    padding-bottom: 36px;
+    margin-bottom: 0;
+  }
+
+  .index-workflow-section .step-image-thumb {
+    width: 72px;
+    height: 72px;
+  }
+
+  .index-workflow-section .step-title {
+    font-size: 1.1rem;
   }
 }
 </style>
@@ -1063,7 +1077,7 @@
     <div class="groutbot-intro__image-side">
       <div class="groutbot-intro__image-wrapper">
         <div style="text-align: center; margin-bottom: 18px;">
-          <img src="/assets/groutbot-logo-1776624455925-pdf6yk.webp?v=1776624456364-lv07i8" alt="Groutbot" style="height: auto !important; width: 480px !important; object-fit: contain; display: inline-block; object-position: 50% 50%; max-width: none !important; max-height: none !important;" data-element-type="image" data-element-id="img-1777323004815-38m00oamr">
+          <img src="/assets/groutbot-logo-1776624455925-pdf6yk.webp?v=1776624456364-lv07i8" alt="Groutbot" style="height: 48px; width: auto; object-fit: contain; display: inline-block;">
         </div>
         <div data-zappy-zoom-wrapper="true" data-element-id="img-1777301060569-71snyb1nr" data-element-type="image" data-zappy-zoom-wrapper-width="480px" data-zappy-zoom-wrapper-height="480px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 480px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 480px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/image-groutbot-service-main-1777301351271-323yxq.webp?v=1777301355037" alt="מכונת Groutbot — מכשיר הזרקת רובה חשמלי צהוב לאתרי בנייה" class="groutbot-intro__product-image" data-placeholder="groutbot-product-main" data-element-type="image" data-element-id="img-1777301060569-71snyb1nr" style="display: block; border-radius: 8px; object-position: 50% 50% !important; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="480" data-zappy-original-height="480"></div>
         <div class="groutbot-intro__image-badge" aria-hidden="true" data-i18n="new_div_324">⚡<br>חשמלי 100%</div>
@@ -1749,81 +1763,81 @@
 
 <section class="index-workflow-section" data-layout-spec="בית-workflow" dir="rtl" data-zappy-section="true" id="zappy-section-3">
   <!-- Decorative radial glow -->
-  <div class="workflow-glow-top" aria-hidden="true"></div>
+  <div class="workflow-glow-decoration" aria-hidden="true"></div>
 
   <div class="workflow-container">
 
     <!-- Section Header -->
     <div class="workflow-header">
-      <span class="workflow-eyebrow" data-i18n="home_p_45">תהליך העבודה</span>
-      <h2 class="workflow-title" data-i18n="home_h2_6">שלושה צעדים פשוטים לגימור מרצפות מושלם</h2>
+      <p class="zappy-editable" data-i18n="home_p_45"><span class="workflow-eyebrow">תהליך העבודה</span>
+      </p><h2 class="workflow-title" data-i18n="home_h2_6">שלושה צעדים פשוטים לגימור מרצפות מושלם</h2>
       <p class="workflow-subtitle" data-i18n="home_p_46">Groutbot מתאים בצורה טבעית לצוותים המכירים עבודות ריצוף — ללא עקומת למידה תלולה, ללא בזבוז חומר, ורק תוצאות עקביות ומקצועיות בכל פרויקט.</p>
     </div>
 
-    <!-- Steps Row -->
+    <!-- Steps -->
     <div class="workflow-steps">
 
-      <!-- Connector lines (desktop only) -->
-      <div class="workflow-connector connector-1" aria-hidden="true">
-        <svg width="100%" height="2" viewBox="0 0 120 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
-          <line x1="0" y1="1" x2="120" y2="1" stroke="#D9C9B2" stroke-width="1.5" stroke-dasharray="6 4"></line>
-        </svg>
-        <span class="connector-arrow" aria-hidden="true">←</span>
-      </div>
-      <div class="workflow-connector connector-2" aria-hidden="true">
-        <svg width="100%" height="2" viewBox="0 0 120 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
-          <line x1="0" y1="1" x2="120" y2="1" stroke="#D9C9B2" stroke-width="1.5" stroke-dasharray="6 4"></line>
-        </svg>
-        <span class="connector-arrow" aria-hidden="true">←</span>
-      </div>
-
       <!-- Step 1 -->
-      <article class="workflow-card">
-        <div class="card-step-badge" data-i18n="new_div_352">
-          <span class="step-label">שלב ראשון</span>
-          <span class="step-number">01</span>
+      <article class="workflow-step zappy-grid-item-nested-grid" data-grid-item-index="0">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_352">
+            <span class="step-label">שלב ראשון</span>
+            <span class="step-number">01</span>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
         </div>
-        <div class="card-thumb">
-          <img alt="טעינת חומר הרובה למכשיר Groutbot" width="56" height="56" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="home_h3_14">טוענים את החומר</h3>
-          <p class="card-desc" data-i18n="new_p_355">מלאו את הרובה במחסנית המכשיר. המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.</p>
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="טעינת חומר הרובה למכשיר Groutbot" width="90" height="90" src="/assets/site-index-workflow-image-1-1776594255161-p484s5.webp?v=1776594257146" data-placeholder="index-workflow-image-1" data-context="Close-up of a construction worker loading grout material cartridge into an electric Groutbot device on a tiled floor, warm natural lighting, professional construction site, tactile materials" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;" data-element-type="image" data-element-id="img-1777322588536-ejvbse4m1">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_14">טוענים את החומר</h3>
+            <p class="step-desc" data-i18n="home_p_47" style="text-align: center;">מלאו את הרובה במחסנית המכשיר.<br>&nbsp;המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.</p>
+          </div>
         </div>
       </article>
 
       <!-- Step 2 -->
-      <article class="workflow-card">
-        <div class="card-step-badge" data-i18n="new_div_353">
-          <span class="step-label">שלב שני</span>
-          <span class="step-number">02</span>
+      <article class="workflow-step zappy-grid-item-nested-grid" data-grid-item-index="1">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_353">
+            <span class="step-label">שלב שני</span>
+            <span class="step-number">02</span>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
         </div>
-        <div class="card-thumb">
-          <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" width="56" height="56" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="home_h3_15">מנחים לאורך המפגש</h3>
-          <p class="card-desc" data-i18n="home_p_49">הנחו את ראש ההזרקה לאורך פגז הרובה בין האריחים. מנגנון ההזרקה החשמלי מספק לחץ אחיד ורציף — מכשיר הזרקת רובה חשמלי למרצפות שמבטיח עומק ומילוי מדויק בכל קו.</p>
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="הנחיית מכשיר Groutbot לאורך מפגשי האריחים" width="90" height="90" src="/assets/site-index-workflow-image-2-1776677216159-w8czh5.webp?v=1776677216159" data-placeholder="index-workflow-image-2" data-context="Electric Groutbot device being guided smoothly along tile grout joints on a large floor, precision tip injecting grout evenly between ceramic tiles, professional construction worker hands, warm workshop lighting" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;" data-element-type="image" data-element-id="img-1777322588536-sdw4c8m49">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_15">מנחים לאורך המפגש</h3>
+            <p class="step-desc" data-i18n="home_p_49">הנחו את ראש ההזרקה לאורך פגז הרובה בין האריחים. מנגנון ההזרקה החשמלי מספק לחץ אחיד ורציף — מכשיר הזרקת רובה חשמלי למרצפות שמבטיח עומק ומילוי מדויק בכל קו.</p>
+          </div>
         </div>
       </article>
 
       <!-- Step 3 -->
-      <article class="workflow-card workflow-card--accent">
-        <div class="card-step-badge" data-i18n="new_div_354">
-          <span class="step-label">שלב שלישי</span>
-          <span class="step-number">03</span>
+      <article class="workflow-step workflow-step--last zappy-grid-item-nested-grid" data-grid-item-index="2">
+        <div class="step-left">
+          <div class="step-number-block" data-i18n="new_div_354">
+            <span class="step-label">שלב שלישי</span>
+            <span class="step-number">03</span>
+          </div>
         </div>
-        <div class="card-thumb">
-          <img alt="גימור נקי ואחיד של הרובה בין המרצפות" width="56" height="56" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="home_h3_16">גימור נקי ועקבי</h3>
-          <p class="card-desc" data-i18n="home_p_50">התוצאה: קווי רובה אחידים, פחות פסולת, ופחות זמן ניקיון. Groutbot מצמצם את המאמץ הידני ומאפשר לצוות להתקדם מהר יותר — בלי להתפשר על איכות הגימור.</p>
+        <div class="step-content">
+          <div class="step-image-thumb">
+            <img alt="גימור נקי ואחיד של הרובה בין המרצפות" width="90" height="90" src="/assets/site-index-workflow-image-3-1776611728971-wrn82s.webp?v=1776611730978" data-placeholder="index-workflow-image-3" data-context="Beautifully finished tiled floor with clean uniform grout lines, minimal mess, professional result, warm earthy tones, construction site finishing stage, clean and precise grouting" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;" data-element-type="image" data-element-id="img-1777322588536-w6ex6wf2r">
+          </div>
+          <div class="step-text">
+            <h3 class="step-title" data-i18n="home_h3_16">גימור נקי ועקבי</h3>
+            <p class="step-desc" data-i18n="home_p_50">התוצאה: קווי רובה אחידים, פחות פסולת, ופחות זמן ניקיון. Groutbot מצמצם את המאמץ הידני ומאפשר לצוות להתקדם מהר יותר — בלי להתפשר על איכות הגימור.</p>
+          </div>
         </div>
       </article>
 
     </div>
-    <!-- /Steps Row -->
+    <!-- /steps -->
 
   </div>
 </section>
@@ -2212,10 +2226,6 @@
 
 
 
-
-
-
-
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -2289,7 +2299,6 @@
       "new_p_346": "השתתפנו בכנסים מובילים בתעשייה, שיתפנו ידע ויצרנו קשרים עסקיים חשובים.",
       "new_p_348": "גאים בפרויקטים המוצלחים שביצענו עבור לקוחותינו, תוך עמידה בלוחות זמנים ובציפיות.",
       "new_p_350": "אנו מאמינים בבניית קשרים חזקים בתוך הצוות דרך אירועים חברתיים ופעילויות משותפות.",
-      "new_p_355": "מלאו את הרובה במחסנית המכשיר. המכשיר מתוכנן לקבל את חומרי הרובה הסטנדרטיים הנפוצים בשוק — ללא כלים נוספים, ללא הכנה מיוחדת.",
       "about_h1_1": "הנדסה שנולדה\nמתוך הרצפה",
       "about_h2_2": "מה מניע אותנו בכל פרויקט",
       "about_h2_3": "<font color=\"#4d4d4d\">אב הטיפוס נבנה כדי להחזיק מעמד בתנאי שטח קשים</font>",
@@ -2465,7 +2474,7 @@
       "new_div_321": "<span class=\"index-workflow-step-num\">01</span>\n            <span class=\"index-workflow-step-label\">שלב ראשון</span>",
       "new_div_322": "<span class=\"index-workflow-step-num\">02</span>\n            <span class=\"index-workflow-step-label\">שלב שני</span>",
       "new_div_323": "<span class=\"index-workflow-step-num\">03</span>\n            <span class=\"index-workflow-step-label\">שלב שלישי</span>",
-      "new_div_324": "⚡\nחשמלי 100%",
+      "new_div_324": "⚡\n          חשמלי 100%",
       "new_div_326": "הכירו את המוצר",
       "new_div_330": "הזרקה חשמלית אוטומטית\n            מנוע חשמלי עוצמתי מחליף לחלוטין את העבודה הידנית",
       "new_div_332": "לחץ אחיד ומדויק\n            זרימת רובה קבועה ואחידה לאורך כל השורה — ללא כיסים ריקים",
@@ -3033,7 +3042,6 @@
       "new_p_346": "We participated in leading industry conferences, shared knowledge and created important business connections.",
       "new_p_348": "We are proud of the successful projects we have executed for our clients, meeting deadlines and expectations.",
       "new_p_350": "We believe in building strong relationships within the team through social events and shared activities.",
-      "new_p_355": "Load the gun with the device cartridge. The device is designed to accept standard grout materials commonly available in the market — no additional tools, no special preparation required.",
       "about_h1_1": "Engineering born\nfrom the ground up",
       "about_h2_2": "What Drives Us in Every Project",
       "about_h2_3": "The prototype was built to withstand harsh field conditions",
@@ -3209,7 +3217,7 @@
       "new_div_321": "<span class=\"index-workflow-step-num\">01</span>\n            <span class=\"index-workflow-step-label\">First Step</span>",
       "new_div_322": "<span class=\"index-workflow-step-num\">02</span>\n            <span class=\"index-workflow-step-label\">Second Step</span>",
       "new_div_323": "<span class=\"index-workflow-step-num\">03</span>\n            <span class=\"index-workflow-step-label\">Third Step</span>",
-      "new_div_324": "⚡\n100% Electric",
+      "new_div_324": "<span class=\"groutbot-intro__badge-icon\">⚡</span>\n          <span class=\"groutbot-intro__badge-text\">100% Electric</span>",
       "new_div_326": "Meet the Product",
       "new_div_330": "<strong>Automatic Electric Injection</strong>\n            <span>Powerful electric motor completely replaces manual work</span>",
       "new_div_332": "<strong>Uniform and Precise Pressure</strong>\n            <span>Consistent and uniform grout flow along the entire line — without empty pockets</span>",
