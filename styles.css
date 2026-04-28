@@ -10000,7 +10000,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
 @media (min-width: 769px) {
 .contact-contact-form-section .ccf-layout {
   display: grid !important;
-  grid-template-columns: 1fr 380px !important;
+  grid-template-columns: 1fr 360px;
   gap: 40px;
 }
 }
