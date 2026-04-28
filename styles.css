@@ -9961,26 +9961,26 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
 
 .site-footer .footer-social a[aria-label="WhatsApp"] i,
 .site-footer .footer-social a[aria-label="WhatsApp"] .fab {
-  font-size: 22px !important;
+  font-size: 18px !important;
   color: #25D366 !important;
 }
 
 .site-footer .footer-social a[aria-label="LinkedIn"] i,
 .site-footer .footer-social a[aria-label="LinkedIn"] .fab {
-  font-size: 22px !important;
-  color: #e0dada !important;
+  font-size: 18px !important;
+  color: #CBD5E1 !important;
 }
 
 .site-footer .footer-social a[aria-label="Facebook"] i,
 .site-footer .footer-social a[aria-label="Facebook"] .fab {
-  font-size: 22px !important;
-  color: #e0dada !important;
+  font-size: 18px !important;
+  color: #CBD5E1 !important;
 }
 
 .site-footer .footer-social a[aria-label="Instagram"] i,
 .site-footer .footer-social a[aria-label="Instagram"] .fab {
-  font-size: 22px !important;
-  color: #e0dada !important;
+  font-size: 18px !important;
+  color: #CBD5E1 !important;
 }
 
 .site-footer .footer-social a[aria-label="LinkedIn"] i {
@@ -9989,6 +9989,38 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weigh
 
 .site-footer .footer-social a[aria-label="WhatsApp"] i {
   color: #e0dada !important;
+}
+
+.contact-contact-form-section .ccf-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px;
+}
+
+@media (min-width: 769px) {
+.contact-contact-form-section .ccf-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 380px !important;
+  gap: 40px;
+}
+}
+
+@media (max-width: 768px) {
+.contact-contact-form-section {
+  padding: 80px 16px 60px;
+}
+
+.contact-contact-form-section .ccf-form-card {
+  padding: 28px 20px;
+}
+
+.contact-contact-form-section .ccf-support-panel {
+  padding: 24px 20px;
+}
+
+.contact-contact-form-section .ccf-title {
+  font-size: 1.5rem;
+}
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
