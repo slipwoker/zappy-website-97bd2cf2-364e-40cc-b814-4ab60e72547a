@@ -505,300 +505,362 @@
 }
 </style>
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-cta-section {
   position: relative;
-  overflow: visible;
-  background-color: #241F1B;
+  overflow: hidden;
+  background-color: #0F172A;
   background-image:
-    radial-gradient(circle at 15% 25%, rgba(255,255,255,0.06) 0%, transparent 50%),
-    linear-gradient(180deg, #3B332D 0%, #241F1B 100%);
+    radial-gradient(ellipse 60% 50% at 10% 20%, rgba(29,78,216,0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 90% 80%, rgba(37,99,235,0.12) 0%, transparent 60%),
+    linear-gradient(160deg, #0F172A 0%, #1E293B 100%);
   color: var(--text-light);
-  padding: 80px 24px 72px;
+  padding: 90px 24px 80px;
   direction: rtl;
 }
 
-/* Decorative glow */
+/* Decorative glow blob */
 .index-cta-section .index-cta-glow {
   position: absolute;
   top: -80px;
-  inset-inline-start: -80px;
+  inset-inline-end: -60px;
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(29,78,216,0.12) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  aria-hidden: true;
 }
 
 /* Container */
 .index-cta-section .index-cta-container {
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
-}
-
-/* Eyebrow badge */
-.index-cta-section .index-cta-eyebrow-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.index-cta-section .index-cta-badge {
-  display: inline-block;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.18);
-  color: #D6C3A8;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 6px 18px;
-  border-radius: 999px;
-  text-align: center;
-}
-
-/* Two-column layout */
-.index-cta-section .index-cta-columns {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1fr 420px;
+  gap: 56px;
+  align-items: start;
   direction: rtl;
 }
 
-@media (min-width: 768px) {
-  .index-cta-section .index-cta-columns {
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-  }
+/* ── MAIN COLUMN ── */
+.index-cta-section .index-cta-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-/* Left column (primary text) */
-.index-cta-section .index-cta-left {
+/* Badge */
+.index-cta-section .index-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(29,78,216,0.18);
+  border: 1px solid rgba(96,165,250,0.35);
+  color: #93C5FD;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.index-cta-section .index-cta-badge::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #60A5FA;
+  box-shadow: 0 0 6px rgba(96,165,250,0.7);
+}
+
+/* Headline */
+.index-cta-section .index-cta-headline {
+  font-family: 'Manrope', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #F8FAFC;
+  margin: 0;
+  text-align: right;
+}
+
+/* Body */
+.index-cta-section .index-cta-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #94A3B8;
+  margin: 0;
+  max-width: 540px;
+  text-align: right;
+}
+
+/* Metrics */
+.index-cta-section .index-cta-metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(148,163,184,0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.index-cta-section .index-cta-metric {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.index-cta-section .index-cta-metric-value {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #60A5FA;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.index-cta-section .index-cta-metric-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #64748B;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.index-cta-section .index-cta-metric-divider {
+  width: 1px;
+  background: rgba(148,163,184,0.14);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* ── CARD COLUMN ── */
+.index-cta-section .index-cta-card {
+  position: relative;
+  background: linear-gradient(145deg, #1E2D4A 0%, #162035 100%);
+  border: 1px solid rgba(96,165,250,0.2);
+  border-radius: 20px;
+  padding: 36px 32px 32px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(96,165,250,0.08) inset;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.index-cta-section .index-cta-headline {
+.index-cta-section .index-cta-card-glow {
+  position: absolute;
+  top: -40px;
+  inset-inline-start: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29,78,216,0.2) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.index-cta-section .index-cta-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.index-cta-section .index-cta-card-title {
   font-family: 'Manrope', sans-serif;
-  font-size: 2rem;
+  font-size: 1.375rem;
   font-weight: 600;
-  line-height: 1.3;
-  color: #F5EFE6;
+  line-height: 1.4;
+  color: #F1F5F9;
   margin: 0;
   text-align: right;
 }
 
-@media (min-width: 768px) {
-  .index-cta-section .index-cta-headline {
-    font-size: 2.5rem;
-  }
-}
-
-.index-cta-section .index-cta-sub {
+.index-cta-section .index-cta-card-sub {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #C4B8A8;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94A3B8;
   margin: 0;
   text-align: right;
-  max-width: 520px;
 }
 
-/* CTA buttons */
-.index-cta-section .index-cta-buttons {
+/* List */
+.index-cta-section .index-cta-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  align-items: flex-start;
+  gap: 16px;
 }
 
-@media (min-width: 480px) {
-  .index-cta-section .index-cta-buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.index-cta-section .index-cta-list-item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+  direction: rtl;
+}
+
+.index-cta-section .index-cta-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.index-cta-section .index-cta-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: right;
+}
+
+.index-cta-section .index-cta-list-content strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #E2E8F0;
+  display: block;
+}
+
+.index-cta-section .index-cta-list-content span {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #64748B;
+  line-height: 1.5;
+  display: block;
+}
+
+/* Divider inside card */
+.index-cta-section .index-cta-list {
+  border-top: 1px solid rgba(148,163,184,0.1);
+  padding-top: 20px;
+}
+
+/* Actions */
+.index-cta-section .index-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid rgba(148,163,184,0.1);
+  padding-top: 24px;
 }
 
 .index-cta-section .index-cta-btn-primary {
-  display: inline-block;
-  background: #78763D;
-  color: #FFFDF9;
+  display: block;
+  text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  line-height: 1;
-  padding: 14px 28px;
-  border-radius: 6px;
-  border: none;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+  border-radius: 10px;
+  padding: 14px 24px;
   text-decoration: none;
-  transition: background 0.2s ease, transform 0.15s ease;
-  white-space: nowrap;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 4px 16px rgba(29,78,216,0.35);
 }
 
 .index-cta-section .index-cta-btn-primary:hover {
-  background: #68663A;
+  background: linear-gradient(135deg, #1e40af 0%, #1D4ED8 100%);
+  box-shadow: 0 6px 24px rgba(29,78,216,0.5);
   transform: translateY(-1px);
 }
 
 .index-cta-section .index-cta-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: #D9794A;
+  display: block;
+  text-align: center;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1;
+  color: #93C5FD;
+  background: transparent;
+  border: 1px solid rgba(96,165,250,0.3);
+  border-radius: 10px;
   padding: 13px 24px;
-  border-radius: 6px;
-  border: 1px solid #D07B54;
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .index-cta-section .index-cta-btn-secondary:hover {
-  background: rgba(217,121,74,0.1);
-  color: #E8916A;
+  background: rgba(29,78,216,0.1);
+  border-color: rgba(96,165,250,0.55);
+  color: #BFDBFE;
 }
 
-/* Right column — stat card */
-.index-cta-section .index-cta-right {
-  display: flex;
-  justify-content: center;
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .index-cta-section .index-cta-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .index-cta-section .index-cta-card {
+    max-width: 100%;
+  }
 }
 
-.index-cta-section .index-cta-stat-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 16px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 460px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
-}
-
-.index-cta-section .index-cta-stat-image-wrap {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.index-cta-section .index-cta-stat-image-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.88) saturate(0.9);
-}
-
-.index-cta-section .index-cta-stat-body {
-  padding: 28px 28px 32px;
-  text-align: right;
-}
-
-.index-cta-section .index-cta-stat-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-  color: #F5EFE6;
-  margin-bottom: 6px;
-  letter-spacing: -0.02em;
-}
-
-.index-cta-section .index-cta-stat-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #D9794A;
-  margin-bottom: 14px;
-}
-
-.index-cta-section .index-cta-stat-desc {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #A89A8A;
-  margin: 0;
-  text-align: right;
-}
-
-/* Divider */
-.index-cta-section .index-cta-divider {
-  width: 100%;
-  height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 52px 0 28px;
-}
-
-/* Partnership note */
-.index-cta-section .index-cta-partnership {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #9A8E82;
-  text-align: center;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.index-cta-section .index-cta-partnership .fa-handshake {
-  color: #78763D;
-  font-size: 15px;
-}
-
-/* Mobile overrides */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .index-cta-section {
     padding: 60px 16px 56px;
   }
 
-  .index-cta-section .index-cta-columns {
-    grid-template-columns: 1fr !important;
+  .index-cta-section .index-cta-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .index-cta-section .index-cta-headline {
+    font-size: 2rem;
+  }
+
+  .index-cta-section .index-cta-metrics {
+    flex-direction: column;
+  }
+
+  .index-cta-section .index-cta-metric-divider {
+    width: 100%;
+    height: 1px;
+    align-self: auto;
+  }
+
+  .index-cta-section .index-cta-metric {
+    padding: 18px 16px;
+  }
+
+  .index-cta-section .index-cta-metric-value {
     font-size: 1.6rem;
   }
 
-  .index-cta-section .index-cta-stat-number {
-    font-size: 2.4rem;
-  }
-
-  .index-cta-section .index-cta-stat-body {
-    padding: 20px 20px 24px;
-  }
-
-  .index-cta-section .index-cta-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .index-cta-section .index-cta-btn-primary,
-  .index-cta-section .index-cta-btn-secondary {
-    text-align: center;
-    justify-content: center;
+  .index-cta-section .index-cta-card {
+    padding: 28px 20px 24px;
   }
 
   .index-cta-section .index-cta-glow {
-    display: none;
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    inset-inline-end: -30px;
   }
 }
 </style>
@@ -2123,61 +2185,82 @@
   </div>
 </section>
 
-<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" id="index-cta-section" style="direction: rtl; position: relative; overflow: hidden; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(44, 36, 30); background-image: none; color: rgb(255, 255, 255); padding: 96px 24px; font-family: Inter, sans-serif; --zappy-bg-color: #2C241E;" data-zappy-bg-color="#2C241E" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-zappy-bg-type="color">
+<section class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" data-zappy-section="true" id="index-cta-section">
+  <!-- Decorative background glow -->
+  <div class="index-cta-glow" aria-hidden="true"></div>
 
-  <div style="--zappy-grid-cols: 1fr 420px; position:relative;z-index:1;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:64px;align-items: stretch !important;direction:rtl;" data-zappy-explicit-columns="true" id="zappy-auto-grid-1777324736083-rl7eve" data-zappy-auto-grid="true" class="zappy-preserve-css-grid" data-zappy-grid-align="center" data-original-item-width="689" data-original-gap="64px">
+  <div class="index-cta-container">
+    <!-- Left (main) column -->
+    <div class="index-cta-main">
+      <span class="index-cta-badge" data-i18n="contact_span_44">הזדמנות השקעה</span>
 
-    <!-- עמודת כותרת + מדדים -->
-    <div style="display:flex;flex-direction:column;gap:28px;" data-grid-item-index="0">
-      <h2  data-i18n="contact_span_44"><font color="#2563eb">הזדמנות השקעה</font></h2><h1></h1>
+      <h2 class="index-cta-headline" data-i18n="new_h2_363">שוק של $4.2B<br>והכלי שמשנה<br>את כללי המשחק</h2>
 
-      <h2 style="font-family: Manrope, sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.75rem); font-weight: 800; line-height: 1.25; color: rgb(255, 255, 255); margin: 0px; letter-spacing: -0.02em;" data-i18n="new_h2_363">שוק של $4.2B<br>והכלי שמשנה<br>את כללי המשחק</h2>
+      <p class="index-cta-body" data-i18n="new_p_364">Groutbot מוביל מהפכה שקטה בענף הריצוף העולמי. טכנולוגיה חשמלית פטנטית שהופכת תהליך ידני ומייגע לאוטומציה מדויקת — עם פוטנציאל סקייל גלובלי מוכן.</p>
 
-      <p style="font-size: 1rem; line-height: 1.75; color: rgb(203, 213, 225); margin: 0px; max-width: 500px;" data-i18n="new_p_364">Groutbot מוביל מהפכה שקטה בענף הריצוף העולמי. טכנולוגיה חשמלית פטנטית שהופכת תהליך ידני ומייגע לאוטומציה מדויקת — עם פוטנציאל סקייל גלובלי מוכן.</p>
-
-      <!-- מדדי מפתח -->
-      <div style="--zappy-grid-cols: repeat(3,1fr); display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;" data-zappy-explicit-columns="true">
-        <div style="display:flex;flex-direction:column;gap:6px;padding:20px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:12px;text-align:right;" data-i18n="new_div_365" data-ta-orig="right">$4.2B
-          שוק כולל (TAM)<br></div>
-        <div style="display:flex;flex-direction:column;gap:6px;padding:20px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:12px;text-align:right;" data-i18n="new_div_367" data-ta-orig="right">×2.5
-          שיפור בפריון עבודה<br></div>
-        <div style="display:flex;flex-direction:column;gap:6px;padding:20px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:12px;text-align:right;" data-i18n="new_div_369" data-ta-orig="right">60%
-          חיסכון בעלויות כוח אדם<br></div>
-      </div>
-    </div>
-
-    <!-- כרטיס CTA -->
-    <div data-grid-item-index="1" style="display: flex !important; flex-direction: column !important; justify-content: flex-end !important; align-items: stretch !important; align-self: stretch !important; height: 100% !important;">
-      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.11);border-radius:20px;padding:40px 32px;display:flex;flex-direction:column;gap:24px;box-shadow:0 24px 60px rgba(0,0,0,0.4);">
-        <h3 style="font-family:'Manrope',sans-serif;font-size:1.375rem;font-weight:700;line-height:1.4;color:#fff;margin:0;text-align:right;" data-i18n="new_h3_371" data-ta-orig="right">מוכנים להשקיע
-בעתיד הבנייה?<br></h3>
-        <p style="font-size:0.9rem;line-height:1.65;color:#CBD5E1;margin:0;text-align:right;" data-i18n="new_p_372" data-ta-orig="right">Groutbot מציגה שילוב נדיר: ביקוש מוכח בשטח, טכנולוגיה ייחודית ויתרון ראשון בשוק.</p>
-
-        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;">
-          <li style="display:grid;--zappy-grid-cols: repeat(1, minmax(0, 1fr)) 1fr; grid-template-columns: repeat(1, minmax(0, 1fr));gap:10px;align-items:flex-start;direction:rtl;" data-zappy-explicit-columns="true">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:2px;flex-shrink:0;color:#60A5FA;"><circle cx="10" cy="10" r="9" stroke="#60A5FA" stroke-width="1.5"></circle><path d="M6 10.5L8.5 13L14 7.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <div style="text-align:right;" data-i18n="new_div_373" data-ta-orig="right">טכנולוגיה סקיילבילית
-              פלטפורמה מותאמת לכל סוגי הריצוף — מוכנה לשווקים בינלאומיים<br></div>
-          </li>
-          <li style="display:grid;--zappy-grid-cols: repeat(1, minmax(0, 1fr)) 1fr; grid-template-columns: repeat(1, minmax(0, 1fr));gap:10px;align-items:flex-start;direction:rtl;" data-zappy-explicit-columns="true">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:2px;flex-shrink:0;"><circle cx="10" cy="10" r="9" stroke="#60A5FA" stroke-width="1.5"></circle><path d="M6 10.5L8.5 13L14 7.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <div style="text-align:right;" data-i18n="new_div_375" data-ta-orig="right">ביקוש מוכח בשטח
-              קבלנים ומרצפים מאמצים — תוצאות מדידות, לקוחות חוזרים<br></div>
-          </li>
-          <li style="display:grid;--zappy-grid-cols: repeat(1, minmax(0, 1fr)) 1fr; grid-template-columns: repeat(1, minmax(0, 1fr));gap:10px;align-items:flex-start;direction:rtl;" data-zappy-explicit-columns="true">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:2px;flex-shrink:0;"><circle cx="10" cy="10" r="9" stroke="#60A5FA" stroke-width="1.5"></circle><path d="M6 10.5L8.5 13L14 7.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <div style="text-align:right;" data-i18n="new_div_377" data-ta-orig="right">יתרון ראשון בשוק
-              פטנט רשום, מותג מבוסס וחסמי כניסה גבוהים — Groutbot כבר שם<br></div>
-          </li>
-        </ul>
-
-        <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px;">
-          <a href="/contact" style="display:inline-flex;align-items:center;justify-content:center;background:#2563EB;color:#fff;font-family:'Manrope',sans-serif;font-size:0.9375rem;font-weight:700;padding:14px 28px;border-radius:10px;text-decoration:none;text-align:center;box-shadow:0 4px 20px rgba(29,78,216,0.4);transition:background 0.2s ease;" data-i18n="new_a_357">צרו קשר עכשיו</a>
-          <a href="/about" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;background:transparent;color:#93C5FD;font-size:0.875rem;font-weight:500;padding:10px 20px;border-radius:8px;border:1px solid rgba(147,197,253,0.3);text-decoration:none;text-align:center;transition:border-color 0.2s ease;" data-i18n="new_a_379">קראו עוד על Groutbot ←</a>
+      <!-- Metrics row -->
+      <div class="index-cta-metrics">
+        <div class="index-cta-metric" data-i18n="new_div_365">
+          <span class="index-cta-metric-value">$4.2B</span>
+          <span class="index-cta-metric-label">שוק כולל (TAM)</span>
+        </div>
+        <div class="index-cta-metric-divider" aria-hidden="true"></div>
+        <div class="index-cta-metric" data-i18n="new_div_382">
+          <span class="index-cta-metric-value">×2.5</span>
+          <span class="index-cta-metric-label">שיפור בפרודוקטיביות</span>
+        </div>
+        <div class="index-cta-metric-divider" aria-hidden="true"></div>
+        <div class="index-cta-metric" data-i18n="new_div_384">
+          <span class="index-cta-metric-value">60%</span>
+          <span class="index-cta-metric-label">חיסכון בעלויות עבודה</span>
         </div>
       </div>
     </div>
 
+    <!-- Right (card) column -->
+    <div class="index-cta-card">
+      <!-- Card inner glow -->
+      <div class="index-cta-card-glow" aria-hidden="true"></div>
+
+      <h3 class="index-cta-card-title" data-i18n="new_h3_371">מוכנים להשקיע<br>בעתיד הבנייה?</h3>
+
+      <p class="index-cta-card-sub" data-i18n="new_p_372">Groutbot מציגה שילוב נדיר: ביקוש מוכח בשטח, טכנולוגיה ייחודית ויתרון ראשון בשוק.</p>
+
+      <ul class="index-cta-list">
+        <li class="index-cta-list-item">
+          <span class="index-cta-check" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="9" fill="rgba(29,78,216,0.18)"></circle><path d="M5 9.5L7.5 12L13 6.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </span>
+          <div class="index-cta-list-content" data-i18n="new_div_373">
+            <strong>טכנולוגיה סקיילבילית</strong>
+            <span>פלטפורמה מותאמת לכל סוגי הריצוף — מוכנה לשווקים בינלאומיים</span>
+          </div>
+        </li>
+        <li class="index-cta-list-item">
+          <span class="index-cta-check" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="9" fill="rgba(29,78,216,0.18)"></circle><path d="M5 9.5L7.5 12L13 6.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </span>
+          <div class="index-cta-list-content" data-i18n="new_div_375">
+            <strong>ביקוש מוכח בשטח</strong>
+            <span>קבלנים ומרצפים מאמצים — תוצאות מדידות, לקוחות חוזרים</span>
+          </div>
+        </li>
+        <li class="index-cta-list-item">
+          <span class="index-cta-check" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="9" fill="rgba(29,78,216,0.18)"></circle><path d="M5 9.5L7.5 12L13 6.5" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </span>
+          <div class="index-cta-list-content" data-i18n="new_div_377">
+            <strong>יתרון ראשון בשוק</strong>
+            <span>פטנט רשום, מותג מבוסס וחסמי כניסה גבוהים — Groutbot כבר שם</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="index-cta-actions">
+        <a href="/contact" class="index-cta-btn-primary" data-i18n="new_a_357">צרו קשר עכשיו</a>
+        <a href="/about" class="index-cta-btn-secondary" data-i18n="new_a_379">קראו עוד על Groutbot ←</a>
+      </div>
+    </div>
   </div>
 </section>
   </main>
@@ -2276,6 +2359,8 @@
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
@@ -2934,6 +3019,8 @@
       "new_div_373": "טכנולוגיה סקיילבילית\n              פלטפורמה מותאמת לכל סוגי הריצוף — מוכנה לשווקים בינלאומיים",
       "new_div_375": "ביקוש מוכח בשטח\n              קבלנים ומרצפים מאמצים — תוצאות מדידות, לקוחות חוזרים",
       "new_div_377": "יתרון ראשון בשוק\n              פטנט רשום, מותג מבוסס וחסמי כניסה גבוהים — Groutbot כבר שם",
+      "new_div_382": "<span class=\"index-cta-metric-value\">×2.5</span>\n          <span class=\"index-cta-metric-label\">שיפור בפרודוקטיביות</span>",
+      "new_div_384": "<span class=\"index-cta-metric-value\">60%</span>\n          <span class=\"index-cta-metric-label\">חיסכון בעלויות עבודה</span>",
       "terms_h2_10": "9. שינוי תנאי השימוש",
       "terms_h2_11": "10. סיום השירות",
       "terms_h2_12": "11. דין חל ויישוב סכסוכים",
@@ -3697,6 +3784,8 @@
       "new_div_373": "<strong style=\"font-size:0.9rem;font-weight:600;color:#F1F5F9;display:block;\">Scalable Technology</strong>\n              <span style=\"font-size:0.8rem;color:#94A3B8;line-height:1.5;display:block;\">Platform adapted for all types of flooring — ready for international markets</span>",
       "new_div_375": "<strong style=\"font-size:0.9rem;font-weight:600;color:#F1F5F9;display:block;\">Proven Field Demand</strong>\n              <span style=\"font-size:0.8rem;color:#94A3B8;line-height:1.5;display:block;\">Contractors and tilers are adopting — measurable results, returning customers</span>",
       "new_div_377": "<strong style=\"font-size:0.9rem;font-weight:600;color:#F1F5F9;display:block;\">First-Mover Advantage</strong>\n              <span style=\"font-size:0.8rem;color:#94A3B8;line-height:1.5;display:block;\">Registered patent, established brand and high barriers to entry — Groutbot is already there</span>",
+      "new_div_382": "<span class=\"index-cta-metric-value\">×2.5</span>\n          <span class=\"index-cta-metric-label\">Productivity Improvement</span>",
+      "new_div_384": "<span class=\"index-cta-metric-value\">60%</span>\n          <span class=\"index-cta-metric-label\">Labor Cost Savings</span>",
       "terms_h2_10": "9. Modification of Terms of Use",
       "terms_h2_11": "10. Service Termination",
       "terms_h2_12": "11. Applicable Law and Dispute Resolution",
