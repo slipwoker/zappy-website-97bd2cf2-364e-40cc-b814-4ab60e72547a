@@ -896,31 +896,6 @@ html[dir="rtl"] body {
       @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
     </style>
 
-    <style id="mobile-lang-menu-deployed-css">
-    @media (max-width: 768px) {
-      .lang-switcher,
-      .nav-cta-container .lang-switcher,
-      .nav-container .lang-switcher,
-      .navbar .lang-switcher,
-      .navbar .nav-cta-container .lang-switcher,
-      .nav-icons-left .lang-switcher,
-      .nav-ecommerce-icons .lang-switcher { display: none !important; }
-      .mobile-lang-menu { width: 100%; border-top: 1px solid rgba(128,128,128,0.2); padding: 8px 0 0 0; margin-top: 8px; }
-      .mobile-lang-toggle { display: flex !important; align-items: center; justify-content: space-between; width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer; font-size: 15px; color: inherit; font-family: inherit; }
-      .mobile-lang-toggle::after { content: ''; display: inline-block; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform 0.3s ease; margin-left: 8px; }
-      .mobile-lang-toggle.expanded::after { transform: rotate(-135deg); }
-      .mobile-lang-options { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-      .mobile-lang-options.expanded { max-height: 300px; }
-      .mobile-lang-option { display: flex !important; align-items: center; gap: 10px; padding: 10px 24px; text-decoration: none; color: inherit; font-size: 14px; font-family: inherit; }
-      .mobile-lang-option:hover { background: rgba(128,128,128,0.1); }
-      .mobile-lang-option.active { font-weight: 600; opacity: 0.7; pointer-events: none; }
-      .mobile-lang-option img { width: 20px; height: 20px; border-radius: 50%; }
-    }
-    @media (min-width: 769px) {
-      .mobile-lang-menu { display: none !important; }
-    }
-    </style>
-
     <style id="zappy-widget-visibility">
       #mic-access-tool-general-button, .mic-access-tool-general-button,
       #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
@@ -1166,6 +1141,7 @@ html[dir="rtl"] body {
 
 
 
+
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
@@ -1173,6 +1149,70 @@ html[dir="rtl"] body {
   const resources = {
   "he": {
     "translation": {
+      "ecom_addToCart": "הוסף לעגלה",
+      "ecom_startingAt": "החל מ",
+      "ecom_all": "הכל",
+      "ecom_featured": "מומלצים",
+      "ecom_new": "חדשים",
+      "ecom_sale": "מבצעים",
+      "ecom_total": "סה\"כ",
+      "ecom_subtotal": "סכום ביניים",
+      "ecom_yourCart": "העגלה שלך",
+      "ecom_emptyCart": "העגלה ריקה",
+      "ecom_checkout": "תשלום",
+      "ecom_remove": "הסר",
+      "ecom_quantity": "כמות",
+      "ecom_viewDetails": "לפרטים נוספים",
+      "ecom_inStock": "במלאי",
+      "ecom_outOfStock": "אזל מהמלאי",
+      "ecom_sku": "מק\"ט",
+      "ecom_proceedToCheckout": "המשך לתשלום",
+      "ecom_continueShopping": "להמשך קניות",
+      "ecom_agreeToTerms": "אני מסכים/ה ל",
+      "ecom_termsAndConditions": "תנאי השימוש",
+      "ecom_pleaseAcceptTerms": "נא לאשר את תנאי השימוש",
+      "ecom_nameRequired": "נא להזין שם מלא",
+      "ecom_emailRequired": "נא להזין כתובת אימייל",
+      "ecom_emailInvalid": "כתובת אימייל לא תקינה",
+      "ecom_phoneRequired": "נא להזין מספר טלפון",
+      "ecom_shippingRequired": "נא לבחור שיטת משלוח",
+      "ecom_streetRequired": "נא להזין רחוב ומספר",
+      "ecom_cityRequired": "נא להזין עיר",
+      "ecom_city": "עיר",
+      "ecom_saveAddressForNextTime": "שמור את הכתובת לפעם הבאה",
+      "ecom_countryRegion": "מדינה / אזור",
+      "ecom_stateProvince": "מדינה / מחוז",
+      "ecom_stateRequired": "נא לבחור מדינה / מחוז",
+      "ecom_streetAndNumber": "רחוב ומספר",
+      "ecom_apartmentExt": "דירה, קומה, קוד בניין, הערות וכו'",
+      "ecom_zipPostal": "מיקוד",
+      "ecom_frequentlyBoughtTogether": "לרכוש יחד",
+      "ecom_frequentlyBoughtTogetherSubtitle": "הוספת מוצרים נלווים לעגלה",
+      "ecom_bundleTotal": "סה\"כ לעגלה",
+      "ecom_addBundleToCart": "הוספת {count} מוצרים לעגלה",
+      "ecom_upsellFree": "חינם",
+      "ecom_home": "דף הבית",
+      "ecom_products": "מוצרים",
+      "ecom_productDetails": "פרטי המוצר",
+      "ecom_specifications": "מפרט טכני",
+      "ecom_storeNote": "מידע נוסף",
+      "ecom_relatedProducts": "מוצרים דומים",
+      "ecom_color": "צבע",
+      "ecom_size": "גודל",
+      "ecom_material": "חומר",
+      "ecom_style": "סגנון",
+      "ecom_weight": "משקל",
+      "ecom_capacity": "קיבולת",
+      "ecom_length": "אורך",
+      "ecom_noShippingMethods": "אין אפשרויות משלוח זמינות",
+      "ecom_free": "חינם",
+      "ecom_days": "ימים",
+      "ecom_freeAbove": "חינם מעל",
+      "ecom_errorLoading": "שגיאה בטעינת האפשרויות",
+      "ecom_vatIncluded": "כולל מע\"מ",
+      "ecom_shipping": "משלוח",
+      "ecom_discount": "הנחה",
+      "ecom_totalToPay": "סה\"כ לתשלום",
       "nav-home": "בית",
       "home_h1_1": "למשקיעים ולקבלנים המעוניינים בפיילוט",
       "home_h1_2": "Groutbot — מכשיר הרובה החשמלי שמשנה את ענף הריצוף",
@@ -1291,7 +1331,7 @@ html[dir="rtl"] body {
       "new_h2_327": "ענף הריצוף -&nbsp;\nעובד עדיין על הברכיים.&nbsp;\nאנחנו משנים את זה.",
       "new_h2_337": "גלריית תמונות",
       "new_h2_355": "הגיע הזמן לשדרג את\nאופן הזרקת הגרוט",
-      "new_h2_363": "שוק של $4.2B\nוהכלי שמשנה&nbsp;\nאת כללי המשחק",
+      "new_h2_363": "שוק של $4.2B\n&nbsp;והכלי שמשנה\n&nbsp;את כללי המשחק",
       "new_h3_147": "כותרת כרטיס 1",
       "new_h3_149": "כותרת כרטיס 2",
       "new_h3_151": "כותרת כרטיס 3",
@@ -1936,6 +1976,70 @@ html[dir="rtl"] body {
   },
   "en": {
     "translation": {
+      "ecom_addToCart": "Add to Cart",
+      "ecom_startingAt": "Starting at",
+      "ecom_all": "All",
+      "ecom_featured": "Featured",
+      "ecom_new": "New",
+      "ecom_sale": "Sale",
+      "ecom_total": "Total",
+      "ecom_subtotal": "Subtotal",
+      "ecom_yourCart": "Your Cart",
+      "ecom_emptyCart": "Your cart is empty",
+      "ecom_checkout": "Checkout",
+      "ecom_remove": "Remove",
+      "ecom_quantity": "Quantity",
+      "ecom_viewDetails": "View Details",
+      "ecom_inStock": "In Stock",
+      "ecom_outOfStock": "Out of Stock",
+      "ecom_sku": "SKU",
+      "ecom_proceedToCheckout": "Proceed to Checkout",
+      "ecom_continueShopping": "Continue Shopping",
+      "ecom_agreeToTerms": "I agree to the",
+      "ecom_termsAndConditions": "Terms and Conditions",
+      "ecom_pleaseAcceptTerms": "Please accept the terms and conditions",
+      "ecom_nameRequired": "Please enter your full name",
+      "ecom_emailRequired": "Please enter your email address",
+      "ecom_emailInvalid": "Please enter a valid email address",
+      "ecom_phoneRequired": "Please enter your phone number",
+      "ecom_shippingRequired": "Please select a shipping method",
+      "ecom_streetRequired": "Please enter your street address",
+      "ecom_cityRequired": "Please enter your city",
+      "ecom_city": "City",
+      "ecom_saveAddressForNextTime": "Save this address for next time",
+      "ecom_countryRegion": "Country / Region",
+      "ecom_stateProvince": "State / Province",
+      "ecom_stateRequired": "Please select a state / province",
+      "ecom_streetAndNumber": "Street and Number",
+      "ecom_apartmentExt": "Apt, Floor, Building Code, Notes, Etc.",
+      "ecom_zipPostal": "Zip / Postal Code",
+      "ecom_frequentlyBoughtTogether": "Frequently bought together",
+      "ecom_frequentlyBoughtTogetherSubtitle": "Save time and get everything you need",
+      "ecom_bundleTotal": "Bundle total",
+      "ecom_addBundleToCart": "Add {count} items to cart",
+      "ecom_upsellFree": "Free",
+      "ecom_home": "Home",
+      "ecom_products": "Products",
+      "ecom_productDetails": "Product Details",
+      "ecom_specifications": "Specifications",
+      "ecom_storeNote": "Additional Information",
+      "ecom_relatedProducts": "Related Products",
+      "ecom_color": "Color",
+      "ecom_size": "Size",
+      "ecom_material": "Material",
+      "ecom_style": "Style",
+      "ecom_weight": "Weight",
+      "ecom_capacity": "Capacity",
+      "ecom_length": "Length",
+      "ecom_noShippingMethods": "No shipping options available",
+      "ecom_free": "FREE",
+      "ecom_days": "days",
+      "ecom_freeAbove": "Free above",
+      "ecom_errorLoading": "Error loading options",
+      "ecom_vatIncluded": "Including VAT",
+      "ecom_shipping": "Shipping",
+      "ecom_discount": "Discount",
+      "ecom_totalToPay": "Total to Pay",
       "nav-home": "Home",
       "home_h1_1": "For investors and contractors interested in a pilot",
       "home_h1_2": "Groutbot — The Electric Grout Gun That's Transforming the Tiling Industry",
@@ -2054,7 +2158,7 @@ html[dir="rtl"] body {
       "new_h2_327": "The flooring industry -&nbsp;\nstill works on its knees.&nbsp;\nWe're changing that.",
       "new_h2_337": "Photo Gallery",
       "new_h2_355": "It's time to upgrade\nyour grouting method",
-      "new_h2_363": "A $4.2B Market\nand the Tool That Changes&nbsp;\nthe Rules of the Game",
+      "new_h2_363": "$4.2B Market\n&nbsp;and the Tool That's Changing\n&nbsp;the Game",
       "new_h3_147": "Card Title 1",
       "new_h3_149": "Card Title 2",
       "new_h3_151": "Card Title 3",
@@ -2708,17 +2812,63 @@ html[dir="rtl"] body {
   // Language display info with SVG flag images for cross-platform compatibility
   const languageInfo = {"he":{"name":"Hebrew","nativeName":"עברית","flag":"🇮🇱","flagIcon":"circle-flags:il","dir":"rtl","flagImg":"<img src=\"https://api.iconify.design/circle-flags/il.svg\" width=\"20\" height=\"20\" alt=\"\" style=\"display:inline-block;vertical-align:middle;border-radius:50%;\" />"},"en":{"name":"English","nativeName":"English","flag":"🇺🇸","flagIcon":"circle-flags:us","dir":"ltr","flagImg":"<img src=\"https://api.iconify.design/circle-flags/us.svg\" width=\"20\" height=\"20\" alt=\"\" style=\"display:inline-block;vertical-align:middle;border-radius:50%;\" />"}};
   
-  // Detect stored language preference - only use stored value, not browser language
-  // This ensures the site respects its original design (e.g., RTL Hebrew site stays RTL by default)
+  // Detect the active language. URL is the source of truth: a /<lang>/... path
+  // or ?lang=<x> query unambiguously says which language the user is viewing,
+  // and stored preference must NOT win over it (or visiting /en/... while
+  // localStorage holds 'he' from a previous Hebrew session keeps the cart
+  // drawer / product detail / checkout strings rendering in Hebrew).
+  // Stored preference is only consulted when no URL signal exists, falling
+  // back to the site default last.
   function detectLanguage() {
-    const stored = localStorage.getItem('zappy_lang');
+    try {
+      var pathLang = (window.location.pathname.match(/^\/([a-z]{2})(?:\/|$)/i) || [])[1];
+      if (pathLang && availableLanguages.includes(pathLang.toLowerCase())) {
+        var resolvedPathLang = pathLang.toLowerCase();
+        try { localStorage.setItem('zappy_lang', resolvedPathLang); } catch (e) {}
+        return resolvedPathLang;
+      }
+      var queryLang = new URLSearchParams(window.location.search).get('lang');
+      if (queryLang && availableLanguages.includes(queryLang.toLowerCase())) {
+        var resolvedQueryLang = queryLang.toLowerCase();
+        try { localStorage.setItem('zappy_lang', resolvedQueryLang); } catch (e) {}
+        return resolvedQueryLang;
+      }
+    } catch (e) {}
+    var stored = localStorage.getItem('zappy_lang');
     if (stored && availableLanguages.includes(stored)) return stored;
-    
-    // Always default to the site's default language, not browser language
-    // This prevents breaking the original site layout on first visit
     return 'he';
   }
-  
+
+  // Build the URL for a target language and navigate. The URL pattern mirrors
+  // exactly what generateUrlBasedLanguageSwitcher writes into <a href> values:
+  //   default lang  → no prefix       (e.g. /products/foo)
+  //   non-default   → /<lang>/...      (e.g. /en/products/foo)
+  // We strip whatever language prefix is currently in the URL before applying
+  // the new one so transitions like /he/x → /en/x and /en/x → / both work.
+  // Navigating (instead of an in-page changeLanguage swap) is critical because
+  // server-rendered chrome (navbar links, announcement bar, footer, hero copy,
+  // etc.) is baked per-language at publish time and has no [data-i18n] hooks
+  // to update at runtime; only a real navigation surfaces the right version.
+  // It also makes refresh idempotent — the URL is the source of truth, so the
+  // page reloads in the same language the user just picked.
+  function navigateToLanguage(targetLang) {
+    if (!targetLang || !availableLanguages.includes(targetLang)) return;
+    if (targetLang === zappyI18n.language) return;
+    try { localStorage.setItem('zappy_lang', targetLang); } catch (e) {}
+
+    var path = window.location.pathname || '/';
+    var prefixMatch = path.match(/^\/([a-z]{2})(?=\/|$)/i);
+    if (prefixMatch && availableLanguages.includes(prefixMatch[1].toLowerCase())) {
+      path = path.slice(prefixMatch[0].length) || '/';
+    }
+
+    var newPath = (targetLang === 'he')
+      ? path
+      : ('/' + targetLang + (path === '/' ? '' : path));
+
+    window.location.assign(newPath + (window.location.search || '') + (window.location.hash || ''));
+  }
+
   // Callbacks for language change events (e.g., e-commerce content refresh)
   const languageChangeCallbacks = [];
   
@@ -2913,7 +3063,7 @@ html[dir="rtl"] body {
       }
     });
     
-    // Update meta description
+    // Update meta description / og:* / twitter:* / keywords / author
     document.querySelectorAll('[data-i18n-content]').forEach(function(el) {
       const key = el.getAttribute('data-i18n-content');
       const translation = zappyI18n.t(key);
@@ -2921,7 +3071,56 @@ html[dir="rtl"] body {
         el.setAttribute('content', translation);
       }
     });
-    
+
+    // Update aria-label / aria-description for accessibility
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(function(el) {
+      const key = el.getAttribute('data-i18n-aria-label');
+      const translation = zappyI18n.t(key);
+      if (translation && translation !== key) el.setAttribute('aria-label', translation);
+    });
+    document.querySelectorAll('[data-i18n-aria-description]').forEach(function(el) {
+      const key = el.getAttribute('data-i18n-aria-description');
+      const translation = zappyI18n.t(key);
+      if (translation && translation !== key) el.setAttribute('aria-description', translation);
+    });
+
+    // Update <optgroup label="...">
+    document.querySelectorAll('[data-i18n-label]').forEach(function(el) {
+      const key = el.getAttribute('data-i18n-label');
+      const translation = zappyI18n.t(key);
+      if (translation && translation !== key) el.setAttribute('label', translation);
+    });
+
+    // Update JSON-LD: swap out __I18N__<key>__<source> tokens
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(function(scriptEl) {
+      try {
+        var raw = scriptEl.textContent;
+        if (!raw || raw.indexOf('__I18N__') === -1) return;
+        var data = JSON.parse(raw);
+        var swapped = false;
+        function walk(node) {
+          if (Array.isArray(node)) { node.forEach(walk); return; }
+          if (!node || typeof node !== 'object') return;
+          for (var k in node) {
+            if (typeof node[k] === 'string' && node[k].indexOf('__I18N__') === 0) {
+              var m = node[k].match(/^__I18N__([^_]+(?:_[^_]+)*?)__([sS]*)$/);
+              if (m) {
+                var key = m[1];
+                var fallback = m[2];
+                var t = zappyI18n.t(key);
+                node[k] = (t && t !== key) ? t : fallback;
+                swapped = true;
+              }
+            } else if (typeof node[k] === 'object' && node[k] !== null) {
+              walk(node[k]);
+            }
+          }
+        }
+        walk(data);
+        if (swapped) scriptEl.textContent = JSON.stringify(data);
+      } catch (_e) { /* leave untouched */ }
+    });
+
     // Update page title
     const titleEl = document.querySelector('title[data-i18n]');
     if (titleEl) {
@@ -3142,13 +3341,29 @@ html[dir="rtl"] body {
         })
         .join('');
       
-      // Re-attach event listeners
+      // Re-attach event listeners. Anchors with a real href (the URL-based
+      // switcher renders <a href="/en/...">) MUST navigate; preventDefault'ing
+      // them and calling changeLanguage(null) — which is what the previous
+      // implementation did, since lang-option anchors do not carry data-lang —
+      // silently swallowed the click and left the navbar / announcement bar /
+      // hero copy stuck in the previous language. Buttons with data-lang fall
+      // through to navigateToLanguage so the page reloads under the correct
+      // /<lang>/... URL and the next refresh stays on that language.
       dropdown.querySelectorAll('.lang-option').forEach(function(option) {
         option.addEventListener('click', function(e) {
+          var langAttr = this.getAttribute('data-lang');
+          var hrefAttr = this.getAttribute('href');
+          if (this.tagName === 'A' && hrefAttr && hrefAttr !== '#') {
+            e.stopPropagation();
+            try { if (langAttr) localStorage.setItem('zappy_lang', langAttr); } catch (_) {}
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            dropdown.style.transform = 'translateY(-8px)';
+            return;
+          }
           e.preventDefault();
           e.stopPropagation();
-          const lang = this.getAttribute('data-lang');
-          zappyI18n.changeLanguage(lang);
+          if (langAttr) navigateToLanguage(langAttr);
           dropdown.style.opacity = '0';
           dropdown.style.visibility = 'hidden';
           dropdown.style.transform = 'translateY(-8px)';
@@ -3220,13 +3435,24 @@ html[dir="rtl"] body {
         }
       });
       
-      // Handle language selection
+      // Handle language selection. See the equivalent block in
+      // updateLanguageSwitcherOptions for why anchors must keep their default
+      // navigation and buttons must route through navigateToLanguage.
       dropdown.querySelectorAll('.lang-option').forEach(function(option) {
         option.addEventListener('click', function(e) {
+          var langAttr = this.getAttribute('data-lang');
+          var hrefAttr = this.getAttribute('href');
+          if (this.tagName === 'A' && hrefAttr && hrefAttr !== '#') {
+            e.stopPropagation();
+            try { if (langAttr) localStorage.setItem('zappy_lang', langAttr); } catch (_) {}
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            dropdown.style.transform = 'translateY(-8px)';
+            return;
+          }
           e.preventDefault();
           e.stopPropagation();
-          const lang = this.getAttribute('data-lang');
-          zappyI18n.changeLanguage(lang);
+          if (langAttr) navigateToLanguage(langAttr);
           dropdown.style.opacity = '0';
           dropdown.style.visibility = 'hidden';
           dropdown.style.transform = 'translateY(-8px)';
@@ -3359,18 +3585,12 @@ html[dir="rtl"] body {
         e.preventDefault();
         e.stopPropagation();
         var lang = this.getAttribute('data-lang');
-        zappyI18n.changeLanguage(lang);
-        optionsEl.classList.remove('open');
-        optionsEl.style.display = 'none';
-        var chevron = newToggle.querySelector('.mobile-lang-chevron');
-        if (chevron) chevron.style.transform = '';
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
-        if (navMenu) navMenu.classList.remove('active');
-        var hamburgerIcon = document.querySelector('.hamburger-icon');
-        var closeIcon = document.querySelector('.close-icon');
-        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
-        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
-        document.body.style.overflow = '';
+        // Navigate to /<lang>/... so server-baked chrome (navbar, hero,
+        // announcement bar, footer) renders in the chosen language. An in-page
+        // changeLanguage swap would only refresh [data-i18n] elements and the
+        // user would still see the old navbar; refreshing would also revert
+        // because the URL still encoded the previous language.
+        if (lang) navigateToLanguage(lang);
       });
     });
   }
@@ -3407,18 +3627,10 @@ html[dir="rtl"] body {
         e.preventDefault();
         e.stopPropagation();
         var lang = this.getAttribute('data-lang');
-        zappyI18n.changeLanguage(lang);
-        optionsContainer.classList.remove('open');
-        optionsContainer.style.display = 'none';
-        var chevron = menuItem.querySelector('.mobile-lang-chevron');
-        if (chevron) chevron.style.transform = '';
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu');
-        if (navMenu) navMenu.classList.remove('active');
-        var hamburgerIcon = document.querySelector('.hamburger-icon');
-        var closeIcon = document.querySelector('.close-icon');
-        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
-        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
-        document.body.style.overflow = '';
+        // See initMobileLangSwitcher above for the rationale: navigate so the
+        // server-rendered chrome ends up in the chosen language and refresh
+        // stays consistent.
+        if (lang) navigateToLanguage(lang);
       });
     });
     
@@ -3687,76 +3899,6 @@ html[dir="rtl"] body {
           observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
         });
       }, 500);
-    })();
-    </script>
-
-    <script id="zappy-mobile-lang-menu-script">
-    (function() {
-      function initMobileLangMenu() {
-        if (window.innerWidth > 768) {
-          var existingMenu = document.querySelector('.mobile-lang-menu');
-          if (existingMenu) existingMenu.remove();
-          return;
-        }
-        if (document.querySelector('.mobile-lang-menu')) return;
-        var switcher = document.querySelector('.lang-switcher');
-        if (!switcher) return;
-        var dropdown = switcher.querySelector('.lang-switcher-dropdown');
-        if (!dropdown) return;
-        var options = dropdown.querySelectorAll('.lang-option');
-        if (options.length === 0) return;
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu') || document.querySelector('nav ul');
-        if (!navMenu) return;
-        var currentLang = document.documentElement.lang || 'en';
-        var langConfigs = {
-          he: {name:'עברית',flag:'https://api.iconify.design/circle-flags/il.svg'},
-          en: {name:'English',flag:'https://api.iconify.design/circle-flags/us.svg'},
-          ar: {name:'العربية',flag:'https://api.iconify.design/circle-flags/sa.svg'},
-          fr: {name:'Français',flag:'https://api.iconify.design/circle-flags/fr.svg'},
-          es: {name:'Español',flag:'https://api.iconify.design/circle-flags/es.svg'},
-          de: {name:'Deutsch',flag:'https://api.iconify.design/circle-flags/de.svg'},
-          ru: {name:'Русский',flag:'https://api.iconify.design/circle-flags/ru.svg'},
-          zh: {name:'中文',flag:'https://api.iconify.design/circle-flags/cn.svg'},
-          ja: {name:'日本語',flag:'https://api.iconify.design/circle-flags/jp.svg'},
-          pt: {name:'Português',flag:'https://api.iconify.design/circle-flags/br.svg'},
-          it: {name:'Italiano',flag:'https://api.iconify.design/circle-flags/it.svg'},
-          ko: {name:'한국어',flag:'https://api.iconify.design/circle-flags/kr.svg'}
-        };
-        var container = document.createElement('div');
-        container.className = 'mobile-lang-menu';
-        var currentConfig = langConfigs[currentLang] || {name:currentLang,flag:''};
-        var toggleBtn = document.createElement('button');
-        toggleBtn.className = 'mobile-lang-toggle';
-        toggleBtn.type = 'button';
-        var currentFlagHtml = currentConfig.flag ? '<img src="' + currentConfig.flag + '" width="20" height="20" alt="" style="border-radius:50%;margin-right:8px;margin-left:8px;">' : '';
-        toggleBtn.innerHTML = currentFlagHtml + currentConfig.name;
-        container.appendChild(toggleBtn);
-        var optionsDiv = document.createElement('div');
-        optionsDiv.className = 'mobile-lang-options';
-        var currentLink = document.createElement('a');
-        currentLink.className = 'mobile-lang-option active';
-        currentLink.href = '#';
-        currentLink.innerHTML = currentFlagHtml + currentConfig.name;
-        optionsDiv.appendChild(currentLink);
-        options.forEach(function(opt) {
-          var link = document.createElement('a');
-          link.className = 'mobile-lang-option';
-          link.href = opt.getAttribute('href');
-          link.innerHTML = opt.innerHTML;
-          optionsDiv.appendChild(link);
-        });
-        container.appendChild(optionsDiv);
-        navMenu.appendChild(container);
-        toggleBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleBtn.classList.toggle('expanded');
-          optionsDiv.classList.toggle('expanded');
-        });
-      }
-      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
-      else { initMobileLangMenu(); }
-      window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
     })();
     </script>
 
