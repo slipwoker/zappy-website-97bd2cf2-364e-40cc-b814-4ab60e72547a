@@ -1048,7 +1048,7 @@ html[dir="rtl"] body {
             <p data-i18n="terms_p_26">לשאלות או הבהרות בנוגע לתנאי השימוש:</p>
             <ul>
                 <li data-i18n="terms_li_66"><strong>חברה:</strong> Groutbot</li>
-                <li data-i18n="terms_li_67"><strong>אימייל:</strong> <a href="mailto:groutbot@gmail.com" data-i18n="terms_link_37">groutbot@gmail.com</a></li>
+                <li><strong><span data-i18n="terms_text_67_0">אימייל:</span></strong> <a href="mailto:groutbot@gmail.com" data-i18n="terms_link_37">groutbot@gmail.com</a></li>
                 <li data-i18n="terms_li_68"><strong>טלפון:</strong> <a href="tel:0556842533">0556842533</a></li>
                 <li data-i18n="terms_li_69"><strong>כתובת:</strong> מחוז מרכז, 7180118, ישראל</li>
             </ul>
@@ -1173,74 +1173,197 @@ html[dir="rtl"] body {
 <!-- i18next Multi-Language Support -->
 <script>
 (function() {
+  var __generatedDir = document.documentElement.getAttribute('dir') || 'ltr';
+
   // Language resources (inline to avoid CDN dependency)
   const resources = {
   "he": {
     "translation": {
+      "ecom_accountWelcome": "ברוך הבא",
+      "ecom_addAddress": "הוסף כתובת",
+      "ecom_addBundleToCart": "הוספת {count} מוצרים לעגלה",
       "ecom_addToCart": "הוסף לעגלה",
-      "ecom_startingAt": "החל מ",
-      "ecom_all": "הכל",
-      "ecom_featured": "מומלצים",
-      "ecom_new": "חדשים",
-      "ecom_sale": "מבצעים",
-      "ecom_total": "סה\"כ",
-      "ecom_subtotal": "סכום ביניים",
-      "ecom_yourCart": "העגלה שלך",
-      "ecom_emptyCart": "העגלה ריקה",
-      "ecom_checkout": "תשלום",
-      "ecom_remove": "הסר",
-      "ecom_quantity": "כמות",
-      "ecom_viewDetails": "לפרטים נוספים",
-      "ecom_inStock": "במלאי",
-      "ecom_outOfStock": "אזל מהמלאי",
-      "ecom_sku": "מק\"ט",
-      "ecom_proceedToCheckout": "המשך לתשלום",
-      "ecom_continueShopping": "להמשך קניות",
+      "ecom_addedToCart": "המוצר נוסף לעגלה!",
+      "ecom_addedToFavorites": "נוסף למועדפים",
+      "ecom_addressDeleted": "הכתובת נמחקה",
+      "ecom_addressLabel": "שם הכתובת",
+      "ecom_addressSaved": "הכתובת נשמרה בהצלחה",
+      "ecom_addresses": "כתובות",
       "ecom_agreeToTerms": "אני מסכים/ה ל",
-      "ecom_termsAndConditions": "תנאי השימוש",
-      "ecom_pleaseAcceptTerms": "נא לאשר את תנאי השימוש",
-      "ecom_nameRequired": "נא להזין שם מלא",
-      "ecom_emailRequired": "נא להזין כתובת אימייל",
-      "ecom_emailInvalid": "כתובת אימייל לא תקינה",
-      "ecom_phoneRequired": "נא להזין מספר טלפון",
-      "ecom_shippingRequired": "נא לבחור שיטת משלוח",
-      "ecom_streetRequired": "נא להזין רחוב ומספר",
-      "ecom_cityRequired": "נא להזין עיר",
-      "ecom_city": "עיר",
-      "ecom_saveAddressForNextTime": "שמור את הכתובת לפעם הבאה",
-      "ecom_countryRegion": "מדינה / אזור",
-      "ecom_stateProvince": "מדינה / מחוז",
-      "ecom_stateRequired": "נא לבחור מדינה / מחוז",
-      "ecom_streetAndNumber": "רחוב ומספר",
+      "ecom_all": "הכל",
+      "ecom_alreadyHaveAccount": "כבר יש לך חשבון?",
+      "ecom_apartment": "דירה, קומה, כניסה",
       "ecom_apartmentExt": "דירה, קומה, קוד בניין, הערות וכו'",
-      "ecom_zipPostal": "מיקוד",
+      "ecom_applyCoupon": "החל",
+      "ecom_backToProducts": "חזרה למוצרים",
+      "ecom_browseFavorites": "גלו את כל המוצרים שלנו",
+      "ecom_bundleTotal": "סה\"כ לעגלה",
+      "ecom_callNow": "התקשר עכשיו",
+      "ecom_cancel": "ביטול",
+      "ecom_capacity": "קיבולת",
+      "ecom_cart": "עגלת קניות",
+      "ecom_category": "קטגוריה",
+      "ecom_checkout": "תשלום",
+      "ecom_city": "עיר",
+      "ecom_cityRequired": "נא להזין עיר",
+      "ecom_color": "צבע",
+      "ecom_confirmDelete": "האם אתה בטוח שברצונך למחוק?",
+      "ecom_contactInformation": "פרטי התקשרות",
+      "ecom_continueShopping": "להמשך קניות",
+      "ecom_continueToHomePage": "המשך לדף הבית",
+      "ecom_countryRegion": "מדינה / אזור",
+      "ecom_couponApplied": "הקופון הוחל בהצלחה!",
+      "ecom_couponCode": "קוד קופון",
+      "ecom_couponExpired": "הקופון פג תוקף",
+      "ecom_couponMinOrder": "סכום הזמנה מינימלי",
+      "ecom_customerInfo": "פרטי לקוח",
+      "ecom_customerLogin": "התחברות לקוחות",
+      "ecom_days": "ימים",
+      "ecom_defaultAddress": "כתובת ברירת מחדל",
+      "ecom_deleteAddress": "מחק כתובת",
+      "ecom_discount": "הנחה",
+      "ecom_editAddress": "ערוך כתובת",
+      "ecom_editProfile": "עריכת פרופיל",
+      "ecom_email": "אימייל",
+      "ecom_emailAddress": "כתובת אימייל",
+      "ecom_emailInvalid": "כתובת אימייל לא תקינה",
+      "ecom_emailRequired": "נא להזין כתובת אימייל",
+      "ecom_emptyCart": "העגלה ריקה",
+      "ecom_enterCode": "הזן את הקוד שנשלח לאימייל שלך",
+      "ecom_enterCouponCode": "הזן קוד קופון",
+      "ecom_enterEmail": "הזן את כתובת האימייל שלך ונשלח לך קוד התחברות",
+      "ecom_errorLoading": "שגיאה בטעינת האפשרויות",
+      "ecom_featured": "מומלצים",
+      "ecom_featuredCategories": "קנו לפי קטגוריה",
+      "ecom_featuredProducts": "מוצרים מומלצים",
+      "ecom_free": "חינם",
+      "ecom_freeAbove": "חינם מעל",
       "ecom_frequentlyBoughtTogether": "לרכוש יחד",
       "ecom_frequentlyBoughtTogetherSubtitle": "הוספת מוצרים נלווים לעגלה",
-      "ecom_bundleTotal": "סה\"כ לעגלה",
-      "ecom_addBundleToCart": "הוספת {count} מוצרים לעגלה",
-      "ecom_upsellFree": "חינם",
+      "ecom_fullName": "שם מלא",
+      "ecom_haveCouponCode": "יש לי קוד קופון",
       "ecom_home": "דף הבית",
-      "ecom_products": "מוצרים",
-      "ecom_productDetails": "פרטי המוצר",
-      "ecom_specifications": "מפרט טכני",
-      "ecom_storeNote": "מידע נוסף",
-      "ecom_relatedProducts": "מוצרים דומים",
-      "ecom_color": "צבע",
-      "ecom_size": "גודל",
-      "ecom_material": "חומר",
-      "ecom_style": "סגנון",
-      "ecom_weight": "משקל",
-      "ecom_capacity": "קיבולת",
+      "ecom_inStock": "במלאי",
+      "ecom_inquiryAbout": "פנייה בנושא",
+      "ecom_invalidCoupon": "קוד קופון לא תקין",
+      "ecom_items": "פריטים",
       "ecom_length": "אורך",
+      "ecom_linkCopied": "הקישור הועתק!",
+      "ecom_loadingOrder": "טוען פרטי הזמנה...",
+      "ecom_loadingPayment": "טוען אפשרויות תשלום...",
+      "ecom_loadingProducts": "טוען מוצרים...",
+      "ecom_loadingShipping": "טוען שיטות משלוח...",
+      "ecom_loggedInAs": "מחובר כ:",
+      "ecom_login": "התחברות",
+      "ecom_loginHere": "התחבר כאן",
+      "ecom_loginToFavorite": "יש להתחבר כדי לשמור מועדפים",
+      "ecom_logout": "התנתק",
+      "ecom_material": "חומר",
+      "ecom_mobileNumber": "מספר טלפון",
+      "ecom_myAccount": "החשבון שלי",
+      "ecom_myFavorites": "המועדפים שלי",
+      "ecom_name": "שם",
+      "ecom_nameRequired": "נא להזין שם מלא",
+      "ecom_new": "חדשים",
+      "ecom_next": "הבא",
+      "ecom_noAddresses": "אין כתובות שמורות",
+      "ecom_noFavorites": "אין עדיין מוצרים מועדפים",
+      "ecom_noFeaturedProducts": "עוד לא נבחרו מוצרים מומלצים. צפו בכל המוצרים שלנו!",
+      "ecom_noOrders": "אין עדיין הזמנות",
+      "ecom_noProducts": "אין מוצרים להצגה כרגע",
       "ecom_noShippingMethods": "אין אפשרויות משלוח זמינות",
-      "ecom_free": "חינם",
-      "ecom_days": "ימים",
-      "ecom_freeAbove": "חינם מעל",
-      "ecom_errorLoading": "שגיאה בטעינת האפשרויות",
-      "ecom_vatIncluded": "כולל מע\"מ",
+      "ecom_notLoggedIn": "לא מחובר",
+      "ecom_orderConfirmation": "אישור הזמנה נשלח לאימייל שלך",
+      "ecom_orderDate": "תאריך",
+      "ecom_orderDetails": "פרטי ההזמנה",
+      "ecom_orderItems": "פריטים בהזמנה",
+      "ecom_orderNotFound": "לא נמצאה הזמנה",
+      "ecom_orderNumber": "מספר הזמנה",
+      "ecom_orderProcessing": "ההזמנה שלך בטיפול. נעדכן אותך כשהמשלוח יצא לדרך.",
+      "ecom_orderStatus": "סטטוס",
+      "ecom_orderSuccess": "ההזמנה התקבלה!",
+      "ecom_orderSummary": "סיכום הזמנה",
+      "ecom_orderTotal": "סה\"כ",
+      "ecom_other": "אחר",
+      "ecom_ourProducts": "המוצרים שלנו",
+      "ecom_outOfStock": "אזל מהמלאי",
+      "ecom_paidAmount": "סכום ששולם",
+      "ecom_payment": "תשלום",
+      "ecom_paymentMethod": "אמצעי תשלום",
+      "ecom_paymentNotConfigured": "תשלום מקוון לא מוגדר",
+      "ecom_personalDetails": "פרטים אישיים",
+      "ecom_phone": "טלפון",
+      "ecom_phoneRequired": "נא להזין מספר טלפון",
+      "ecom_placeOrder": "בצע הזמנה",
+      "ecom_pleaseAcceptTerms": "נא לאשר את תנאי השימוש",
+      "ecom_pleaseLogin": "יש להתחבר כדי לצפות בחשבון",
+      "ecom_pleaseSelect": "נא לבחור",
+      "ecom_proceedToCheckout": "המשך לתשלום",
+      "ecom_productDetails": "פרטי המוצר",
+      "ecom_productNotFound": "המוצר לא נמצא",
+      "ecom_products": "מוצרים",
+      "ecom_profileUpdated": "הפרופיל עודכן בהצלחה",
+      "ecom_quantity": "כמות",
+      "ecom_relatedProducts": "מוצרים דומים",
+      "ecom_remove": "הסר",
+      "ecom_removeCoupon": "הסר",
+      "ecom_removeFromFavorites": "הסר ממועדפים",
+      "ecom_removedFromFavorites": "הוסר מהמועדפים",
+      "ecom_returnPolicy": "מדיניות החזרות",
+      "ecom_sale": "מבצעים",
+      "ecom_saveAddressForNextTime": "שמור את הכתובת לפעם הבאה",
+      "ecom_saveChanges": "שמור שינויים",
+      "ecom_saveToFavorites": "שמור למועדפים",
+      "ecom_saving": "שומר...",
+      "ecom_searchProducts": "חיפוש מוצרים",
+      "ecom_selectVariant": "בחר אפשרות",
+      "ecom_sendCode": "שלח קוד",
+      "ecom_sendInquiry": "שלח פנייה",
+      "ecom_setAsDefault": "הגדר כברירת מחדל",
+      "ecom_shareProduct": "שתף מוצר",
       "ecom_shipping": "משלוח",
-      "ecom_discount": "הנחה",
+      "ecom_shippingAddress": "כתובת למשלוח",
+      "ecom_shippingMethod": "שיטת משלוח",
+      "ecom_shippingRequired": "נא לבחור שיטת משלוח",
+      "ecom_signInHere": "התחבר כאן",
+      "ecom_size": "גודל",
+      "ecom_sku": "מק\"ט",
+      "ecom_specifications": "מפרט טכני",
+      "ecom_startingAt": "החל מ",
+      "ecom_stateProvince": "מדינה / מחוז",
+      "ecom_stateRequired": "נא לבחור מדינה / מחוז",
+      "ecom_statusCancelled": "בוטל",
+      "ecom_statusDelivered": "נמסר",
+      "ecom_statusPaid": "שולם",
+      "ecom_statusPending": "ממתין לתשלום",
+      "ecom_statusProcessing": "בטיפול",
+      "ecom_statusShipped": "נשלח",
+      "ecom_storeNote": "מידע נוסף",
+      "ecom_street": "רחוב ומספר",
+      "ecom_streetAndNumber": "רחוב ומספר",
+      "ecom_streetRequired": "נא להזין רחוב ומספר",
+      "ecom_style": "סגנון",
+      "ecom_subtotal": "סכום ביניים",
+      "ecom_termsAndConditions": "תנאי השימוש",
+      "ecom_thankYouOrder": "תודה על ההזמנה",
+      "ecom_total": "סה\"כ",
       "ecom_totalToPay": "סה\"כ לתשלום",
+      "ecom_transactionDate": "תאריך עסקה",
+      "ecom_upsellFree": "חינם",
+      "ecom_variantUnavailable": "לא זמין",
+      "ecom_vat": "מע\"מ",
+      "ecom_vatIncluded": "כולל מע\"מ",
+      "ecom_verificationCode": "קוד אימות",
+      "ecom_verify": "אמת",
+      "ecom_viewAllResults": "הצג את כל התוצאות",
+      "ecom_viewDetails": "לפרטים נוספים",
+      "ecom_viewOrder": "צפה בהזמנה",
+      "ecom_weight": "משקל",
+      "ecom_work": "עבודה",
+      "ecom_yourCart": "העגלה שלך",
+      "ecom_yourOrders": "ההזמנות שלך",
+      "ecom_zip": "מיקוד",
+      "ecom_zipPostal": "מיקוד",
       "nav-home": "בית",
       "home_h1_1": "למשקיעים ולקבלנים המעוניינים בפיילוט",
       "home_h1_2": "Groutbot — מכשיר הרובה החשמלי שמשנה את ענף הריצוף",
@@ -1538,7 +1661,6 @@ html[dir="rtl"] body {
       "terms_li_64": "אי-אכיפה של זכות לא תחשב כוויתור עליה",
       "terms_li_65": "תנאי השימוש מהווים את מלוא ההסכם בין הצדדים",
       "terms_li_66": "חברה: Groutbot",
-      "terms_li_67": "אימייל: groutbot@gmail.com",
       "terms_li_68": "טלפון: 0556842533",
       "terms_li_69": "כתובת: מחוז מרכז, 7180118, ישראל",
       "terms_li_70": "אודות",
@@ -1705,7 +1827,6 @@ html[dir="rtl"] body {
       "privacy_li_56": "זכות להתנגד לעיבוד מידע למטרות שיווק",
       "privacy_li_57": "זכות להגשת תלונה לרשם מאגרי המידע",
       "privacy_li_58": "חברה: Groutbot",
-      "privacy_li_59": "אימייל: groutbot@gmail.com",
       "privacy_li_60": "טלפון: 0556842533",
       "privacy_li_61": "כתובת: מחוז מרכז, 7180118, ישראל",
       "privacy_li_62": "אודות",
@@ -1776,7 +1897,6 @@ html[dir="rtl"] body {
       "contact_label_68": "כתובת אימייל",
       "contact_label_69": "טלפון",
       "contact_label_70": "הודעה",
-      "contact_label_71": "קראתי ואני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות",
       "legal_terms_h1_1": "תנאי שימוש",
       "legal_terms_h2_2": "1. הגדרות",
       "legal_terms_h2_3": "2. תיאור השירותים",
@@ -1894,7 +2014,6 @@ html[dir="rtl"] body {
       "accessibility_li_60": "בדיקת ניגודיות צבעים",
       "accessibility_li_61": "בדיקה עם משתמשים עם מוגבלויות",
       "accessibility_li_62": "חברה: Groutbot",
-      "accessibility_li_63": "אימייל: groutbot@gmail.com",
       "accessibility_li_64": "טלפון: 0556842533",
       "accessibility_li_65": "אודות",
       "accessibility_li_66": "צור קשר",
@@ -1999,75 +2118,201 @@ html[dir="rtl"] body {
       "legal_accessibility_link_17": "groutbot@gmail.com",
       "legal_accessibility_link_18": "← חזרה לאתר",
       "accessibility_meta_description": "הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית",
-      "legal_accessibility_page_title": "הצהרת נגישות - Groutbot"
+      "legal_accessibility_page_title": "הצהרת נגישות - Groutbot",
+      "contact_text_71_0": "קראתי ואני מסכים/ה ל",
+      "contact_text_71_1": " ול",
+      "privacy_text_59_0": "אימייל: ",
+      "accessibility_text_63_0": "אימייל: ",
+      "terms_text_67_0": "אימייל: "
     }
   },
   "en": {
     "translation": {
+      "ecom_accountWelcome": "Welcome",
+      "ecom_addAddress": "Add Address",
+      "ecom_addBundleToCart": "Add {count} items to cart",
       "ecom_addToCart": "Add to Cart",
-      "ecom_startingAt": "Starting at",
-      "ecom_all": "All",
-      "ecom_featured": "Featured",
-      "ecom_new": "New",
-      "ecom_sale": "Sale",
-      "ecom_total": "Total",
-      "ecom_subtotal": "Subtotal",
-      "ecom_yourCart": "Your Cart",
-      "ecom_emptyCart": "Your cart is empty",
-      "ecom_checkout": "Checkout",
-      "ecom_remove": "Remove",
-      "ecom_quantity": "Quantity",
-      "ecom_viewDetails": "View Details",
-      "ecom_inStock": "In Stock",
-      "ecom_outOfStock": "Out of Stock",
-      "ecom_sku": "SKU",
-      "ecom_proceedToCheckout": "Proceed to Checkout",
-      "ecom_continueShopping": "Continue Shopping",
+      "ecom_addedToCart": "Product added to cart!",
+      "ecom_addedToFavorites": "Added to favorites",
+      "ecom_addressDeleted": "Address deleted",
+      "ecom_addressLabel": "Address Label",
+      "ecom_addressSaved": "Address saved successfully",
+      "ecom_addresses": "Addresses",
       "ecom_agreeToTerms": "I agree to the",
-      "ecom_termsAndConditions": "Terms and Conditions",
-      "ecom_pleaseAcceptTerms": "Please accept the terms and conditions",
-      "ecom_nameRequired": "Please enter your full name",
-      "ecom_emailRequired": "Please enter your email address",
-      "ecom_emailInvalid": "Please enter a valid email address",
-      "ecom_phoneRequired": "Please enter your phone number",
-      "ecom_shippingRequired": "Please select a shipping method",
-      "ecom_streetRequired": "Please enter your street address",
-      "ecom_cityRequired": "Please enter your city",
-      "ecom_city": "City",
-      "ecom_saveAddressForNextTime": "Save this address for next time",
-      "ecom_countryRegion": "Country / Region",
-      "ecom_stateProvince": "State / Province",
-      "ecom_stateRequired": "Please select a state / province",
-      "ecom_streetAndNumber": "Street and Number",
+      "ecom_all": "All",
+      "ecom_alreadyHaveAccount": "Already have an account?",
+      "ecom_apartment": "Apt, Floor, Unit",
       "ecom_apartmentExt": "Apt, Floor, Building Code, Notes, Etc.",
-      "ecom_zipPostal": "Zip / Postal Code",
+      "ecom_applyCoupon": "Apply",
+      "ecom_backToProducts": "Back to Products",
+      "ecom_browseFavorites": "Discover all our products",
+      "ecom_bundleTotal": "Bundle total",
+      "ecom_callNow": "Call Now",
+      "ecom_cancel": "Cancel",
+      "ecom_capacity": "Capacity",
+      "ecom_cart": "Cart",
+      "ecom_category": "Category",
+      "ecom_checkout": "Checkout",
+      "ecom_city": "City",
+      "ecom_cityRequired": "Please enter your city",
+      "ecom_color": "Color",
+      "ecom_confirmDelete": "Are you sure you want to delete?",
+      "ecom_contactInformation": "Contact Information",
+      "ecom_continueShopping": "Continue Shopping",
+      "ecom_continueToHomePage": "Continue to Home Page",
+      "ecom_countryRegion": "Country / Region",
+      "ecom_couponApplied": "Coupon applied successfully!",
+      "ecom_couponCode": "Coupon Code",
+      "ecom_couponExpired": "Coupon has expired",
+      "ecom_couponMinOrder": "Minimum order amount",
+      "ecom_customerInfo": "Customer Info",
+      "ecom_customerLogin": "Customer Login",
+      "ecom_days": "days",
+      "ecom_defaultAddress": "Default Address",
+      "ecom_deleteAddress": "Delete Address",
+      "ecom_discount": "Discount",
+      "ecom_editAddress": "Edit Address",
+      "ecom_editProfile": "Edit Profile",
+      "ecom_email": "Email",
+      "ecom_emailAddress": "Email Address",
+      "ecom_emailInvalid": "Please enter a valid email address",
+      "ecom_emailRequired": "Please enter your email address",
+      "ecom_emptyCart": "Your cart is empty",
+      "ecom_enterCode": "Enter the code sent to your email",
+      "ecom_enterCouponCode": "Enter coupon code",
+      "ecom_enterEmail": "Enter your email and we'll send you a login code",
+      "ecom_errorLoading": "Error loading options",
+      "ecom_featured": "Featured",
+      "ecom_featuredCategories": "Shop by Category",
+      "ecom_featuredProducts": "Featured Products",
+      "ecom_free": "FREE",
+      "ecom_freeAbove": "Free above",
       "ecom_frequentlyBoughtTogether": "Frequently bought together",
       "ecom_frequentlyBoughtTogetherSubtitle": "Save time and get everything you need",
-      "ecom_bundleTotal": "Bundle total",
-      "ecom_addBundleToCart": "Add {count} items to cart",
-      "ecom_upsellFree": "Free",
+      "ecom_fullName": "Full Name",
+      "ecom_haveCouponCode": "I have a coupon code",
       "ecom_home": "Home",
-      "ecom_products": "Products",
-      "ecom_productDetails": "Product Details",
-      "ecom_specifications": "Specifications",
-      "ecom_storeNote": "Additional Information",
-      "ecom_relatedProducts": "Related Products",
-      "ecom_color": "Color",
-      "ecom_size": "Size",
-      "ecom_material": "Material",
-      "ecom_style": "Style",
-      "ecom_weight": "Weight",
-      "ecom_capacity": "Capacity",
+      "ecom_inStock": "In Stock",
+      "ecom_inquiryAbout": "Inquiry about",
+      "ecom_invalidCoupon": "Invalid coupon code",
+      "ecom_items": "Items",
       "ecom_length": "Length",
+      "ecom_linkCopied": "Link copied!",
+      "ecom_loadingOrder": "Loading order details...",
+      "ecom_loadingPayment": "Loading payment options...",
+      "ecom_loadingProducts": "Loading products...",
+      "ecom_loadingShipping": "Loading shipping methods...",
+      "ecom_loggedInAs": "Logged in as:",
+      "ecom_login": "Login",
+      "ecom_loginHere": "Login here",
+      "ecom_loginToFavorite": "Log in to save favorites",
+      "ecom_logout": "Logout",
+      "ecom_material": "Material",
+      "ecom_mobileNumber": "Mobile Number",
+      "ecom_myAccount": "My Account",
+      "ecom_myFavorites": "My Favorites",
+      "ecom_name": "Name",
+      "ecom_nameRequired": "Please enter your full name",
+      "ecom_new": "New",
+      "ecom_next": "Next",
+      "ecom_noAddresses": "No saved addresses",
+      "ecom_noFavorites": "No favorites yet",
+      "ecom_noFeaturedProducts": "No featured products yet. Check out all our products!",
+      "ecom_noOrders": "No orders yet",
+      "ecom_noProducts": "No products to display",
       "ecom_noShippingMethods": "No shipping options available",
-      "ecom_free": "FREE",
-      "ecom_days": "days",
-      "ecom_freeAbove": "Free above",
-      "ecom_errorLoading": "Error loading options",
-      "ecom_vatIncluded": "Including VAT",
+      "ecom_notLoggedIn": "Not Logged In",
+      "ecom_orderConfirmation": "A confirmation email has been sent to you",
+      "ecom_orderDate": "Date",
+      "ecom_orderDetails": "Order Details",
+      "ecom_orderItems": "Order Items",
+      "ecom_orderNotFound": "Order not found",
+      "ecom_orderNumber": "Order Number",
+      "ecom_orderProcessing": "Your order is being processed. We'll notify you when it ships.",
+      "ecom_orderStatus": "Status",
+      "ecom_orderSuccess": "Order Received!",
+      "ecom_orderSummary": "Order Summary",
+      "ecom_orderTotal": "Total",
+      "ecom_other": "Other",
+      "ecom_ourProducts": "Our Products",
+      "ecom_outOfStock": "Out of Stock",
+      "ecom_paidAmount": "Amount Paid",
+      "ecom_payment": "Payment",
+      "ecom_paymentMethod": "Payment Method",
+      "ecom_paymentNotConfigured": "Online payment not configured",
+      "ecom_personalDetails": "Personal Details",
+      "ecom_phone": "Phone",
+      "ecom_phoneRequired": "Please enter your phone number",
+      "ecom_placeOrder": "Place Order",
+      "ecom_pleaseAcceptTerms": "Please accept the terms and conditions",
+      "ecom_pleaseLogin": "Please login to view your account",
+      "ecom_pleaseSelect": "Please select",
+      "ecom_proceedToCheckout": "Proceed to Checkout",
+      "ecom_productDetails": "Product Details",
+      "ecom_productNotFound": "Product not found",
+      "ecom_products": "Products",
+      "ecom_profileUpdated": "Profile updated successfully",
+      "ecom_quantity": "Quantity",
+      "ecom_relatedProducts": "Related Products",
+      "ecom_remove": "Remove",
+      "ecom_removeCoupon": "Remove",
+      "ecom_removeFromFavorites": "Remove from Favorites",
+      "ecom_removedFromFavorites": "Removed from favorites",
+      "ecom_returnPolicy": "Return Policy",
+      "ecom_sale": "Sale",
+      "ecom_saveAddressForNextTime": "Save this address for next time",
+      "ecom_saveChanges": "Save Changes",
+      "ecom_saveToFavorites": "Save to Favorites",
+      "ecom_saving": "Saving...",
+      "ecom_searchProducts": "Search products",
+      "ecom_selectVariant": "Select option",
+      "ecom_sendCode": "Send Code",
+      "ecom_sendInquiry": "Send Inquiry",
+      "ecom_setAsDefault": "Set as Default",
+      "ecom_shareProduct": "Share Product",
       "ecom_shipping": "Shipping",
-      "ecom_discount": "Discount",
+      "ecom_shippingAddress": "Shipping Address",
+      "ecom_shippingMethod": "Shipping Method",
+      "ecom_shippingRequired": "Please select a shipping method",
+      "ecom_signInHere": "Sign in here",
+      "ecom_size": "Size",
+      "ecom_sku": "SKU",
+      "ecom_specifications": "Specifications",
+      "ecom_startingAt": "Starting at",
+      "ecom_stateProvince": "State / Province",
+      "ecom_stateRequired": "Please select a state / province",
+      "ecom_statusCancelled": "Cancelled",
+      "ecom_statusDelivered": "Delivered",
+      "ecom_statusPaid": "Paid",
+      "ecom_statusPending": "Pending Payment",
+      "ecom_statusProcessing": "Processing",
+      "ecom_statusShipped": "Shipped",
+      "ecom_storeNote": "Additional Information",
+      "ecom_street": "Street Address",
+      "ecom_streetAndNumber": "Street and Number",
+      "ecom_streetRequired": "Please enter your street address",
+      "ecom_style": "Style",
+      "ecom_subtotal": "Subtotal",
+      "ecom_termsAndConditions": "Terms and Conditions",
+      "ecom_thankYouOrder": "Thank you for your order",
+      "ecom_total": "Total",
       "ecom_totalToPay": "Total to Pay",
+      "ecom_transactionDate": "Transaction Date",
+      "ecom_upsellFree": "Free",
+      "ecom_variantUnavailable": "Unavailable",
+      "ecom_vat": "VAT",
+      "ecom_vatIncluded": "Including VAT",
+      "ecom_verificationCode": "Verification Code",
+      "ecom_verify": "Verify",
+      "ecom_viewAllResults": "View all results",
+      "ecom_viewDetails": "View Details",
+      "ecom_viewOrder": "View Order",
+      "ecom_weight": "Weight",
+      "ecom_work": "Work",
+      "ecom_yourCart": "Your Cart",
+      "ecom_yourOrders": "Your Orders",
+      "ecom_zip": "ZIP Code",
+      "ecom_zipPostal": "Zip / Postal Code",
       "nav-home": "Home",
       "home_h1_1": "For investors and contractors interested in a pilot",
       "home_h1_2": "Groutbot — The Electric Grout Gun That's Transforming the Tiling Industry",
@@ -2365,7 +2610,6 @@ html[dir="rtl"] body {
       "terms_li_64": "Non-enforcement of a right will not be considered a waiver of it",
       "terms_li_65": "The terms of use constitute the entire agreement between the parties",
       "terms_li_66": "<strong>חברה:</strong> Groutbot",
-      "terms_li_67": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "terms_li_68": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "terms_li_69": "<strong>כתובת:</strong> מחוז מרכז, 7180118, ישראל",
       "terms_li_70": "About",
@@ -2532,7 +2776,6 @@ html[dir="rtl"] body {
       "privacy_li_56": "Right to object to information processing for marketing purposes",
       "privacy_li_57": "Right to file a complaint with the Data Protection Registrar",
       "privacy_li_58": "<strong>חברה:</strong> Groutbot",
-      "privacy_li_59": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "privacy_li_60": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "privacy_li_61": "<strong>כתובת:</strong> מחוז מרכז, 7180118, ישראל",
       "privacy_li_62": "About",
@@ -2603,7 +2846,6 @@ html[dir="rtl"] body {
       "contact_label_68": "Email Address",
       "contact_label_69": "Phone",
       "contact_label_70": "Message",
-      "contact_label_71": "I have read and agree to the Terms of Use and Privacy Policy",
       "legal_terms_h1_1": "Terms of Use",
       "legal_terms_h2_2": "1. Definitions",
       "legal_terms_h2_3": "2. Service Description",
@@ -2721,7 +2963,6 @@ html[dir="rtl"] body {
       "accessibility_li_60": "Color contrast testing",
       "accessibility_li_61": "Testing with users with disabilities",
       "accessibility_li_62": "<strong>חברה:</strong> Groutbot",
-      "accessibility_li_63": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "accessibility_li_64": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "accessibility_li_65": "About",
       "accessibility_li_66": "Contact",
@@ -2826,7 +3067,12 @@ html[dir="rtl"] body {
       "legal_accessibility_link_17": "groutbot@gmail.com",
       "legal_accessibility_link_18": "← Back to website",
       "accessibility_meta_description": "Our accessibility statement - our commitment to digital accessibility",
-      "legal_accessibility_page_title": "Accessibility Statement - Groutbot"
+      "legal_accessibility_page_title": "Accessibility Statement - Groutbot",
+      "contact_text_71_0": "I have read and agree to the ",
+      "contact_text_71_1": " and ",
+      "privacy_text_59_0": "<strong>אימייל:</strong> <a href=\"mailto:",
+      "accessibility_text_63_0": "<strong>אימייל:</strong> <a href=\"mailto:",
+      "terms_text_67_0": "<strong>אימייל:</strong> <a href=\"mailto:"
     }
   }
 };
@@ -2885,6 +3131,29 @@ html[dir="rtl"] body {
     try { localStorage.setItem('zappy_lang', targetLang); } catch (e) {}
 
     var path = window.location.pathname || '/';
+
+    // PREVIEW MODE: when the page is loaded inside the dashboard preview
+    // iframe the pathname is the API route itself
+    // (/api/website/preview/:id or /api/website/preview-fullscreen/:id) and
+    // the in-site path lives in ?page=. Prepending /<lang>/ to that pathname
+    // would produce /en/api/website/preview-fullscreen/... — a 404 with no
+    // matching Express route. Instead we keep the iframe URL and toggle only
+    // the ?lang= query param. The preview-fullscreen route already treats
+    // ?lang= as the highest-priority language source (overrides path/locale
+    // detection) and re-renders the page with the correct chrome on reload,
+    // which is exactly what the published /<lang>/ navigation would have
+    // delivered on a real domain.
+    if (path.indexOf('/api/website/preview') === 0) {
+      var previewUrl = new URL(window.location.href);
+      if (targetLang === 'he') {
+        previewUrl.searchParams.delete('lang');
+      } else {
+        previewUrl.searchParams.set('lang', targetLang);
+      }
+      window.location.assign(previewUrl.pathname + previewUrl.search + previewUrl.hash);
+      return;
+    }
+
     var prefixMatch = path.match(/^\/([a-z]{2})(?=\/|$)/i);
     if (prefixMatch && availableLanguages.includes(prefixMatch[1].toLowerCase())) {
       path = path.slice(prefixMatch[0].length) || '/';
@@ -3194,10 +3463,12 @@ html[dir="rtl"] body {
     });
     
     // Swap inline text-align on content elements when direction changes.
-    // RTL-primary sites have text-align:right baked into inline styles;
-    // these must become text-align:left when viewing in LTR, and vice versa.
-    var defaultIsRTL = rtlLanguages.includes('he');
-    var needsSwap = isRTL !== defaultIsRTL;
+    // The HTML was generated with a specific direction (captured as
+    // __generatedDir at script start, before any runtime changes).
+    // When the active language's direction differs from the generation
+    // direction, inline text-align values must be mirrored.
+    var generatedIsRTL = __generatedDir === 'rtl';
+    var needsSwap = isRTL !== generatedIsRTL;
     document.querySelectorAll('[style]').forEach(function(el) {
       if (el.closest('header') || el.closest('nav') || el.closest('.navbar') || el.closest('.lang-switcher')) return;
       if (el.closest('.legal-content') || el.closest('.terms-content') || el.closest('.privacy-content')) return;
@@ -3214,38 +3485,70 @@ html[dir="rtl"] body {
       }
     });
 
-    // Swap text-align in CSS stylesheet rules when direction changes.
-    // CSS rules with text-align:right (from RTL-primary generation) must become
-    // text-align:left when viewing in LTR, and vice versa.
-    if (!window.__zappyOrigTA) window.__zappyOrigTA = new WeakMap();
-    var origTAMap = window.__zappyOrigTA;
+    // Swap directional CSS properties in stylesheet rules when direction changes.
+    // Handles text-align (right↔left) and — for flex-direction:column rules only
+    // — align-items (flex-end↔flex-start).  Recurses into @media/@supports so
+    // responsive rules are also mirrored.  Uses setProperty() to preserve the
+    // original !important priority.
+    if (!window.__zappyOrigCSS) window.__zappyOrigCSS = new WeakMap();
+    var origCSSMap = window.__zappyOrigCSS;
+    function swapCSSRule(cssRule) {
+      if (cssRule.cssRules && cssRule.cssRules.length) {
+        for (var ci = 0; ci < cssRule.cssRules.length; ci++) swapCSSRule(cssRule.cssRules[ci]);
+        return;
+      }
+      if (!cssRule.style || !cssRule.selectorText) return;
+      if (cssRule.selectorText.indexOf('[dir=') !== -1) return;
+      if (cssRule.style.direction) return;
+      if (/^(html|body)\s*,?\s*(html|body)?\s*$/.test(cssRule.selectorText.trim())) return;
+      if (/\.(lang-option|lang-switcher|mobile-lang)/.test(cssRule.selectorText)) return;
+      if (!origCSSMap.has(cssRule)) {
+        origCSSMap.set(cssRule, {
+          ta: cssRule.style.textAlign || '',
+          taPri: cssRule.style.getPropertyPriority('text-align'),
+          ai: cssRule.style.alignItems || '',
+          aiPri: cssRule.style.getPropertyPriority('align-items'),
+          fd: cssRule.style.flexDirection || ''
+        });
+      }
+      var orig = origCSSMap.get(cssRule);
+      var rta = orig.ta;
+      if (rta && rta !== 'center' && rta !== 'justify' && rta !== 'start' && rta !== 'end') {
+        var newTA = needsSwap ? (rta === 'right' ? 'left' : 'right') : rta;
+        cssRule.style.setProperty('text-align', newTA, orig.taPri);
+      }
+      var rai = orig.ai;
+      if ((rai === 'flex-end' || rai === 'flex-start') && orig.fd === 'column') {
+        var newAI = needsSwap ? (rai === 'flex-end' ? 'flex-start' : 'flex-end') : rai;
+        cssRule.style.setProperty('align-items', newAI, orig.aiPri);
+      }
+    }
     for (var si = 0; si < document.styleSheets.length; si++) {
       try {
         var sheetRules = document.styleSheets[si].cssRules;
-        for (var ri = 0; ri < sheetRules.length; ri++) {
-          var cssRule = sheetRules[ri];
-          if (!cssRule.style || !cssRule.selectorText) continue;
-          var rta = cssRule.style.textAlign;
-          if (!rta || rta === 'center' || rta === 'justify' || rta === 'start' || rta === 'end') continue;
-          if (cssRule.selectorText.indexOf('[dir=') !== -1) continue;
-          if (/direction\s*:/i.test(cssRule.cssText)) continue;
-          if (/^(html|body)\s*,?\s*(html|body)?\s*$/.test(cssRule.selectorText.trim())) continue;
-          if (/\.(lang-option|lang-switcher|mobile-lang)/.test(cssRule.selectorText)) continue;
-          if (!origTAMap.has(cssRule)) {
-            origTAMap.set(cssRule, rta);
-          }
-          var origRTA = origTAMap.get(cssRule);
-          if (needsSwap) {
-            cssRule.style.textAlign = origRTA === 'right' ? 'left' : 'right';
-          } else {
-            cssRule.style.textAlign = origRTA;
-          }
-        }
+        for (var ri = 0; ri < sheetRules.length; ri++) swapCSSRule(sheetRules[ri]);
       } catch(e) {}
     }
 
+    // Swap align-items on inline-styled flex-direction:column containers
+    document.querySelectorAll('[style]').forEach(function(el) {
+      if (el.closest('header') || el.closest('nav') || el.closest('.navbar') || el.closest('.lang-switcher')) return;
+      if (el.closest('.legal-content') || el.closest('.terms-content') || el.closest('.privacy-content')) return;
+      var ai = el.style.alignItems;
+      if (ai !== 'flex-end' && ai !== 'flex-start') return;
+      if (el.style.flexDirection !== 'column') return;
+      if (!el.hasAttribute('data-ai-orig')) {
+        el.setAttribute('data-ai-orig', ai);
+      }
+      var origAI = el.getAttribute('data-ai-orig');
+      if (needsSwap) {
+        el.style.alignItems = origAI === 'flex-end' ? 'flex-start' : 'flex-end';
+      } else {
+        el.style.alignItems = origAI;
+      }
+    });
+
     // Update catalog menu RTL class to match current direction
-    // This is critical for e-commerce sites with category navigation
     document.querySelectorAll('.zappy-catalog-menu').forEach(function(el) {
       if (isRTL) {
         el.classList.add('rtl');

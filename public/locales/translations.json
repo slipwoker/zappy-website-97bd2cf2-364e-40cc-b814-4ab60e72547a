@@ -298,7 +298,6 @@
       "terms_li_64": "אי-אכיפה של זכות לא תחשב כוויתור עליה",
       "terms_li_65": "תנאי השימוש מהווים את מלוא ההסכם בין הצדדים",
       "terms_li_66": "חברה: Groutbot",
-      "terms_li_67": "אימייל: groutbot@gmail.com",
       "terms_li_68": "טלפון: 0556842533",
       "terms_li_69": "כתובת: מחוז מרכז, 7180118, ישראל",
       "terms_li_70": "אודות",
@@ -465,7 +464,6 @@
       "privacy_li_56": "זכות להתנגד לעיבוד מידע למטרות שיווק",
       "privacy_li_57": "זכות להגשת תלונה לרשם מאגרי המידע",
       "privacy_li_58": "חברה: Groutbot",
-      "privacy_li_59": "אימייל: groutbot@gmail.com",
       "privacy_li_60": "טלפון: 0556842533",
       "privacy_li_61": "כתובת: מחוז מרכז, 7180118, ישראל",
       "privacy_li_62": "אודות",
@@ -536,7 +534,6 @@
       "contact_label_68": "כתובת אימייל",
       "contact_label_69": "טלפון",
       "contact_label_70": "הודעה",
-      "contact_label_71": "קראתי ואני מסכים/ה לתנאי השימוש ולמדיניות הפרטיות",
       "legal_terms_h1_1": "תנאי שימוש",
       "legal_terms_h2_2": "1. הגדרות",
       "legal_terms_h2_3": "2. תיאור השירותים",
@@ -654,7 +651,6 @@
       "accessibility_li_60": "בדיקת ניגודיות צבעים",
       "accessibility_li_61": "בדיקה עם משתמשים עם מוגבלויות",
       "accessibility_li_62": "חברה: Groutbot",
-      "accessibility_li_63": "אימייל: groutbot@gmail.com",
       "accessibility_li_64": "טלפון: 0556842533",
       "accessibility_li_65": "אודות",
       "accessibility_li_66": "צור קשר",
@@ -759,7 +755,12 @@
       "legal_accessibility_link_17": "groutbot@gmail.com",
       "legal_accessibility_link_18": "← חזרה לאתר",
       "accessibility_meta_description": "הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית",
-      "legal_accessibility_page_title": "הצהרת נגישות - Groutbot"
+      "legal_accessibility_page_title": "הצהרת נגישות - Groutbot",
+      "contact_text_71_0": "קראתי ואני מסכים/ה ל",
+      "contact_text_71_1": " ול",
+      "privacy_text_59_0": "אימייל: ",
+      "accessibility_text_63_0": "אימייל: ",
+      "terms_text_67_0": "אימייל: "
     }
   },
   "en": {
@@ -1061,7 +1062,6 @@
       "terms_li_64": "Non-enforcement of a right will not be considered a waiver of it",
       "terms_li_65": "The terms of use constitute the entire agreement between the parties",
       "terms_li_66": "<strong>חברה:</strong> Groutbot",
-      "terms_li_67": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "terms_li_68": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "terms_li_69": "<strong>כתובת:</strong> מחוז מרכז, 7180118, ישראל",
       "terms_li_70": "About",
@@ -1228,7 +1228,6 @@
       "privacy_li_56": "Right to object to information processing for marketing purposes",
       "privacy_li_57": "Right to file a complaint with the Data Protection Registrar",
       "privacy_li_58": "<strong>חברה:</strong> Groutbot",
-      "privacy_li_59": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "privacy_li_60": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "privacy_li_61": "<strong>כתובת:</strong> מחוז מרכז, 7180118, ישראל",
       "privacy_li_62": "About",
@@ -1299,7 +1298,6 @@
       "contact_label_68": "Email Address",
       "contact_label_69": "Phone",
       "contact_label_70": "Message",
-      "contact_label_71": "I have read and agree to the Terms of Use and Privacy Policy",
       "legal_terms_h1_1": "Terms of Use",
       "legal_terms_h2_2": "1. Definitions",
       "legal_terms_h2_3": "2. Service Description",
@@ -1417,7 +1415,6 @@
       "accessibility_li_60": "Color contrast testing",
       "accessibility_li_61": "Testing with users with disabilities",
       "accessibility_li_62": "<strong>חברה:</strong> Groutbot",
-      "accessibility_li_63": "<strong>אימייל:</strong> <a href=\"mailto:groutbot@gmail.com\">groutbot@gmail.com</a>",
       "accessibility_li_64": "<strong>טלפון:</strong> <a href=\"tel:0556842533\">0556842533</a>",
       "accessibility_li_65": "About",
       "accessibility_li_66": "Contact",
@@ -1522,7 +1519,12 @@
       "legal_accessibility_link_17": "groutbot@gmail.com",
       "legal_accessibility_link_18": "← Back to website",
       "accessibility_meta_description": "Our accessibility statement - our commitment to digital accessibility",
-      "legal_accessibility_page_title": "Accessibility Statement - Groutbot"
+      "legal_accessibility_page_title": "Accessibility Statement - Groutbot",
+      "contact_text_71_0": "I have read and agree to the ",
+      "contact_text_71_1": " and ",
+      "privacy_text_59_0": "<strong>אימייל:</strong> <a href=\"mailto:",
+      "accessibility_text_63_0": "<strong>אימייל:</strong> <a href=\"mailto:",
+      "terms_text_67_0": "<strong>אימייל:</strong> <a href=\"mailto:"
     }
   }
 }
