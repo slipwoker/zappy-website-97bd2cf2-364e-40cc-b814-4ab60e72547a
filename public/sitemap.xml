@@ -56,6 +56,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/contact" />
   </url>
   <url>
+    <loc>https://groutbot.co.il/team</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
+  </url>
+  <url>
+    <loc>https://groutbot.co.il/en/team</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
+  </url>
+  <url>
     <loc>https://groutbot.co.il/privacy</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
