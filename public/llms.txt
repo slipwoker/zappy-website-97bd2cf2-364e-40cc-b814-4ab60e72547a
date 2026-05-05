@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# Groutbot — Generative Engine Optimization Map
+
+> A construction technology company that manufactures an innovative electric device designed to inject grout between floor tiles. The product automates and simplifies a traditionally manual and labor-intensive process in the construction and tiling industry, suggesting a focus on efficiency, precision, and professional-grade solutions for contractors and builders.
 
 ---
 
@@ -32,12 +34,45 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: groutbot@gmail.com
+- Phone: 0556842533
+- Phone (tel): tel:0556842533
+- Address: מחוז מרכז, 7180118, ישראל
+
+### Contact form
+- URL: https://groutbot.co.il/contact
+- Endpoint: https://groutbot.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://groutbot.co.il/sitemap.xml
-- **Robots.txt**: https://groutbot.co.il/robots.txt
+## About Groutbot
+A construction technology company that manufactures an innovative electric device designed to inject grout between floor tiles. The product automates and simplifies a traditionally manual and labor-intensive process in the construction and tiling industry, suggesting a focus on efficiency, precision, and professional-grade solutions for contractors and builders.
+
+## Target Audience
+- מנהלי פרויקטים בקנה מידה גדול
+- אדריכלים בפיתוח עירוני
+- ספקי ציוד בנייה
+- תומכי בנייה בת קיימא
+
+## Industry
+טכנולוגיה לענף הבניה
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://groutbot.co.il/sitemap.xml
+- Robots: https://groutbot.co.il/robots.txt
+- Flattened page text (for LLMs): https://groutbot.co.il/llms-full.txt

@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="מדיניות פרטיות">
     <meta name="twitter:description" content="מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://groutbot.co.il#organization","name":"Groutbot","url":"https://groutbot.co.il","description":"A construction technology company that manufactures an innovative electric device designed to inject grout between floor tiles. The product automates and simplifies a traditionally manual and labor-intensive process in the construction and tiling industry, suggesting a focus on efficiency, precision, and professional-grade solutions for contractors and builders.","address":{"@type":"PostalAddress","streetAddress":"מחוז מרכז, 7180118, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"groutbot@gmail.com","telephone":"0556842533","availableLanguage":["he","en"]}]},{"@type":"WebSite","@id":"https://groutbot.co.il#website","url":"https://groutbot.co.il","name":"Groutbot","publisher":{"@id":"https://groutbot.co.il#organization"},"inLanguage":"he"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://groutbot.co.il"},{"@type":"ListItem","position":2,"name":"Privacy","item":"https://groutbot.co.il/privacy"}]}]}</script>
     <title data-i18n="privacy_page_title">מדיניות פרטיות</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -897,11 +898,37 @@ html[dir="rtl"] body {
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -1390,6 +1417,9 @@ html[dir="rtl"] body {
       "new_a_357": "צרו קשר עכשיו",
       "new_a_358": "לפרטי המוצר <i class=\"fa-solid fa-arrow-left\"></i>",
       "new_a_379": "קראו עוד על Groutbot ←",
+      "new_a_383": "פתרון",
+      "new_a_384": "צוות",
+      "new_a_385": "וידאו ותמונות",
       "new_p_148": "טקסט תיאור כרטיס נמצא כאן",
       "new_p_150": "טקסט תיאור כרטיס נמצא כאן",
       "new_p_152": "טקסט תיאור כרטיס נמצא כאן",
@@ -1451,12 +1481,14 @@ html[dir="rtl"] body {
       "home_h4_22": "יצירת קשר",
       "new_h1_198": "מהפכה בהזרקת\nמילוי בין אריחים",
       "new_h1_261": "הפנייה שלך התקבלה בהצלחה",
+      "new_h1_386": "<span class=\"hero-headline-white\">רובוטיקה</span>\n        <span class=\"hero-headline-white\">ובינה מלאכותית</span>\n        <span class=\"hero-headline-accent\">לרצפות המחר</span>",
       "new_h2_206": "כותרת חדשה",
       "new_h2_263": "הפנייה שלך התקבלה בהצלחה",
-      "new_h2_327": "ענף הריצוף —&nbsp;\nעובד עדיין על הברכיים.&nbsp;\nאנחנו משנים את זה.",
+      "new_h2_327": "ענף הריצוף — עובד עדיין על הברכיים. אנחנו משנים את זה.",
       "new_h2_337": "גלריית תמונות",
       "new_h2_355": "הגיע הזמן לשדרג את\nאופן הזרקת הגרוט",
       "new_h2_363": "שוק של $4.2B&nbsp;\nוהכלי&nbsp;\nשמשנה את כללי המשחק",
+      "new_h2_381": "שוק של $4.2B והכלי שמשנה את כללי המשחק",
       "new_h3_147": "כותרת כרטיס 1",
       "new_h3_149": "כותרת כרטיס 2",
       "new_h3_151": "כותרת כרטיס 3",
@@ -1721,6 +1753,7 @@ html[dir="rtl"] body {
       "new_span_273": "GROUTBOT — מכונה חשמלית להזרקת רובה בין מרצפות",
       "new_span_274": "⚠️ המצב הנוכחי",
       "new_span_291": "✅ Groutbot בפעולה",
+      "new_span_382": "EasyFloor",
       "privacy_h1_1": "מדיניות פרטיות",
       "privacy_h2_2": "1. איסוף מידע",
       "privacy_h2_3": "2. שימוש במידע",
@@ -2339,6 +2372,9 @@ html[dir="rtl"] body {
       "new_a_357": "Contact us now",
       "new_a_358": "Product details <i class=\"fa-solid fa-arrow-left\"></i>",
       "new_a_379": "Read more about Groutbot ←",
+      "new_a_383": "Solution",
+      "new_a_384": "Team",
+      "new_a_385": "Video and Images",
       "new_p_148": "Card description text is located here",
       "new_p_150": "Card description text is located here",
       "new_p_152": "Card description text is located here",
@@ -2400,12 +2436,14 @@ html[dir="rtl"] body {
       "home_h4_22": "Contact Us",
       "new_h1_198": "Revolution in Grout\nInjection Between Tiles",
       "new_h1_261": "הפנייה שלך התקבלה בהצלחה",
+      "new_h1_386": "<span class=\"hero-headline-white\">Robotics</span>\n        <span class=\"hero-headline-white\">and Artificial Intelligence</span>\n        <span class=\"hero-headline-accent\">for Tomorrow's Floors</span>",
       "new_h2_206": "New Heading",
       "new_h2_263": "הפנייה שלך התקבלה בהצלחה",
-      "new_h2_327": "The flooring industry —&nbsp;\nstill working on its knees.&nbsp;\nWe're changing that.",
+      "new_h2_327": "The flooring industry — still working on its knees. We're changing that.",
       "new_h2_337": "Photo Gallery",
       "new_h2_355": "It's time to upgrade\nyour grouting method",
       "new_h2_363": "$4.2B Market&nbsp;\nand the Tool&nbsp;\nthat Changes the Game",
+      "new_h2_381": "$4.2B market and the tool that changes the game",
       "new_h3_147": "Card Title 1",
       "new_h3_149": "Card Title 2",
       "new_h3_151": "Card Title 3",
@@ -2670,6 +2708,7 @@ html[dir="rtl"] body {
       "new_span_273": "GROUTBOT — Electric machine for grout injection between tiles",
       "new_span_274": "⚠️ Current situation",
       "new_span_291": "✅ Groutbot in action",
+      "new_span_382": "EasyFloor",
       "privacy_h1_1": "Privacy Policy",
       "privacy_h2_2": "1. Information Collection",
       "privacy_h2_3": "2. Use of Information",
