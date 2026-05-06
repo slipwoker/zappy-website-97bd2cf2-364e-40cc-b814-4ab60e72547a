@@ -20,22 +20,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il" />
   </url>
   <url>
-    <loc>https://groutbot.co.il/about</loc>
+    <loc>https://groutbot.co.il/team</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/about" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
   </url>
   <url>
-    <loc>https://groutbot.co.il/en/about</loc>
+    <loc>https://groutbot.co.il/en/team</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/about" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
   </url>
   <url>
     <loc>https://groutbot.co.il/contact</loc>
@@ -56,22 +56,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/contact" />
   </url>
   <url>
-    <loc>https://groutbot.co.il/team</loc>
+    <loc>https://groutbot.co.il/about-us</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/about-us" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/about-us" />
   </url>
   <url>
-    <loc>https://groutbot.co.il/en/team</loc>
+    <loc>https://groutbot.co.il/en/about-us</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/team" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/team" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/team" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://groutbot.co.il/about-us" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://groutbot.co.il/en/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groutbot.co.il/about-us" />
   </url>
   <url>
     <loc>https://groutbot.co.il/privacy</loc>
