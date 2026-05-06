@@ -899,21 +899,23 @@ html[dir="rtl"] body {
       html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
       html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: none !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
+        div[id*="mic-access-tool-box"], ._access-menu {
+          visibility: hidden; opacity: 0; pointer-events: auto !important;
         }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
+        div[id*="mic-access-tool-box"], ._access-menu {
+          visibility: hidden; opacity: 0; pointer-events: auto !important;
         }
       }
     </style>
@@ -1350,38 +1352,7 @@ html[dir="rtl"] body {
     
     console.log('[Navbar] Mobile menu initialized successfully');
     
-    // === WHATSAPP BUTTON VISIBILITY FIX ===
-    // Ensure WhatsApp floating button is hidden on desktop and visible on mobile
-    // IMPORTANT: Only target the floating button by its class, NOT generic wa.me links
-    const handleWhatsAppVisibility = function() {
-      const whatsappBtn = document.querySelector('.whatsapp-float');
-      if (whatsappBtn) {
-        const isDesktop = window.innerWidth >= 769;
-        if (isDesktop) {
-          whatsappBtn.style.setProperty('display', 'none', 'important');
-          whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
-          whatsappBtn.style.setProperty('opacity', '0', 'important');
-          whatsappBtn.style.setProperty('pointer-events', 'none', 'important');
-          console.log('[WhatsApp] Button hidden on desktop');
-        } else {
-          whatsappBtn.style.removeProperty('display');
-          whatsappBtn.style.removeProperty('visibility');
-          whatsappBtn.style.removeProperty('opacity');
-          whatsappBtn.style.removeProperty('pointer-events');
-          console.log('[WhatsApp] Button visible on mobile');
-        }
-      }
-    };
-    
-    // Run on load
-    handleWhatsAppVisibility();
-    
-    // Run on resize with debouncing
-    let resizeTimer;
-    window.addEventListener('resize', function() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(handleWhatsAppVisibility, 100);
-    });
+    // WhatsApp visibility is now controlled via CSS (siteSettings)
   });
 })();
 
