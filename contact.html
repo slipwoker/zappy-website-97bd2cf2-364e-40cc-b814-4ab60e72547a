@@ -1291,18 +1291,18 @@ html[dir="rtl"] body {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
-        div[id*="mic-access-tool-box"], ._access-menu {
-          visibility: hidden; opacity: 0; pointer-events: auto !important;
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
-        div[id*="mic-access-tool-box"], ._access-menu {
-          visibility: hidden; opacity: 0; pointer-events: auto !important;
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
     </style>
@@ -1329,7 +1329,7 @@ html[dir="rtl"] body {
       <a href="/" class="logo-link">
         <img src="/assets/groutbot-logo-1777992244811-nftx3v.webp?v=1777992245324-12brlo" alt="Groutbot" class="logo" data-i18n-alt="home_alt_134">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li style="display: none !important;" class="zappy-hidden-menu-item"><a href="/the-team" class="nav-link" data-i18n="new_a_385">הצוות</a></li><li><a href="/vision" data-i18n="home_nav_132">חזון</a></li><li class="nav-cta-item-mobile"><a href="/contact">צור קשר</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/the-team" class="nav-link" data-i18n="new_a_385">הצוות</a></li><li><a href="/vision" data-i18n="home_nav_132">חזון</a></li><li class="nav-cta-item-mobile"><a href="/contact">צור קשר</a></li></ul></div>
 
     
 
@@ -2370,6 +2370,7 @@ html[dir="rtl"] body {
       "new_p_418": "מוכנים להתחיל?",
       "new_p_420": "הצוות שלנו עומד לרשותכם לכל שאלה, הדגמה או ייעוץ מקצועי. בין אם אתם קבלנים, מרצפים או יזמי בנייה — Groutbot מוכן לעבוד לצדכם.",
       "new_p_425": "מהיר יותר, מדויק יותר, ופחות מאמץ ידני —\n        הכלי שכל קבלן ריצוף חיכה לו.",
+      "new_p_434": "Groutbot מפתחת מכונה להזרקת רובה חשמלית בין מרצפות — מהיר פי 2.5, מדויק, ונקי. ללא עבודה ידנית קשה, ללא שחיקה.",
       "about_h1_1": "הנדסה שנולדה\nמתוך הרצפה",
       "about_h2_2": "מה מניע אותנו בכל פרויקט",
       "about_h2_3": "אב הטיפוס נבנה כדי להחזיק מעמד בתנאי שטח קשים",
@@ -2409,7 +2410,7 @@ html[dir="rtl"] body {
       "home_h4_22": "יצירת קשר",
       "new_h1_198": "מהפכה בהזרקת\nמילוי בין אריחים",
       "new_h1_261": "הפנייה שלך התקבלה בהצלחה",
-      "new_h1_384": "ענף הריצוף\nעובד עדיין על הברכיים?\nאנחנו משנים את זה.",
+      "new_h1_384": "ענף הריצוף עובד עדיין על הברכיים?\nאנחנו משנים את זה.",
       "new_h1_386": "המכשיר שמשנה את\nעולם הריצוף המקצועי",
       "new_h1_423": "Groutbot —\n\n        <span class=\"groutbot-hero__title-highlight\">המכשיר שמשנה</span>\n\n        את עולם הריצוף",
       "new_h2_206": "כותרת חדשה",
@@ -2589,6 +2590,7 @@ html[dir="rtl"] body {
       "new_div_426": "<span class=\"groutbot-hero__trust-value\">3×</span>\n          <span class=\"groutbot-hero__trust-label\">מהיר יותר</span>",
       "new_div_429": "<span class=\"groutbot-hero__trust-value\">98%</span>\n          <span class=\"groutbot-hero__trust-label\">דיוק הזרקה</span>",
       "new_div_431": "<span class=\"groutbot-hero__trust-value\">500+</span>\n          <span class=\"groutbot-hero__trust-label\">קבלנים מרוצים</span>",
+      "new_div_435": "<span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>הזרקה חשמלית אוטומטית</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>לחץ אחיד ומדויק</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>קל משקל ונייד</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>תואם חומרים סטנדרטיים</span>",
       "terms_h2_10": "9. שינוי תנאי השימוש",
       "terms_h2_11": "10. סיום השירות",
       "terms_h2_12": "11. דין חל ויישוב סכסוכים",
@@ -3367,6 +3369,7 @@ html[dir="rtl"] body {
       "new_p_418": "Ready to get started?",
       "new_p_420": "Our team is at your service for any question, demonstration, or professional consultation. Whether you're contractors, tilers, or construction entrepreneurs — Groutbot is ready to work alongside you.",
       "new_p_425": "Faster, more accurate, and less manual effort —\n        the tool every tiling contractor has been waiting for.",
+      "new_p_434": "Groutbot develops an electric grout injection machine for tiles — 2.5x faster, precise, and clean. No hard manual labor, no wear and tear.",
       "about_h1_1": "Engineering born\nfrom the ground up",
       "about_h2_2": "What Drives Us in Every Project",
       "about_h2_3": "The prototype was built to withstand harsh field conditions",
@@ -3406,7 +3409,7 @@ html[dir="rtl"] body {
       "home_h4_22": "Contact Us",
       "new_h1_198": "Revolution in Grout\nInjection Between Tiles",
       "new_h1_261": "הפנייה שלך התקבלה בהצלחה",
-      "new_h1_384": "The flooring industry\nstill working on its knees?\nWe're changing that.",
+      "new_h1_384": "The tiling industry still works on its knees?\nWe're changing that.",
       "new_h1_386": "The device that transforms\nthe professional flooring world",
       "new_h1_423": "Groutbot —\n\n        <span class=\"groutbot-hero__title-highlight\">The device that changes</span>\n\n        the world of tiling",
       "new_h2_206": "New Heading",
@@ -3586,6 +3589,7 @@ html[dir="rtl"] body {
       "new_div_426": "<span class=\"groutbot-hero__trust-value\">3×</span>\n          <span class=\"groutbot-hero__trust-label\">Faster</span>",
       "new_div_429": "<span class=\"groutbot-hero__trust-value\">98%</span>\n          <span class=\"groutbot-hero__trust-label\">Injection accuracy</span>",
       "new_div_431": "<span class=\"groutbot-hero__trust-value\">500+</span>\n          <span class=\"groutbot-hero__trust-label\">Satisfied contractors</span>",
+      "new_div_435": "<span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>Automatic electric injection</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>Uniform and precise pressure</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>Lightweight and portable</span>\n        <span class=\"groutbot-intro-compact__tag\"><span class=\"dot\"></span>Compatible with standard materials</span>",
       "terms_h2_10": "9. Modification of Terms of Use",
       "terms_h2_11": "10. Service Termination",
       "terms_h2_12": "11. Applicable Law and Dispute Resolution",
